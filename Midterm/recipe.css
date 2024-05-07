@@ -78,35 +78,42 @@ font-weight: 400;
 /* steps-------  */
 
 .recipe-step-container{
-display: flex;
-width: 100%;
-flex-wrap: wrap;
-/* max-width: 1000px; */
-
+  display: flex;
+  /* min-width: 1000px; */
+  padding: 80px;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 100px 80px;
+  align-self: stretch;
+  flex-wrap: wrap;
 }
 
-.step-card{
-display: flex;
+.step-wrapper{
+  display: flex;
+height: 565px;
+min-width: 500px;
 flex-direction: column;
-/* width: 100%; */
-  
+align-items: center;
+gap: 48px;
+flex: 1 0 0;
+overflow: hidden;
 }
 
 .step-image{
-  /* max-width: 300px; */
+  height: auto;
+  min-height: 400px;
+  width: 100%; 
+  align-self: stretch;
+  object-fit: cover;
 }
 
-.step-image img{
-  width: 100%;
-  max-width: 400px;
-    min-width: 300px;
-  }
-
 .step-content-wrapper{
-display: flex;
-align-items: start;
-
-  
+  display: flex;
+  align-items: flex-start;
+  gap: 43px;
+  align-self: stretch;
+  flex-grow: 1;
 }
 
 .step-number-wrapper{
@@ -124,7 +131,6 @@ align-items: start;
   width: 24px;
   height: 24px;
   justify-content: center;
-  align-items: center;
   color: #393E46;
   font-size: 24px;
   font-weight: 600;
@@ -133,10 +139,9 @@ align-items: start;
 }
 
 .step-text-wrappper{
-gap: 24px;
 
 
-  
+  flex-grow: 1;
 }
 
 .step-text-wrappper h3{
@@ -201,19 +206,20 @@ gap: 24px;
 /* steps-------  */
 
 .recipe-step-container{
- 
-  
+  padding: 80px;
+  gap: 80px 60px;
 }
 
-.step-card{
-
-  
+.step-wrapper{
+  /* width: 100%; */
+  min-width: 480px;
+  flex-wrap: nowrap;
+  gap: 48px;
 
 }
 
 .step-image{
-
-  
+  height: 420px;
  
 }
 
@@ -270,36 +276,34 @@ gap: 24px;
 /* steps-------  */
 
 .recipe-step-container{
-
-  
-
+  width: 100vw;
+justify-content: center;
+align-items: center;
 
 }
 
 
 
 
-.step-card{
-
-  
-
-
-
-
+.step-wrapper{
+height: auto;
+gap: 16px;
+align-self: stretch;
+  position: relative;
 } 
 
 .step-image{
-
-  
-
+  order: 2;
+max-width: 70vw;
  
 } 
 
 
 .step-content-wrapper{
-
-  
-
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+width: 70vw;
 }  
 
 
@@ -310,18 +314,15 @@ gap: 24px;
 
 /* For mobile devices (less than 500px) -------------------------------*/
 @media (max-width: 500px) {
-  .all-ingredients{
-    flex-direction: column;
-    
-  }
+  
 
 
 /* steps-------  */
 
-.step-card{
- 
-  
-
+.step-wrapper{
+  /* height: auto;
+  gap: 16px; */
+  margin-left: 2vw;
   } 
 
 }
@@ -331,9 +332,10 @@ gap: 24px;
 /* For mobile devices (less than 420px) -------------------------------*/
 @media (max-width: 420px) {
 
- 
-.step-card{
-
+.step-wrapper{
+  /* height: auto;
+  gap: 16px; */
+  margin-left: 20vw;
   } 
 
 }

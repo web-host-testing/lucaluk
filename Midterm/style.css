@@ -1,7 +1,7 @@
 * {
   margin: 0;
   /* padding: 0; */
-  /* box-sizing: border-box; */}
+  /* box-sizing: border-box; */
 
 
   @font-face {
@@ -14,7 +14,7 @@
     src: url("Nohemi-SemiBold.woff2");
     font-weight: 600;
   }
-  @font-ace {
+  @font-face {
     font-family: "Nohemi";
     src: url("/Nohemi-Bold.woff2");
     font-weight: 700;
@@ -25,17 +25,17 @@
 }
 
 body{
-  /* display: flex; */
-/* flex-direction: column; */
-/* align-items: center; */
+  display: flex;
+flex-direction: column;
+align-items: center;
 font-family: Nohemi;
-/* width: 100vw; */
+width: 100vw;
 }
 
-/* .container{
+.container{
 width: 100vw;
 overflow: hidden;
-} */
+}
 
 
 
