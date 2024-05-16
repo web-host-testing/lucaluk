@@ -181,6 +181,7 @@ overflow: hidden;
 
 .recipe-hero .text-wrapper{
   display: flex;
+  
 /* width: 540px; */
 flex-direction: column;
 align-items: flex-start;
