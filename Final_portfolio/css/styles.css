@@ -171,7 +171,7 @@
 
     /* preloader
      */
-    --color-preloader-bg           : #CFE6E8;
+    --color-preloader-bg           : #000000;
     --color-loader                 : var(--color-text-dark);
     --color-loader-light           : var(--color-1-lighter);
 
@@ -2238,21 +2238,16 @@ table {
 th, td {
     padding: var(--vspace-0_5) 3.2rem calc(var(--vspace-0_5) - 1px); /* Top and bottom padding with custom variable, left and right padding set to 3.2rem */
     text-align: left; /* Aligns text to the left */
-    border-bottom: 1px solid var(--color-border); /* Bottom border with color variable */
+    border-bottom: 2px solid var(--color-border); /* Bottom border with color variable */
 }
 
 .header-row{
     box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.613); /* Adds shadow for better visibility */
 }
 
-th {
-    color: var(--color-text-dark); /* Text color for header */
-    font-weight: 600; /* Bold font weight */
-    background-color: #ffffff; /* Light grey background */
-    position: sticky; /* Makes the header sticky */
-    top: 0; /* Positions the sticky header at the top of the table viewport */
-    z-index: 10; /* Ensures the header is above other content */
-    box-shadow: 0 2px 2px -1px rgba(0,0,0,0.4); /* Adds shadow for better visibility */
+
+.responsibility th {
+    background-color: none; /* Light grey background */
 }
 
 th:first-child, td:first-child {
@@ -2915,7 +2910,7 @@ img.u-pull-left {
                   0 2px 2px rgba(0, 0, 0, 0.01),
                   0 6px 6px rgba(0, 0, 0, 0.01);
 
-    z-index          : 100;
+    z-index          : 1001;
     display          : flex;
     height           : var(--header-height);
     background-color : var(--color-body);
@@ -3013,9 +3008,12 @@ img.u-pull-left {
     right      : 3.6rem;
 }
 
+
+
+
 .s-header__social li {
     padding-left : 0;
-    margin-right : 1rem;
+    margin-right : 2rem;
     line-height  : 1;
 }
 
@@ -3027,6 +3025,12 @@ img.u-pull-left {
     height : 2.8rem;
     width  : 2.8rem;
 }
+
+.linkedin-icon svg {
+   padding: 5px;
+}
+
+
 
 .s-header__social svg path {
     fill : var(--color-text-dark);
@@ -3230,6 +3234,7 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .s-intro {
     padding-top : calc(9.5 * var(--space));
+    padding-bottom: 2rem;
     width       : 100%;
     position    : relative;
 }
@@ -3985,6 +3990,7 @@ img.u-pull-left {
     padding-bottom : var(--vspace-2_5);
     font-weight    : 300;
     position       : relative;
+    background-color: #ffe81d;
 }
 
 .s-footer .text-subtitle {
@@ -4173,6 +4179,10 @@ img.u-pull-left {
 
 /* add manaully */
 
+.yellow{
+   background-color: #ffe81d;
+}
+
 .remove-margin-top{
     margin-top: 0;
 }
@@ -4218,6 +4228,7 @@ img.u-pull-left {
 
 
 /* Home */
+
 
 .comics-narrative{
     background-color: rgb(246, 245, 232);
@@ -4270,7 +4281,7 @@ background-color: white;
 
 /* testimonial  */
 #testimonial-section{
-    padding: 2rem 0 8rem 0;
+    padding: 8rem 0 8rem 0;
 }
 .slider {
     position: relative;
@@ -4462,9 +4473,7 @@ width: 12rem;
 margin: 0;
 }
 
-.about-page h3{
-    margin-top: 48px;
-}
+
 
 #my-process{
      /* background-color: #ffe81d; */
@@ -4516,8 +4525,7 @@ margin: 0;
   }
 }
 
-.fun-facts{
-    background-color: #ffe81d;
+.articles{
     padding: 8rem 0 8rem 0;
     /* margin: 120px 0 120px 0; */
 }
@@ -4553,21 +4561,29 @@ text-align: center;
 .process-item{
     padding: 0 4rem 0 4rem;
 }
-.fun-facts figure{
+.articles figure{
     margin: 0;
 }
-.fun-facts p{
+
+
+.articles p{
     margin: 0;
 }
+
+
 )
 }
 
+.fun-fact-article{
+margin-top: 0;
+margin-bottom: 0;
+}
 
 @media screen and (max-width: 600px) {
     #about-hero img{
 width: 80vw;
     }
-.fun-facts{
+.articles{
     padding: 8rem 3rem 8rem 3rem;
     /* margin: 120px 0 120px 0; */
 }
@@ -4575,4 +4591,97 @@ width: 80vw;
      /* background-color: #ffe81d; */
     padding: 8rem 3rem 8rem 3rem;
 }
+}
+
+
+/* case study  */
+
+.case-study-hero {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Maintaining a 16:9 ratio */
+    max-height: 80vh;
+    overflow: hidden;
+    
+}
+
+.case-study-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block; /* Eliminates any space below the image */
+}
+
+
+
+
+
+/* case study  */
+
+body{
+    background-color: white;
+}
+
+
+.case-intro{
+     background-color: white;
+     padding: 8rem 0 8rem 0;
+}
+
+.case-intro .text-wrapper{
+    text-align: center;
+}
+
+.case-intro .text-wrapper p{
+    width: 30vw; /* Set the width of the text box */
+    padding: 0px; /* Optional: add some padding */
+    display: block; /* Ensure it respects text-align center */
+    margin: 36px auto; /* Center it horizontally */
+   
+}
+
+
+.case-intro .tags-group{
+    justify-content: center;
+}
+
+.case-intro h1{
+    margin-top: 0;
+}
+
+.responsibility table{
+    border-width: 1px;
+   border-color: #000000;
+}
+
+.responsibility th, td {
+    border-bottom: none;
+}
+
+
+
+.responsibility td {
+    vertical-align: top;
+}
+
+
+.big-text-section{
+    padding: 8rem 0 8rem 0;
+}
+
+.big-text-section h2{
+  margin: 0;
+}
+
+.items-row{
+    padding: 8rem 0 8rem 0;
+}
+
+@media screen and (max-width: 900px) {
+.case-intro .text-wrapper p{
+    width: 80vw; /* Set the width of the text box */
+   
+}
+
+
 }
