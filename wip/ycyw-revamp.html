@@ -1,0 +1,1855 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YCYW Education Network Revamp</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+       <style>
+
+    body{
+        background-color: transparent;
+    }
+    
+
+.black {
+    background-color: #000000;
+    
+}
+
+
+
+.white-text{
+    color: white !important;
+}
+
+    .tags-group{
+    flex-direction: row;
+   display: flex;
+   gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+
+
+.badge {
+    background-color: rgb(0, 0, 0);
+    border-width: 0.5px;
+    color: white;
+    padding: 4px 12px;
+    text-align: center;
+    font-size: medium;
+  }
+
+  .badge-white {
+    background-color: rgb(255, 255, 255);
+    border-width: 0.5px;
+    color: rgb(0, 0, 0);
+    padding: 4px 12px;
+    text-align: center;
+    font-size: medium;
+  }
+
+
+.bage-section .text-huge-title{
+    margin-left: -12px;
+}
+
+.bage-section .text-subtitle{
+    margin-left: -16px;
+}
+
+
+.section-padding{
+    padding: 100px 0;
+}
+
+
+
+
+.badge-wrap{
+    gap: 12px;
+  width: 60vw;
+}
+
+ .industries-badges{
+    padding-right: 120px;
+    
+  }
+
+  .bage-section .text-subtitle{
+    margin-left: -16px;
+}
+
+/* testimonial  */
+#testimonial-section{
+    padding: 8rem 0 8rem 0;
+}
+.slider {
+    position: relative;
+    width: 100%; /* Adjust based on your layout needs */
+    overflow: hidden; /* Keeps anything outside the slider div from being visible */
+}
+
+.slider-contorls{
+ left: 5rem;
+top: 5rem;
+position: absolute;
+}
+
+.control-button{
+    padding: 0;
+}
+
+.slides {
+    width: 100%;
+    margin-top: 8rem;
+}
+
+.slide {
+    display: none; /* Hide all slides by default */
+    width: 100%; /* Adjust based on your layout needs */
+    padding: 20px; /* Provides some space inside the slide */
+    text-align: center; /* Center the text inside the slide */
+}
+
+.slide.active {
+    display: block; /* Only the active slide is shown */
+}
+
+
+
+
+.prev, .next {
+    /* position: absolute; */
+    top: 50%;
+    /* right: 0; */
+    transform: translateY(-50%);
+    width: 48px; /* Size of the SVG */
+    height: 48px; /* Size of the SVG */
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev svg, .next svg {
+    fill: white; /* Adjust if you need a different color */
+    width: 50%;
+    height: auto;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+
+.tesmintonal-profile-pic{
+width: 80px;
+height: 80px;
+margin-right: 12px;
+
+}
+
+.testimonial-profile-wrapper{
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-bottom: 2rem;
+}
+
+.tesminonail-paragraph{
+   text-align: left;
+font-size: 2rem;
+margin-bottom: 0;
+line-height: 180%;
+
+}
+
+.testimonial-name-wrapper{
+     text-align: left;
+}
+
+    .testimonial-wrapper{
+        width: 50%; /* Each testimonial takes up half the width of the slide */
+            float: left; /* Align testimonials side by side */
+            box-sizing: border-box;
+            padding: 0 2rem; /* Optional: Adjust padding based on design needs */
+    
+    }
+
+.linkedIn-card {
+    background: transparent !important;
+    border: 1.5px solid #000000;
+    color: #000000;
+    padding: 24px 60px;
+    margin: 0;
+    height: 160px;
+    width: auto;
+    display: block;
+    width: auto;
+    object-fit: contain;
+    margin-top: 16px;
+}
+
+.footer-contact-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+   
+}
+
+.footer-image {
+    margin-bottom: 20px;
+    display: block;
+    width: 50svw;
+    margin-bottom: 24px;
+    margin-top: -80px;
+}
+
+.email-link svg {
+    margin-right: 8px;
+}
+
+
+.footer-contact-wrap .email-link {
+    margin-top: 20px; /* Add margin to separate the elements */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-image {
+    margin-bottom: 20px;
+    display: block;
+    width: 40svw;
+    margin-bottom: 24px;
+}
+
+.case-study-paragraph-wrap{
+    margin-bottom: 16px;
+}
+
+.reduced-margin-bottom{
+margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+
+ 
+.title-paragraph{
+    font-size: 2rem;
+  margin: 0px 18px 40px 18px;
+ line-height: 140%;
+}
+
+ .footer-image {
+    width: 80svw;
+       margin-top: -80px;
+}
+
+.linkedIn-card {
+ 
+    padding: 4px 24px;
+  
+}
+
+.big-image{
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+  
+}
+
+
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .comics-narrative{
+   justify-self: center;
+    }
+    
+    .comics-narrative p{
+        max-width: none;
+    }
+
+    figure img {
+
+        align-self: center;
+    }
+
+.text-home-title{
+font-size: 80px; 
+padding: 0 40px;   
+}
+.title-icon{
+width: 100px;
+height: 100px;
+
+}
+
+.title-paragraph{
+    font-size: 3rem;
+  margin: 0px 36px 40px 36px;
+ line-height: 140%;
+ text-align: center;
+}
+
+
+.work-card{
+    padding: 18px; 
+    margin-top: 24px;
+}
+
+
+.badge-wrap{
+    gap: 12px;
+  width: 100%;
+}
+
+
+.big-image{
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+
+}
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+ 
+.title-paragraph{
+    font-size: 2rem;
+  margin: 0px 18px 40px 18px;
+ line-height: 140%;
+}
+
+ .footer-image {
+    width: 80svw;
+       margin-top: -80px;
+}
+
+.linkedIn-card {
+ 
+    padding: 4px 24px;
+  
+}
+
+.big-image{
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+.slider-contorls{
+ left: auto;
+top: 5rem;
+position: absolute;
+}
+
+
+
+.title-icon{
+width: 80px;
+height: 80px;
+margin-right: 12px;
+margin-bottom: 20px;
+margin-left: -16px;
+}
+
+.title-paragraph{
+    font-size: 2rem;
+  margin: 0px 18px 40px 18px;
+ line-height: 140%;
+}
+
+.work-card{
+    padding: 18px; 
+    margin-top: 24px;
+}
+
+.text-home-title{
+  
+  font-size      : 6rem;    
+  padding: 0 40px; 
+}
+
+     .industries-badges{
+    padding-right: 0px;
+    margin-bottom: 24px;
+  }
+
+ .footer-image {
+    width: 80svw;
+   margin-top: -80px;
+}
+
+}
+
+/* about  */
+
+.about-page{
+    background-color: white;
+}
+
+
+
+.about-hero{
+    padding-top : 20svh;
+    width       : 100%;
+    position    : relative;
+     /* background-color: #ffe81d; */
+     min-height: 100svh;
+     height: auto;
+     margin-bottom: 80px;
+     padding-bottom: 24px;
+    
+}
+
+
+.section-title{
+    /* text-align: center; */
+    font-size: 2.5em;
+    /* margin: 0 auto; */
+    width: 92%;
+    /* padding: 0 20px; */
+}
+
+
+.content-paragraph{
+padding: 100px 0;
+}
+
+.process-item{
+ margin-top: 2rem;
+}
+
+.my-process-icon{
+width: 12rem;
+margin: 0;
+}
+
+
+
+#my-process{
+     /* background-color: #ffe81d; */
+    padding: 8rem 0 8rem 0;
+}
+
+
+#experience{
+     background-color: #ffe81d;
+    padding: 8rem 0 8rem 0;
+}
+
+/* tools  */
+#tools-section .row{
+     /* background-color: #ffe81d; */
+    padding: 8rem 0 8rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  > div {
+    background: black;
+    padding: 1rem;
+    position: relative;
+    &::before {
+      // for apsect ratio
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+
+    .grid img {
+      position: absolute;
+      max-width: 100%;
+
+      // Alternate Version
+      // top: 0;
+      // bottom: 0;
+      // right: 0;
+      // left: 0;
+      // margin: auto;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.articles{
+    padding: 8rem 0 8rem 0;
+    /* margin: 120px 0 120px 0; */
+}
+
+
+
+.process-item h3{
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+
+    .process-item{
+      margin-bottom: 4rem;
+      padding: 0 16rem 0 16rem;
+    }
+    .section-title{
+        text-align: center;
+    }
+
+
+
+}
+
+@media screen and (max-width: 700px) {
+
+.block-stack-on-700 .process-item{
+    /* width: 80%; */
+}
+
+.about-hero{
+text-align: center;
+}
+
+.process-item{
+    padding: 0 4rem 0 4rem;
+}
+.articles figure{
+    margin: 0;
+}
+
+
+.articles p{
+    margin: 0;
+}
+
+
+
+}
+
+.fun-fact-article{
+margin-top: 0;
+margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+    #about-hero img{
+width: 80vw;
+    }
+.articles{
+    padding: 8rem 3rem 8rem 3rem;
+    /* margin: 120px 0 120px 0; */
+}
+#tools-section .row{
+     /* background-color: #ffe81d; */
+    padding: 8rem 3rem 8rem 3rem;
+}
+}
+
+
+/* case study  */
+.case-study-hero {
+    position: relative;
+    height: 100svh;
+    width: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin-top: 5svh;  */
+}
+
+.case-study-hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire section */
+    z-index: -1; /* Position the background image behind other content */
+}
+
+
+.padding-bottom{
+    padding-bottom: 24px;
+}
+
+.content-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Set a maximum width for better layout control */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1; /* Ensure this content is above the background image */
+}
+
+.additional-hero-image {
+    width: 100%;
+    height: 100%;
+    max-height: 60svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Ensure this image is above the background image */
+}
+
+.additional-hero-image .hero-image {
+    width: 100%;
+    max-height: 60vh; /* Adjust as necessary */
+    object-fit: contain;
+    height: 100%;
+    margin-top: 5svh;
+    padding-bottom: 24px;
+}
+
+.hero-text {
+    width: 100%;
+    text-align: center;
+   
+   gap: 12px;
+    z-index: 2; /* Ensure text is above all images */
+    margin-bottom: 20px; /* Adjust spacing from the bottom */
+}
+
+.hero-text h1 {
+    margin: 0;
+    padding:16px 0;
+}
+
+.hero-text p {
+    max-width: 600px; /* Adjust the max width as necessary */
+    margin: 0 auto; /* Center the paragraph */
+    /* Add some padding for better readability */
+    white-space: normal; /* Ensure the text wraps */
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.left{
+    text-align: left;
+}
+
+.list-paragraph li{
+padding-bottom: 8px;
+}
+
+.animate-on-load {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* case study link to other pages  */
+
+.navigation-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16rem;
+    width: 100%;
+}
+
+.control-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Uncommented for spacing between elements */
+}
+
+.arrow-button {
+    width: 48px;
+    height: 48px;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.left-btn .link-text h3, .left-btn .link-text p {
+    margin-left: 24px;
+    text-align: left;
+}
+
+
+.right-btn .link-text h3, .right-btn .link-text p {
+    margin-right: 24px;
+    text-align: right;
+}
+ 
+
+    
+/* Tablet Screens */
+@media (max-width: 1000px) {
+    .arrow-button {
+        width: 40px; /* Smaller size for tablets */
+        height: 40px; /* Smaller size for tablets */
+    }
+
+    .link-text h3 {
+        font-size: 2rem; /* Smaller font size for tablets */
+    }
+
+    .link-text figcaption {
+        font-size: 1.6rem; /* Smaller font size for tablets */
+    }
+
+    .left-btn .link-text{
+    margin-left: 12px;
+}
+
+.right-btn .link-text{
+    margin-right: 12px;
+}
+}
+
+
+/* big mobile Screens */
+@media (max-width: 800px) {
+
+    .link-text h3 {
+        font-size: 2rem; /* Smaller font size for tablets */
+    }
+
+    .link-text figcaption {
+        font-size: 1.6rem; /* Smaller font size for tablets */
+    }
+
+    .left-btn .link-text{
+    margin-left: 8px;
+}
+
+.right-btn .link-text{
+    margin-right: 8px;
+}
+}
+
+
+/* small mobile Screens */
+@media (max-width: 600px) {
+    .navigation-links {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 24px;
+        gap: 24px;
+    }
+
+    .control-button {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        width: 100%; /* Ensure the buttons take full width */
+     
+    }
+
+ 
+
+ 
+}
+/* -------------  */
+
+
+
+.big-image-with-caption{
+    padding: 2rem 0;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .additional-hero-image {
+        margin-top: -20px; /* Reduce spacing at the top on smaller screens */
+    }
+
+    .additional-hero-image .hero-image {
+        max-height: 60vh; /* Adjust max height for smaller screens */
+    }
+
+    .hero-text {
+        margin-bottom: 10px; /* Adjust spacing for smaller screens */
+        padding: 0 10px; /* Add some padding for better text alignment */
+    }
+
+        .hero-text p {
+        max-width: 90%; /* Adjust max width for smaller screens */
+        padding: 0 10px; /* Add some padding for better text alignment */
+    }
+
+    
+}
+
+@media (max-width: 600px) {
+    
+
+  
+
+  .additional-hero-image .hero-image {
+    /* width: 100%; */
+    height: 60vh; /* Adjust as necessary */
+    object-fit: cover;
+    
+}   
+
+.overview-item{
+padding-top: 24px;
+}
+
+  
+}
+
+.remove-margin{
+    margin: 0;
+}
+
+.remove-padding{
+    padding: 0;
+}
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.tags-group.special-badge {
+    position: absolute;
+    top: 10px; /* Adjust as necessary */
+    left: 10px; /* Adjust as necessary */
+    z-index: 10;
+}
+
+.special-badge .badge {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+/* case study  */
+
+body{
+    background-color: white;
+}
+
+
+.case-intro{
+     background-color: white;
+     padding: 8rem 0 8rem 0;
+}
+
+.case-intro .text-wrapper{
+    text-align: center;
+}
+
+.case-study-paragraph-wrap{
+    padding: 0 0 24px 0;
+}
+
+.case-intro .text-wrapper p{
+    width: 30vw; /* Set the width of the text box */
+    padding: 0px; /* Optional: add some padding */
+    display: block; /* Ensure it respects text-align center */
+    margin: 36px auto; /* Center it horizontally */
+   
+}
+
+
+.case-intro .tags-group{
+    justify-content: center;
+}
+
+.case-intro h1{
+    margin-top: 0;
+}
+
+.responsibility table{
+    border-width: 1px;
+   border-color: #000000;
+}
+
+.responsibility th, td {
+    border-bottom: none;
+}
+
+
+
+.responsibility td {
+    vertical-align: top;
+}
+
+
+.big-text-section{
+    padding: 8rem 0 8rem 0;
+}
+
+.big-text-section h2{
+  margin: 0;
+}
+
+.items-row{
+    padding: 8rem 0 8rem 0;
+}
+
+.image-caption-right{
+padding-left: 4rem;
+padding-bottom: 24px;
+}
+
+.image-caption-left{
+padding-right: 3rem;
+padding-bottom: 24px;
+}
+
+
+.impact-icon{
+ width: 20rem;
+ padding: 8rem 0 4rem 0;
+margin: 0;   
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+.learning-item{
+    margin-bottom: 40px;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 900px) {
+.case-intro .text-wrapper p{
+    width: 80vw; /* Set the width of the text box */
+   
+}
+.padding-left{
+    padding-left: 2rem;
+    padding-right: 0;
+}
+
+ .image-caption-right{
+padding-left: 2rem;
+
+}
+
+.image-caption-left{
+padding-left: 2rem;
+}
+ .image-caption-right{
+order: -1;
+
+}
+
+ .image-caption-left{
+order: -1;
+}
+
+
+
+
+}
+
+    </style> 
+    <!-- favicons
+    ================================================== -->
+   <link rel="icon" href="images/favicon_luca.png" type="image/png">
+
+</head>
+
+
+
+<body id="top-ycyw" class="about-page">
+    <div id="preloader">
+        <div id="loader" class="line"></div>
+    </div>
+    <div id="page" class="s-pagewrap">
+    
+    <header id="masthead" class="s-header">
+    <div class="s-hader__block">
+        <div class="s-header__branding">
+            <p class="site-title">
+                <a href="index.html" rel="home">Luca Luk</a>
+            </p>
+        </div>
+        <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+    </div> <!-- end s-header__block -->
+
+    <div class="row s-header__nav-wrap">
+        <nav class="s-header__nav">
+            <ul>
+                <!-- Dropdown Menu for Work -->
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">
+        Work
+        <img src="images/arrow-down.svg" alt="Dropdown Arrow" class="dropdown-arrow">
+    </a>
+    <div class="dropdown-content ">
+
+        <a href="mobile-cheque-deposit.html">
+       <p class="badge remove-margin-bottom" style="color: white; text-decoration: none;">UX</p>
+        <p>Mobile Cheque Deposit Feature</p>
+        </a>
+
+        <div style="clear: both;"></div> 
+
+        <a href="corporate-banking-revamp.html">
+       <p class="badge remove-margin-bottom" style="color: white; text-decoration: none;">Research</p>
+        <p>Corporate Banking App</p>
+        </a>
+
+        <div style="clear: both;"></div> 
+
+        <a href="education-website-revamp.html">
+       <p class="badge remove-margin-bottom" style="color: white; text-decoration: none;">UIUX</p>
+        <p>Education Network Website</p>
+        </a>
+
+
+    </div>
+</li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Luca-Luk-CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+            </ul>
+        </nav> <!-- end s-header__nav -->
+
+        <ul class="s-header__social">
+            <li>
+                <a href="https://www.linkedin.com/in/lucaluk" target="_blank">
+                    <img src="images/icons/linkedin.svg" alt="" class="nav-icon">
+                    <span class="u-screen-reader-text">LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                
+                
+<a href="javascript:void(0);" onclick="copyEmailToClipboard()" style="position: relative;">
+    <img src="images/icons/email-link.svg" alt="" class="nav-icon">
+    <span class="u-screen-reader-text">Email</span>
+    <span id="tooltip" class="tooltip-text">Email copied!</span> <!-- Tooltip -->
+</a>
+            </li>
+        </ul>  
+    </div> <!-- end s-header__nav-wrap -->
+</header> <!-- end s-header -->
+
+
+        <section class="case-study-hero">
+            <picture>
+                <source srcset="images/comics_placeholder.png" media="(min-width: 1024px)">
+                <source srcset="images/comics_placeholder.png" media="(min-width: 768px)">
+                <source srcset="images/comics_placeholder.png">
+                <img src="images/comics_placeholder.png" alt="Hero Image" class="case-study-hero-image">
+            </picture>
+            <figure class="additional-hero-image animate-on-load">
+                <img class="hero-image" src="images/wheel-500.jpg"
+                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w" alt="Additional Hero Image">
+            </figure>
+            <div class="hero-text ">
+                <strong class="animate-on-load">YCYW Education Network</strong>
+                <h1 class="text-big-title animate-on-load" >Education Websites Revamp</h1>
+                <p class=" animate-on-load">
+                    Led end-to-end research and design for 22 international schools, focusing on content strategy, information architecture and design system.
+                </p>
+            </div>
+        </section>
+
+        <section class="content-paragraph ">
+            <div class="row row-y-top block-stack-on-900 horizontal-center">
+                <div class="column lg-2 md-3 tab-12 remove-paddings-margin">
+                    <h2 class=""> Overview </h2>
+                </div>
+                <div class="column lg-10 md-9 tab-12 padding-left">
+                    <div class="row">
+                        <div class="lg-4 tab-12 column overview-item">
+                            <h4>Timeline</h4>
+                              <strong>13 Months</strong>
+                             <p class="padding-bottom">Apr 2021 - May 2022</p>
+                        </div>
+                        <div class="lg-4 tab-12 column overview-item">
+                            <h4>Team</h4>
+                            <ul>
+                                <li>Internal Project Manager</li>
+                                <li>Client Product Managers</li>
+                                <li>IT Vendors</li>
+                                <li>Copy Writer</li>
+                            </ul>
+                        </div>
+                        <div class="lg-4 tab-12 column overview-item">
+                            <h4>Contribution</h4>
+                            <ul>
+                                <li>Social Listening</li>
+                                <li>Information Architecture</li>
+                                <li>Content Strategy</li>
+                                <li>UX/UI Design</li>
+                                <li>Design System</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="lg-4 tab-12 column">
+                    <div class="image-container">
+                        <div class="tags-group special-badge">
+                            <p class="badge remove-margin-bottom">Brief</p>
+                        </div>
+                        <figure>
+                            <img src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
+                                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                        </figure>
+                    </div>
+                    <p>Align new branding across all 21 schools to present a unified and modernized online presence.</p>
+                </div>
+                <div class="lg-4 tab-12 column">
+                    <div class="image-container">
+                        <div class="tags-group special-badge">
+                            <p class="badge remove-margin-bottom">Problem</p>
+                        </div>
+                        <figure>
+                            <img src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
+                                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                        </figure>
+                    </div>
+                    <p>Messy structure and outdated visuals of school websites lead to poor usability and make it hard for users to find needed information.</p>
+                </div>
+                <div class="lg-4 tab-12 column">
+                    <div class="image-container">
+                        <div class="tags-group special-badge">
+                            <p class="badge remove-margin-bottom">Goals</p>
+                        </div>
+                        <figure>
+                            <img src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
+                                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                        </figure>
+                    </div>
+                    <ul class="list-paragraph">
+                        <li>Improve brand image </li>
+                        <li>Increase student enrollment</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-paragraph yellow">
+            <div class="row">
+                <div class="row row-y-top block-stack-on-900 horizontal-center">
+                    <div class="column lg-7 md-4 tab-12">
+                        <h3 class="text-big-title reduced-margin-bottom"> Final Deliverables </h3>
+                        <a class="btn btn--stroke" href="#features-highlights">Skip to Features</a>
+                    </div>
+                    <div class="column lg-5 md-8 tab-12 case-study-paragraph-wrap">
+                        <p class="reduced-margin-bottom">Developed a unified and customizable template for 21 schools, each optimized to attract future parents and increase enrollment in YCYW.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lg-6 mob-12 column padding-bottom">
+                        <div class="image-container">
+                            <figure>
+                                <img src="images/wheel-500.jpg"
+                                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
+                                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            </figure>
+                        </div>
+                        <h3>New</h3>
+                    </div>
+                    <div class="lg-6 mob-12 column padding-bottom">
+                        <div class="image-container">
+                            <figure>
+                                <img src="images/wheel-500.jpg"
+                                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
+                                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            </figure>
+                        </div>
+                        <h3>Old</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-paragraph ">
+            <div class="row row-y-top block-stack-on-900 horizontal-center">
+                <div class="column lg-4 md-4 tab-12 case-study-paragraph-wrap">
+                  <div class=" tags-group">
+                    <p class="badge remove-margin-bottom" >Background Work</p>
+                 </div>
+                    <h3 class="text-big-title reduced-margin-bottom"> Stakeholder Analysis</h3>
+                </div>
+                <div class="column lg-8 md-8 tab-12 case-study-paragraph-wrap">
+                  <strong>Stakeholders</strong>
+                    <p class="padding-bottom">Client (Mothership + Individual Schools), IT Vendors, Internal Team</p>
+                   <strong>Challenge</strong>
+                    <p class="padding-bottom"> Multiple stakeholders including mothership, individual schools, IT vendors, and internal teams with different target audiences.</p>
+                       
+                    <strong>Approach</strong>
+                    <p>Confirming the goals of all stakeholders early to avoid costly changes later.</p>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 16px;">
+                <figure>
+                    <img class="big-image" src="images/wheel-500.jpg"
+                        srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                </figure>
+            </div>
+            <div class="row">
+                <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
+                    <div class="column lg-9 md-8 tab-12">
+                        <figure>
+                            <img class="big-image" src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        </figure>
+                    </div>
+                    <div class="column lg-3 md-4 tab-12 image-caption-right">
+                        <h4>Network structure Mapping</h4>
+                        <p>Helped internal teams understand the relationship between sub-brands.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
+                    <div class="column lg-3 md-4 tab-12 image-caption-left">
+                        <h4>Analyzing Existing Sites</h4>
+                        <p>Focus on how similar content placed under different sections and named inconsistently.</p>
+                    </div>
+                    <div class="column lg-9 md-8 tab-12">
+                        <figure>
+                            <img class="big-image" src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
+                    <div class="column lg-9 md-8 tab-12">
+                        <figure>
+                            <img class="big-image" src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        </figure>
+                    </div>
+                    <div class="column lg-3 md-4 tab-12 image-caption-right">
+                        <h4>Align business goals with user goals</h4>
+                        <p>Identify target users corresponding with what we want them to do on the site and how to feel about the school.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-paragraph yellow">
+            <div class="row row-y-top block-stack-on-900 horizontal-center">
+                <div class="column lg-4 md-4 tab-12 case-study-paragraph-wrap">
+                 <div class=" tags-group">
+                    <p class="badge remove-margin-bottom" >Research</p>
+                 </div>
+                    <h3 class="text-big-title reduced-margin-bottom"> Content Strategy </h3>
+                </div>
+                <div class="column lg-8 md-8 tab-12 case-study-paragraph-wrap">
+                    <strong>Focus</strong>
+                    <p class="reduced-margin-bottom">Understanding the needs and decision-making factors of parents looking for schools for their children.</p>
+                    <h3 class="title-paragraph-about">Target user: Future parents, who do the research and can make the buy-in decision for their child.</h3>
+                    
+                    <ul>
+                        <li>How to build trust?</li>
+                        <li>How to attract parents effectively?</li>
+                        <li>How to resolve key concerns?</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 16px;">
+                <figure>
+                    <img class="big-image" src="images/wheel-500.jpg"
+                        srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                </figure>
+            </div>
+            <div class="row">
+                <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
+                    <div class="column lg-9 md-8 tab-12">
+                        <figure>
+                            <img class="big-image" src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        </figure>
+                    </div>
+                    <div class="column lg-3 md-4 tab-12 image-caption-right">
+                        <h4>Market Reports</h4>
+                        <p>Insights into demographics and preferences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
+                    <div class="column lg-3 md-4 tab-12 image-caption-left">
+                        <h4>Social Listening</h4>
+                        <p>Understanding concerns and perceptions from forums and social media.</p>
+                    </div>
+                    <div class="column lg-9 md-8 tab-12">
+                        <figure>
+                            <img class="big-image" src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+               <div class="row">
+                <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
+                    <div class="column lg-9 md-8 tab-12">
+                        <figure>
+                            <img class="big-image" src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        </figure>
+                    </div>
+                    <div class="column lg-3 md-4 tab-12 image-caption-right">
+                        <h4>Root Cause Analysis</h4>
+                        <p>Mind maps to visualize parents' mental models.</p>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
+                    <div class="column lg-3 md-4 tab-12 image-caption-left">
+                        <h4>Competitor Analysis</h4>
+                        <p>Not only UI design and features, but how others solve the same problems we have.</p>
+                    </div>
+                    <div class="column lg-9 md-8 tab-12">
+                        <figure>
+                            <img class="big-image" src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
+                    <div class="column lg-12 image-caption-left">
+                        <figure>
+                            <img class="big-image" src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        </figure>
+                        <h4>Actionable Game Plan</h4>
+                        <p style="margin-bottom: 40px;">Breakdown of what content, media and features to use to achieve each goal.</p>
+                    </div>
+                </div>
+            </div>
+                
+        </section>
+
+
+
+        <section class="content-paragraph ">
+            <div class="row row-y-top block-stack-on-900 horizontal-center" >
+                <div class="column lg-4 md-4 tab-12 case-study-paragraph-wrap">
+                <div class=" tags-group">
+                    <p class="badge remove-margin-bottom" >UX Design</p>
+                 </div>
+                    <h3 class="text-big-title reduced-margin-bottom"> Information Architecture </h3>
+                </div>
+                <div class="column lg-8 md-8 tab-12 case-study-paragraph-wrap reduced-margin-bottom padding-left" style="float: right">
+                <strong>Challenge</strong>
+                <ul>
+                  <li>More than 200 pages of content from diffrent sub-brands.</li>
+                  <li>Standardizing structure and naming across schools.</li>
+                </ul>
+
+                 <strong>Approach</strong>
+                 <ul>
+                    <li>Identify the key info users looking for.</li>
+                    <li>Understand mental model of users in sorting info.</li>
+                 </ul>
+                </div>
+             
+            </div>
+            <div class="row" style="margin-bottom: 16px;">
+                <figure>
+                    <img class="big-image" src="images/wheel-500.jpg"
+                        srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                </figure>
+            </div>
+            <div class="row">
+                <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
+                    <div class="column lg-9 md-8 tab-12">
+                        <figure>
+                            <img class="big-image" src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        </figure>
+                    </div>
+                    <div class="column lg-3 md-4 tab-12 image-caption-right">
+                        <h4>Evaluate Existing Structure</h4>
+                        <p>Discover key navigation issues, especially key info parents looking for with tree test.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
+                    <div class="column lg-3 md-4 tab-12 image-caption-left">
+                        <h4>Understand familiar structures</h4>
+                        <p>Learn where parents look for key info by studying structures of other international schools.</p>
+                    </div>
+                    <div class="column lg-9 md-8 tab-12">
+                        <figure>
+                            <img class="big-image" src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
+                    <div class="column lg-9 md-8 tab-12">
+                        <figure>
+                            <img class="big-image" src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        </figure>
+                    </div>
+                    <div class="column lg-3 md-4 tab-12 image-caption-right">
+                        <h4>Page Names Study</h4>
+                        <p>Use card sorting to confirm our assumptions on how parents group information.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
+                    <div class="column lg-12 image-caption-left">
+                        <figure>
+                            <img class="big-image" src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        </figure>
+                        <h4>Simplified Structure</h4>
+                        <p>Reduced from 40+ pages to 18 key pages, using tabs to streamline information access.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-paragraph yellow">
+            <div class="row row-y-top block-stack-on-900 horizontal-center">
+                <div class="column lg-5 md-4 tab-12 case-study-paragraph-wrap">
+                <div class=" tags-group">
+                    <p class="badge remove-margin-bottom" >Collaboration</p>
+                 </div>
+                    <h3 class="text-big-title reduced-margin-bottom"> Client & Vendors </h3>
+                </div>
+                <div class="column lg-7 md-8 tab-12 case-study-paragraph-wrap">
+               <div class="padding-left">
+                   <strong>Approach</strong>
+                  <ul>
+                    <li>Regular meetings to update on research and design progress and seek client approvals.</li>
+                    <li>Manage client expectations with milestones and avoid reworking.</li>
+                    <li>Make sure IT understand our expectations and have all resourcess needed. </li>
+                  </ul>
+               </div>
+                    
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 16px;">
+                <figure>
+                    <img class="big-image" src="images/wheel-500.jpg"
+                        srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                </figure>
+            </div>
+            <div class="row">
+                <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
+                    <div class="column lg-9 md-8 tab-12">
+                        <figure>
+                            <img class="big-image" src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        </figure>
+                    </div>
+                    <div class="column lg-3 md-4 tab-12 image-caption-right">
+                        <h4>Content Collaboration</h4>
+                        <p>Before proceeding with the copywriting, we use side notes in wireframes for client feedback..</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="row">
+                <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
+                    <div class="column lg-12 image-caption-left">
+                        <figure>
+                            <img class="big-image" src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        </figure>
+                        <h4>Challenges with Vendors Transitioning</h4>
+                        <p>Unfortunately we needed to change vendor and restart the whole development. With prior experience, we managed to maintain the delivery quality by thorough explanation sessions and small milestones.</p>
+                    </div>
+                </div>
+            </div>
+                  <div class="row">
+                <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
+                    <div class="column lg-12 image-caption-left">
+                        <figure>
+                            <img class="big-image" src="images/wheel-500.jpg"
+                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        </figure>
+                        <h4>Design System</h4>
+                        <p>To facilitate developments and individual schools to customize the sites themselves, we make all the design as components with clear guidelines in a design system.</p>
+                    </div>
+                </div>
+            </div>
+ 
+ 
+        </section>
+
+
+        <section class="content-paragraph " id="features-highlights">
+            <div class="row">
+                <div class="row row-y-top block-stack-on-900 horizontal-center">
+                    <div class="column lg-4 md-4 tab-12">
+                       <div class=" tags-group">
+                    <p class="badge remove-margin-bottom" >Solution</p>
+                 </div>
+                        <h3 class="text-big-title reduced-margin-bottom"> Features Highlights </h3>
+                    </div>
+                    <div class="column lg-8 md-8 tab-12 case-study-paragraph-wrap">
+                    <h3 class="title-paragraph-about">Features bring most value and easy to build:</h3>
+                      <ul>
+                        <li>Allow users reach essential information</li>
+                        <li>Helps parents envision their children’s promising futures</li>
+                        <li>Highlights the connections between schools within the same network</li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 16px;">
+                    <figure>
+                        <img class="big-image" src="images/wheel-500.jpg"
+                            srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                    </figure>
+                </div>
+                <div class="row" style="margin-bottom: 16px;">
+                    <figure>
+                        <img class="big-image" src="images/wheel-500.jpg"
+                            srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                    </figure>
+                </div>
+                <div class="row">
+                    <div class="lg-6 mob-12 column padding-bottom">
+                        <div class="image-container">
+                            <figure>
+                                <img src="images/wheel-500.jpg"
+                                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
+                                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            </figure>
+                        </div>
+                        <h3>Quick Links</h3>
+                        <p>Display links that user likely look for on each page based on card sorting and tree test results.</p>
+                    </div>
+                    <div class="lg-6 mob-12 column padding-bottom">
+                        <div class="image-container">
+                            <figure>
+                                <img src="images/wheel-500.jpg"
+                                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
+                                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            </figure>
+                        </div>
+                        <h3>Journey of Students</h3>
+                        <p>Helping parents envision their child's success at YCYW..</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lg-6 mob-12 column padding-bottom">
+                        <div class="image-container">
+                            <figure>
+                                <img src="images/wheel-500.jpg"
+                                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
+                                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            </figure>
+                        </div>
+                        <h3>Simplified Enquiry Form</h3>
+                        <p>Reducing form-filling hassle while gathering key information.</p>
+                    </div>
+                    <div class="lg-6 mob-12 column padding-bottom">
+                        <div class="image-container">
+                            <figure>
+                                <img src="images/wheel-500.jpg"
+                                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
+                                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            </figure>
+                        </div>
+                        <h3>Optimize Campus Facilities VR</h3>
+                        <p>Assure parents that their children will study in best environment.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lg-6 mob-12 column padding-bottom">
+                        <div class="image-container">
+                            <figure>
+                                <img src="images/wheel-500.jpg"
+                                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
+                                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            </figure>
+                        </div>
+                        <h3>School Switching Dropdown</h3>
+                        <p>Introduce users to the whole network.</p>
+                    </div>
+                    <div class="lg-6 mob-12 column padding-bottom">
+                        <div class="image-container">
+                            <figure>
+                                <img src="images/wheel-500.jpg"
+                                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
+                                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            </figure>
+                        </div>
+                        <h3>Mothership Website</h3>
+                        <p>Explain the structure of the sub-brands in the network.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="black ">
+            <div class="articles">
+                <div class="row">
+                    <div class="column lg-12 ">
+                        <h2 class="text-huge-title white-text">Impact</h2>
+                    </div>
+                    <div class="lg-4 tab-12 column">
+                        <img class="impact-icon" src="/images/ear.png" srcset="images/ear.png" alt="">
+                        <h3 class="white-text">Increase in Admission Enquiries</h3>
+                        <p class="white-text">More parents showed interest in the schools.</p>
+                    </div>
+                    <div class="lg-4 tab-12 column">
+                        <img class="impact-icon" src="/images/ear.png" srcset="images/ear.png" alt="">
+                        <h3 class="white-text">Improved Branding</h3>
+                        <p class="white-text">Unified branding enhanced public perception.</p>
+                    </div>
+                    <div class="lg-4 tab-12 column">
+                        <img class="impact-icon" src="/images/ear.png" srcset="images/ear.png" alt="">
+                        <h3 class="white-text">Enhanced Agency Reputation</h3>
+                        <As class="white-text">As the biggest client by that time, the success of this project marked the beginning of local recognition.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+<section class=" white">
+
+    <div class="articles " style="gap: 4rem;">
+
+        <div class="row ">
+
+
+            <div class="column lg-12" >
+
+            <figure style="margin-bottom: 8rem;">
+                <img class="big-image" src="images/wheel-500.jpg" 
+                srcset="images/wheel-1000.jpg 1000w, 
+                images/wheel-500.jpg 500w"  >
+            </figure>
+         
+                
+                <h2 class="text-huge-title " style="margin-bottom: 4rem;"> What I Learned</h2>
+                 
+            </div>
+
+             
+
+
+                 
+ <div class="lg-4   tab-12 column learning-item">
+    <!-- <img class="impact-icon" src="/images/ear.png" 
+                srcset="images/ear.png "  alt=""> -->
+
+                <h3>Actionable Plan</h3>
+
+         <p>I realized if we can't propose what to do for exact, the research can be a waste of time and resources.</p>
+   
+</div>
+  
+
+    
+    
+ <div class="lg-4 tab-12 column learning-item">
+    <!-- <img class="impact-icon" src="/images/ear.png" 
+                srcset="images/ear.png "  alt=""> -->
+
+                <h3>Stakeholder management</h3>
+
+         <p>Set small milestones with client and dev can greatly minimize the risk of redoing everything and ensure timely delivery.</p>
+   
+</div>
+
+
+    
+ <div class="lg-4 tab-12 column learning-item">
+    <!-- <img class="impact-icon" src="/images/ear.png" 
+                srcset="images/ear.png "  alt=""> -->
+
+                <h3>Love in Complexness</h3>
+
+         <p>This project required handling of huge amount of information, and I found myself enjoy this a lot. It is very satisfying to make complicated things easy for everyone.</p>
+   
+</div>
+    
+
+
+       
+
+ <div class="column lg-12 remove-margin">
+<div class="navigation-links">
+    <div class="control-button left-btn" >
+        <a href="mobile-cheque-deposit.html" class="arrow-button" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M12.707 17.293L8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z" fill="white"/>
+            </svg>
+        </a>
+        <div class="link-text" >
+            <h3 class="title-paragraph-about remove-padding remove-margin">Corporate Banking Revamp</h3>
+            <figcaption class="remove-margin hide-on-tab" >#Business Value #Collaboration</figcaption>
+        </div>
+    </div>
+    <div class="control-button right-btn">
+       <div class="link-text">
+            <h3 class="title-paragraph-about remove-padding remove-margin">Mobile Cheque Deposit</h3>
+            <figcaption class="remove-margin hide-on-tab">#Complex Logics #Hazard Handling</figcaption>
+        </div>
+         <a href="corporate-banking-revamp.html" class="arrow-button" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M11.293 6.707L15.586 11H6v2h9.586l-4.293 4.293 1.414 1.414L19.414 12l-6.707-6.707z" fill="white"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+    </div>
+
+      </div>
+
+</section>
+
+
+
+                
+
+
+             <!-- # site footer
+        ================================================== -->
+       <footer id="colophon" class="s-footer">
+    <div class="row s-footer__contact-header">
+        <div class="column lg-12">
+          
+            <div class="footer-contact-wrap">
+                <img src="images/ear.png" class="footer-image" alt="Profile Image">
+
+                      <h2 class="text-big-title center remove-margin-top">
+                Let's Connect!
+            </h2>
+        
+
+                        <div class=" footer-contact-wrap">
+                             <a href="www.linkedin.com/in/lucaluk" target="_blank" class=""><img  src="  ./images/LinkedInStyleContactCard.png" class="linkedIn-card " alt=""></a>
+                             
+ 
+                       
+                         </div>
+                          
+
+                   
+                </div>
+            </div> <!-- end s-footer__content -->
+
+            <div class="row s-footer__bottom">
+                <div class="column ss-copyright">
+                    <p>© 2024 Luca Luk / luca.kahim.luk@gmail.com </p> 
+                  
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"></path></svg>
+                    </a>
+                </div>
+            </div> <!-- end s-footer__bottom-->
+
+        </footer> <!-- end s-footer -->
+
+
+    </div> <!-- end s-pagewrap -->
+
+
+
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+
+
+
+
+</html>
