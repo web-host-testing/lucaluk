@@ -18,529 +18,266 @@
    <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
 
+      
+      
+      
+         <style>
+:root {
+            --primary-color: #ffe81d; 
+    --secondary-color :#7b31c0;
+}
 
-       <style>
-
-    body{
-        background-color: transparent;
+    body {
+        background-color: transparent; /* Consolidated to a single rule */
     }
-    
 
-.black {
-    background-color: #000000;
-    
-}
+    .tags-group {
+        flex-direction: row;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 24px;
+    }
 
+    .badge {
+        background-color: black;
+        border-width: 0.5px;
+        color: white;
+        padding: 4px 12px;
+        text-align: center;
+        font-size: medium;
+    }
 
+    .badge-white {
+        background-color: rgb(255, 255, 255);
+        border-width: 0.5px;
+        color: rgb(0, 0, 0);
+        padding: 4px 12px;
+        text-align: center;
+        font-size: medium;
+    }
 
-.white-text{
-    color: white !important;
-}
+    .badge-section .text-huge-title {
+        margin-left: -12px;
+    }
 
-    .tags-group{
-    flex-direction: row;
-   display: flex;
-   gap: 16px;
-  align-items: center;
-  margin-bottom: 24px;
-}
+    .industries-badges .text-subtitle,
+    .projects-badges .text-subtitle {
+        margin-left: -16px;
+    }
 
+    .section-padding {
+        padding: 100px 0;
+    }
 
+    .badge-wrap {
+        gap: 12px;
+        width: 60vw;
+    }
 
-.badge {
-    background-color: rgb(0, 0, 0);
-    border-width: 0.5px;
-    color: white;
-    padding: 4px 12px;
-    text-align: center;
-    font-size: medium;
-  }
+    .industries-badges {
+        padding-right: 120px;
+    }
 
-  .badge-white {
-    background-color: rgb(255, 255, 255);
-    border-width: 0.5px;
-    color: rgb(0, 0, 0);
-    padding: 4px 12px;
-    text-align: center;
-    font-size: medium;
-  }
+    #testimonial-section {
+        padding: 8rem 0;
+    }
 
+    .slider {
+        position: relative;
+        width: 100%; /* Adjust based on your layout needs */
+        overflow: hidden; /* Keeps anything outside the slider div from being visible */
+    }
 
-.bage-section .text-huge-title{
-    margin-left: -12px;
-}
+    .slider-contorls {
+        left: 5rem;
+        top: 5rem;
+        position: absolute;
+    }
 
-.bage-section .text-subtitle{
-    margin-left: -16px;
-}
+    .control-button {
+        padding: 0;
+    }
 
+    .slides {
+        width: 100%;
+        margin-top: 8rem;
+    }
 
-.section-padding{
-    padding: 100px 0;
-}
+    .slide {
+        display: none; /* Hide all slides by default */
+        width: 100%; /* Adjust based on your layout needs */
+        padding: 20px; /* Provides some space inside the slide */
+        text-align: center; /* Center the text inside the slide */
+    }
 
+    .slide.active {
+        display: block; /* Only the active slide is shown */
+    }
 
+    .prev,
+    .next {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 48px; /* Size of the SVG */
+        height: 48px; /* Size of the SVG */
+        background-color: rgb(0, 0, 0);
+        cursor: pointer;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .prev svg,
+    .next svg {
+        fill: white; /* Adjust if you need a different color */
+        width: 50%;
+        height: auto;
+    }
 
-.badge-wrap{
-    gap: 12px;
-  width: 60vw;
-}
+    .prev {
+        left: 10px;
+    }
 
- .industries-badges{
-    padding-right: 120px;
-    
-  }
+    .next {
+        right: 10px;
+    }
 
-  .bage-section .text-subtitle{
-    margin-left: -16px;
-}
+    .tesmintonal-profile-pic {
+        width: 80px;
+        height: 80px;
+        margin-right: 12px;
+    }
 
-/* testimonial  */
-#testimonial-section{
-    padding: 8rem 0 8rem 0;
-}
-.slider {
-    position: relative;
-    width: 100%; /* Adjust based on your layout needs */
-    overflow: hidden; /* Keeps anything outside the slider div from being visible */
-}
+    .testimonial-profile-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
 
-.slider-contorls{
- left: 5rem;
-top: 5rem;
-position: absolute;
-}
+    .tesminonail-paragraph {
+        text-align: left;
+        font-size: 2rem;
+        margin-bottom: 0;
+        line-height: 180%;
+    }
 
-.control-button{
-    padding: 0;
-}
+    .testimonial-name-wrapper {
+        text-align: left;
+    }
 
-.slides {
-    width: 100%;
-    margin-top: 8rem;
-}
-
-.slide {
-    display: none; /* Hide all slides by default */
-    width: 100%; /* Adjust based on your layout needs */
-    padding: 20px; /* Provides some space inside the slide */
-    text-align: center; /* Center the text inside the slide */
-}
-
-.slide.active {
-    display: block; /* Only the active slide is shown */
-}
-
-
-
-
-.prev, .next {
-    /* position: absolute; */
-    top: 50%;
-    /* right: 0; */
-    transform: translateY(-50%);
-    width: 48px; /* Size of the SVG */
-    height: 48px; /* Size of the SVG */
-    background-color: rgb(0, 0, 0);
-    cursor: pointer;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.prev svg, .next svg {
-    fill: white; /* Adjust if you need a different color */
-    width: 50%;
-    height: auto;
-}
-
-.prev { left: 10px; }
-.next { right: 10px; }
-
-
-
-.tesmintonal-profile-pic{
-width: 80px;
-height: 80px;
-margin-right: 12px;
-
-}
-
-.testimonial-profile-wrapper{
-    display: flex;
-   flex-direction: row;
-   align-items: center;
-   margin-bottom: 2rem;
-}
-
-.tesminonail-paragraph{
-   text-align: left;
-font-size: 2rem;
-margin-bottom: 0;
-line-height: 180%;
-
-}
-
-.testimonial-name-wrapper{
-     text-align: left;
-}
-
-    .testimonial-wrapper{
+    .testimonial-wrapper {
         width: 50%; /* Each testimonial takes up half the width of the slide */
-            float: left; /* Align testimonials side by side */
-            box-sizing: border-box;
-            padding: 0 2rem; /* Optional: Adjust padding based on design needs */
-    
+        float: left; /* Align testimonials side by side */
+        box-sizing: border-box;
+        /* Optional: Adjust padding based on design needs */
     }
 
-.linkedIn-card {
-    background: transparent !important;
-    border: 1.5px solid #000000;
-    color: #000000;
-    padding: 24px 60px;
-    margin: 0;
-    height: 160px;
-    width: auto;
-    display: block;
-    width: auto;
-    object-fit: contain;
-    margin-top: 16px;
-}
-
-.footer-contact-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    text-align: center;
-   
-}
-
-.footer-image {
-    margin-bottom: 20px;
-    display: block;
-    width: 50svw;
-    margin-bottom: 24px;
-    margin-top: -80px;
-}
-
-.email-link svg {
-    margin-right: 8px;
-}
-
-
-.footer-contact-wrap .email-link {
-    margin-top: 20px; /* Add margin to separate the elements */
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-}
-
-.footer-image {
-    margin-bottom: 20px;
-    display: block;
-    width: 40svw;
-    margin-bottom: 24px;
-}
-
-.case-study-paragraph-wrap{
-    margin-bottom: 16px;
-}
-
-.reduced-margin-bottom{
-margin-bottom: 1rem;
-}
-
-@media screen and (max-width: 600px) {
-
+    .linkedIn-card {
  
-.title-paragraph{
-    font-size: 2rem;
-  margin: 0px 18px 40px 18px;
- line-height: 140%;
-}
-
- .footer-image {
-    width: 80svw;
-       margin-top: -80px;
-}
-
-.linkedIn-card {
- 
-    padding: 4px 24px;
-  
-}
-
-.big-image{
-    height: 100%;
-    width: 100vw;
-    object-fit: cover;
-  
-}
-
-
-}
-
-
-
-@media screen and (max-width: 900px) {
-
-    .comics-narrative{
-   justify-self: center;
-    }
-    
-    .comics-narrative p{
-        max-width: none;
+        margin: 0;
+        height: 160px;
+        display: block;
+        object-fit: contain;
+        margin-top: 16px;
     }
 
-    figure img {
-
-        align-self: center;
-    }
-
-.text-home-title{
-font-size: 80px; 
-padding: 0 40px;   
-}
-.title-icon{
-width: 100px;
-height: 100px;
-
-}
-
-.title-paragraph{
-    font-size: 3rem;
-  margin: 0px 36px 40px 36px;
- line-height: 140%;
- text-align: center;
-}
-
-
-.work-card{
-    padding: 18px; 
-    margin-top: 24px;
-}
-
-
-.badge-wrap{
-    gap: 12px;
-  width: 100%;
-}
-
-
-.big-image{
-    height: 100%;
-    width: 100vw;
-    object-fit: cover;
-
-}
-
-}
-
-
-@media screen and (max-width: 600px) {
-
- 
-.title-paragraph{
-    font-size: 2rem;
-  margin: 0px 18px 40px 18px;
- line-height: 140%;
-}
-
- .footer-image {
-    width: 80svw;
-       margin-top: -80px;
-}
-
-.linkedIn-card {
- 
-    padding: 4px 24px;
-  
-}
-
-.big-image{
-    height: 100%;
-    width: 100vw;
-    object-fit: cover;
-}
-
-
-}
-
-
-
-@media screen and (max-width: 400px) {
-
-.slider-contorls{
- left: auto;
-top: 5rem;
-position: absolute;
-}
-
-
-
-.title-icon{
-width: 80px;
-height: 80px;
-margin-right: 12px;
-margin-bottom: 20px;
-margin-left: -16px;
-}
-
-.title-paragraph{
-    font-size: 2rem;
-  margin: 0px 18px 40px 18px;
- line-height: 140%;
-}
-
-.work-card{
-    padding: 18px; 
-    margin-top: 24px;
-}
-
-.text-home-title{
-  
-  font-size      : 6rem;    
-  padding: 0 40px; 
-}
-
-     .industries-badges{
-    padding-right: 0px;
-    margin-bottom: 24px;
-  }
-
- .footer-image {
-    width: 80svw;
-   margin-top: -80px;
-}
-
-}
-
-/* about  */
-
-.about-page{
-    background-color: white;
-}
-
-
-
-.about-hero{
-    padding-top : 20svh;
-    width       : 100%;
-    position    : relative;
-     /* background-color: #ffe81d; */
-     min-height: 100svh;
-     height: auto;
-     margin-bottom: 80px;
-     padding-bottom: 24px;
-    
-}
-
-
-.section-title{
-    /* text-align: center; */
-    font-size: 2.5em;
-    /* margin: 0 auto; */
-    width: 92%;
-    /* padding: 0 20px; */
-}
-
-
-.content-paragraph{
-padding: 100px 0;
-}
-
-.process-item{
- margin-top: 2rem;
-}
-
-.my-process-icon{
-width: 12rem;
-margin: 0;
-}
-
-
-
-#my-process{
-     /* background-color: #ffe81d; */
-    padding: 8rem 0 8rem 0;
-}
-
-
-#experience{
-     background-color: #ffe81d;
-    padding: 8rem 0 8rem 0;
-}
-
-/* tools  */
-#tools-section .row{
-     /* background-color: #ffe81d; */
-    padding: 8rem 0 8rem 0;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 1rem;
-  > div {
-    background: black;
-    padding: 1rem;
-    position: relative;
-    &::before {
-      // for apsect ratio
-      content: "";
-      display: block;
-      padding-bottom: 100%;
-    }
-
-    .grid img {
-      position: absolute;
-      max-width: 100%;
-
-      // Alternate Version
-      // top: 0;
-      // bottom: 0;
-      // right: 0;
-      // left: 0;
-      // margin: auto;
-
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-}
-
-.articles{
-    padding: 8rem 0 8rem 0;
-    /* margin: 120px 0 120px 0; */
-}
-
-
-
-.process-item h3{
-    margin-top: 2rem;
-}
-
-@media screen and (max-width: 900px) {
-
-    .process-item{
-      margin-bottom: 4rem;
-      padding: 0 16rem 0 16rem;
-    }
-    .section-title{
+    .footer-contact-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
         text-align: center;
     }
 
+    .footer-image {
+        margin-bottom: 40px;
+        display: block;
+        height: 240px;
+        width: auto;
+        margin-top: -80px;
+    }
 
+    .email-link svg {
+        margin-right: 8px;
+    }
 
-}
+    .footer-contact-wrap .email-link {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+    }
 
-@media screen and (max-width: 700px) {
+    .case-study-paragraph-wrap {
+        margin-bottom: 16px;
+    }
+
+    .reduced-margin-bottom {
+        margin-bottom: 1rem;
+    }
+
+    .big-image {
+        height: 100%;
+        width: 100vw;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 900px) {
+
+        .comics-narrative {
+            justify-self: center;
+        }
+
+        .comics-narrative p {
+            max-width: none;
+        }
+
+        .text-home-title {
+            font-size: 80px;
+            padding: 0 40px;
+        }
+
+        .title-icon {
+            width: 100px;
+            height: 100px;
+        }
+
+        .title-paragraph {
+            font-size: 3rem;
+            margin: 0px 36px 40px 36px;
+            line-height: 140%;
+            text-align: center;
+        }
+
+        .work-card {
+            padding: 18px;
+            margin-top: 24px;
+        }
+
+        .badge-wrap {
+            gap: 12px;
+            width: 100%;
+        }
+
+        .image-caption-left,
+        .image-caption-right {
+            padding: 0 2rem 24px 2rem;
+            order: -1;
+        }
+
+         .testimonial-wrapper {
+        width: 100%; /* Each testimonial takes up half the width of the slide */
+      
+    }
+
+    }
+
+    @media screen and (max-width: 700px) {
 
 .block-stack-on-700 .process-item{
     /* width: 80%; */
@@ -571,23 +308,88 @@ margin-top: 0;
 margin-bottom: 0;
 }
 
-@media screen and (max-width: 600px) {
-    #about-hero img{
-width: 80vw;
-    }
-.articles{
+    @media screen and (max-width: 600px) {
+
+        .title-paragraph {
+            font-size: 2rem;
+            margin: 0px 18px 40px 18px;
+            line-height: 140%;
+        }
+
+        .articles{
     padding: 8rem 3rem 8rem 3rem;
     /* margin: 120px 0 120px 0; */
 }
-#tools-section .row{
-     /* background-color: #ffe81d; */
-    padding: 8rem 3rem 8rem 3rem;
-}
-}
+
+         .footer-image {
+        margin-bottom: 40px;
+        display: block;
+        height: 200px;
+        width: auto;
+        /* margin-top: -80px; */
+    }
 
 
-/* case study  */
-.case-study-hero {
+        .big-image {
+            height: 100%;
+            width: 100vw;
+            object-fit: cover;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+
+        .slider-contorls {
+            left: auto;
+            top: 5rem;
+            position: absolute;
+        }
+
+        .title-icon {
+            width: 80px;
+            height: 80px;
+            margin-right: 12px;
+            margin-bottom: 20px;
+            margin-left: -16px;
+        }
+
+        .title-paragraph {
+            font-size: 2rem;
+            margin: 0px 18px 40px 18px;
+            line-height: 140%;
+        }
+
+        .work-card {
+            padding: 18px;
+            margin-top: 24px;
+        }
+
+        .text-home-title {
+            font-size: 6rem;
+            padding: 0 40px;
+        }
+
+        .industries-badges {
+            padding-right: 0px;
+            margin-bottom: 24px;
+        }
+
+.industries-badges .text-subtitle,
+    .projects-badges .text-subtitle {
+        margin-left: 0;
+    }
+          .footer-image {
+        margin-bottom: 40px;
+        display: block;
+        height: 160px;
+        width: auto;
+        /* margin-top: -80px; */
+    }
+    }
+
+    /* case study  */
+
+  .case-study-hero {
     position: relative;
     height: 100svh;
     width: 100%;
@@ -605,23 +407,22 @@ width: 80vw;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire section */
-    z-index: -1; /* Position the background image behind other content */
+    object-fit: cover;
+    z-index: -1;
 }
 
-
-.padding-bottom{
+.padding-bottom {
     padding-bottom: 24px;
 }
 
 .content-wrapper {
     position: relative;
     width: 100%;
-    max-width: 1200px; /* Set a maximum width for better layout control */
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1; /* Ensure this content is above the background image */
+    z-index: 1;
 }
 
 .additional-hero-image {
@@ -631,228 +432,112 @@ width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1; /* Ensure this image is above the background image */
+    z-index: 1;
 }
 
 .additional-hero-image .hero-image {
     width: 100%;
-    max-height: 60vh; /* Adjust as necessary */
+    max-height: 60vh;
     object-fit: contain;
     height: 100%;
     margin-top: 5svh;
     padding-bottom: 24px;
 }
-
 .hero-text {
     width: 100%;
     text-align: center;
-   
-   gap: 12px;
-    z-index: 2; /* Ensure text is above all images */
-    margin-bottom: 20px; /* Adjust spacing from the bottom */
+    gap: 12px;
+    z-index: 2;
+    margin-bottom: 5svh;
 }
 
 .hero-text h1 {
     margin: 0;
-    padding:16px 0;
+    padding: 16px 0;
 }
 
 .hero-text p {
-    max-width: 600px; /* Adjust the max width as necessary */
-    margin: 0 auto; /* Center the paragraph */
-    /* Add some padding for better readability */
-    white-space: normal; /* Ensure the text wraps */
+    max-width: 600px;
+    margin: 0 auto;
+    white-space: normal;
 }
-
 .center {
     margin: 0 auto;
 }
 
-.left{
+.left {
     text-align: left;
 }
 
-.list-paragraph li{
-padding-bottom: 8px;
+.list-paragraph li {
+    padding-bottom: 8px;
 }
 
 .animate-on-load {
     animation: fadeIn 0.3s ease-in-out;
 }
 
-/* case study link to other pages  */
-
-.navigation-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 16rem;
-    width: 100%;
-}
-
-.control-button {
-    display: flex;
-    align-items: center;
-    gap: 1rem; /* Uncommented for spacing between elements */
-}
-
-.arrow-button {
-    width: 48px;
-    height: 48px;
-    background-color: rgb(0, 0, 0);
-    cursor: pointer;
-    z-index: 100;
-    display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-}
-
-.left-btn .link-text h3, .left-btn .link-text p {
-    margin-left: 24px;
-    text-align: left;
-}
-
-
-.right-btn .link-text h3, .right-btn .link-text p {
-    margin-right: 24px;
-    text-align: right;
-}
- 
-
-    
-/* Tablet Screens */
-@media (max-width: 1000px) {
-    .arrow-button {
-        width: 40px; /* Smaller size for tablets */
-        height: 40px; /* Smaller size for tablets */
-    }
-
-    .link-text h3 {
-        font-size: 2rem; /* Smaller font size for tablets */
-    }
-
-    .link-text figcaption {
-        font-size: 1.6rem; /* Smaller font size for tablets */
-    }
-
-    .left-btn .link-text{
-    margin-left: 12px;
-}
-
-.right-btn .link-text{
-    margin-right: 12px;
-}
-}
-
-
-/* big mobile Screens */
-@media (max-width: 800px) {
-
-    .link-text h3 {
-        font-size: 2rem; /* Smaller font size for tablets */
-    }
-
-    .link-text figcaption {
-        font-size: 1.6rem; /* Smaller font size for tablets */
-    }
-
-    .left-btn .link-text{
-    margin-left: 8px;
-}
-
-.right-btn .link-text{
-    margin-right: 8px;
-}
-}
-
-
-/* small mobile Screens */
-@media (max-width: 600px) {
-    .navigation-links {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 24px;
-        gap: 24px;
-    }
-
-    .control-button {
-        flex-direction: row;
-        align-items: center;
-        gap: 8px;
-        width: 100%; /* Ensure the buttons take full width */
-     
-    }
-
- 
-
- 
-}
-/* -------------  */
-
-
-
-.big-image-with-caption{
+.big-image-with-caption {
     padding: 2rem 0;
 }
+
+.content-paragraph{
+padding: 100px 0;
+}
+
+.articles{
+    padding: 8rem 0 8rem 0;
+    /* margin: 120px 0 120px 0; */
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
-/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .additional-hero-image {
-        margin-top: -20px; /* Reduce spacing at the top on smaller screens */
+        margin-top: -20px;
     }
 
     .additional-hero-image .hero-image {
-        max-height: 60vh; /* Adjust max height for smaller screens */
+        max-height: 60vh;
     }
 
     .hero-text {
-        margin-bottom: 10px; /* Adjust spacing for smaller screens */
-        padding: 0 10px; /* Add some padding for better text alignment */
+        /* margin-bottom: 10px; */
+        padding: 0 10px;
     }
 
-        .hero-text p {
-        max-width: 90%; /* Adjust max width for smaller screens */
-        padding: 0 10px; /* Add some padding for better text alignment */
+    .hero-text p {
+        max-width: 90%;
+        padding: 0 10px;
     }
-
-    
 }
 
 @media (max-width: 600px) {
-    
+    .additional-hero-image .hero-image {
+        height: 60vh;
+        object-fit: cover;
+    }
 
-  
-
-  .additional-hero-image .hero-image {
-    /* width: 100%; */
-    height: 60vh; /* Adjust as necessary */
-    object-fit: cover;
-    
-}   
-
-.overview-item{
-padding-top: 24px;
+    .overview-item {
+        padding-top: 24px;
+    }
 }
 
-  
-}
-
-.remove-margin{
+.remove-margin {
     margin: 0;
 }
 
-.remove-padding{
+.remove-padding {
     padding: 0;
 }
-
 
 .image-container {
     position: relative;
@@ -866,13 +551,12 @@ padding-top: 24px;
 .image-container img {
     width: 100%;
     height: auto;
-    
 }
 
 .tags-group.special-badge {
     position: absolute;
-    top: 10px; /* Adjust as necessary */
-    left: 10px; /* Adjust as necessary */
+    top: 10px;
+    left: 10px;
     z-index: 10;
 }
 
@@ -884,134 +568,221 @@ padding-top: 24px;
     border-radius: 3px;
 }
 
-/* case study  */
-
-body{
+.case-intro {
     background-color: white;
+    padding: 8rem 0;
 }
 
-
-.case-intro{
-     background-color: white;
-     padding: 8rem 0 8rem 0;
-}
-
-.case-intro .text-wrapper{
+.case-intro .text-wrapper {
     text-align: center;
 }
 
-.case-study-paragraph-wrap{
+.case-study-paragraph-wrap {
     padding: 0 0 24px 0;
 }
 
-.case-intro .text-wrapper p{
-    width: 30vw; /* Set the width of the text box */
-    padding: 0px; /* Optional: add some padding */
-    display: block; /* Ensure it respects text-align center */
-    margin: 36px auto; /* Center it horizontally */
-   
+.case-intro .text-wrapper p {
+    width: 30vw;
+    padding: 0px;
+    display: block;
+    margin: 36px auto;
 }
 
-
-.case-intro .tags-group{
+.case-intro .tags-group {
     justify-content: center;
 }
 
-.case-intro h1{
+.tags-group{
+  display: inline-flex;
+}
+
+.case-intro h1 {
     margin-top: 0;
 }
 
-.responsibility table{
+.responsibility table {
     border-width: 1px;
-   border-color: #000000;
+    border-color: #000000;
 }
 
-.responsibility th, td {
+.responsibility th,
+td {
     border-bottom: none;
 }
-
-
 
 .responsibility td {
     vertical-align: top;
 }
 
-
-.big-text-section{
-    padding: 8rem 0 8rem 0;
+.big-text-section {
+    padding: 8rem 0;
 }
 
-.big-text-section h2{
-  margin: 0;
+.big-text-section h2 {
+    margin: 0;
 }
 
-.items-row{
-    padding: 8rem 0 8rem 0;
+.items-row {
+    padding: 8rem 0;
 }
 
-.image-caption-right{
-padding-left: 4rem;
-padding-bottom: 24px;
+.image-caption-right {
+    padding-left: 4rem;
+    padding-bottom: 24px;
 }
 
-.image-caption-left{
-padding-right: 3rem;
-padding-bottom: 24px;
+.image-caption-left {
+    padding-right: 3rem;
+    padding-bottom: 24px;
 }
 
-
-.impact-icon{
- width: 20rem;
- padding: 8rem 0 4rem 0;
-margin: 0;   
+.impact-icon {
+    width: 20rem;
+    padding: 8rem 0 4rem 0;
+    margin: 0;
 }
 
+.navigation-links {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    padding-top: 16rem;
+    width: 100%;
+    margin-bottom: 120px;
+}
 
+.control-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.arrow-button {
+    width: 48px;
+    height: 48px;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-btn .link-text h3,
+.left-btn .link-text figcaption {
+   
+    text-align: left;
+}
+
+.left-btn .link-text{
+ margin-left: 16px;
+}
+
+.right-btn .link-text h3,
+.right-btn .link-text figcaption {
+   
+    text-align: right;
+}
+
+.right-btn .link-text{
+ margin-right: 16px;
+}
+
+@media (max-width: 1000px) {
+    .arrow-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .link-text h3 {
+        font-size: 2rem;
+    }
+
+    .link-text figcaption {
+        font-size: 1.6rem;
+    }
+
+    .left-btn .link-text {
+        margin-left: 8px;
+    }
+
+    .right-btn .link-text {
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 800px) {
+    .link-text h3 {
+        font-size: 2rem;
+    }
+
+    .link-text figcaption {
+        font-size: 1.6rem;
+    }
+
+    .left-btn .link-text {
+        margin-left: 8px;
+    }
+
+    .right-btn .link-text {
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navigation-links {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 24px;
+        gap: 24px;
+    }
+
+    .control-button {
+        flex-direction: row;
+
+        /* align-items: center; */
+       
+        width: 100%;
+        gap: 8px;
+        /* width: 100%; */
+    }
+
+
+    .left-btn + .control-button{
+ justify-content: right;
+ /* padding-left: 30svw; */
+    }
+
+    .right-btn + .control-button{
+ justify-content: right;
+  /* padding-right: 30svw; */
+    }
+}
 
 @media screen and (max-width: 800px) {
-
-.learning-item{
-    margin-bottom: 40px;
+    .learning-item {
+        margin-bottom: 40px;
+    }
 }
-
-
-}
-
-
 
 @media screen and (max-width: 900px) {
-.case-intro .text-wrapper p{
-    width: 80vw; /* Set the width of the text box */
-   
-}
-.padding-left{
-    padding-left: 2rem;
-    padding-right: 0;
-}
+    .case-intro .text-wrapper p {
+        width: 80vw;
+    }
+/* 
+    .overview-item{
+        padding: 0;
+    } */
 
- .image-caption-right{
-padding-left: 2rem;
-
-}
-
-.image-caption-left{
-padding-left: 2rem;
-}
- .image-caption-right{
-order: -1;
-
+    .padding-left {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
- .image-caption-left{
-order: -1;
-}
+</style>
 
-
-
-
-}
-
-    </style> 
     <!-- favicons
     ================================================== -->
    <link rel="icon" href="images/favicon_luca.png" type="image/png">
@@ -1020,7 +791,7 @@ order: -1;
 
 
 
-<body id="top-ycyw" class="about-page">
+<body id="top" class="about-page">
     <div id="preloader">
         <div id="loader" class="line"></div>
     </div>
@@ -1106,22 +877,45 @@ order: -1;
                 <img class="hero-image" src="images/wheel-500.jpg"
                     srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w" alt="Additional Hero Image">
             </figure>
-            <div class="hero-text ">
-                <strong class="animate-on-load">YCYW Education Network</strong>
-                <h1 class="text-big-title animate-on-load" >Education Websites Revamp</h1>
-                <p class=" animate-on-load">
-                    Led end-to-end research and design for 22 international schools, focusing on content strategy, information architecture and design system.
-                </p>
-            </div>
+
+    <div class="hero-text ">
+
+     <div class=" tags-group animate-on-load remove-margin" >
+             <p class="badge remove-margin-bottom"  >UIUX</p>
+             <!-- <strong>UX Design</strong> -->
+            <p class="remove-margin-bottom">Responsive Web / 2022</p>
+        </div>
+    
+      
+        <h1 class="text-big-title animate-on-load" >Education Network Website</h1>
+
+        <strong class="animate-on-load">YCYW Education Network</strong>
+
+    </div>
         </section>
 
         <section class="content-paragraph ">
-            <div class="row row-y-top block-stack-on-900 horizontal-center">
-                <div class="column lg-2 md-3 tab-12 remove-paddings-margin">
-                    <h2 class=""> Overview </h2>
-                </div>
-                <div class="column lg-10 md-9 tab-12 padding-left">
-                    <div class="row">
+       
+
+               
+    <div class="row row-y-top  block-stack-on-900 horizontal-center  " >
+       
+        
+    
+        <div class="column lg-2 md-3 tab-12 " >
+        
+      
+                <h2 class=""> Overview </h2>
+                 
+        
+        </div> 
+
+
+    <div class="column lg-10 md-9 tab-12 padding-left" >
+      
+      <div class="column">
+
+      <div class="row">
                         <div class="lg-4 tab-12 column overview-item">
                             <h4>Timeline</h4>
                               <strong>13 Months</strong>
@@ -1147,9 +941,34 @@ order: -1;
                             </ul>
                         </div>
                     </div>
-                </div>
+
+       <div class=" column case-study-paragraph-wrap overview-item" >
+    <h4>Executive Summary</h4>
+          <p class="padding-bottom">Led the revamp of 22 school websites, focusing on content strategy, information architecture, and a scalable design system..</p>
+          <p class="padding-bottom">As the sole designer and researcher, I developed a unified template and design system, creating actionable strategies that addressed the unique needs of different stakeholders.</p>
+          <p class="padding-bottom">This work aligned business goals with user needs while ensuring consistency and flexibility across all schools.</p>
+              
+                <!-- <h3 class="title-paragraph-about"> As an INFJ, I balance empathy with logic, <b>respecting diverse perspectives</b> and <b>avoiding judging right away</b>.</h3>
+        <p> This combination helps me understand and <b>respect others’ choices</b> genuinely. </p> -->
+        </div>
+    
+                
+    
             </div>
-            <div class="row">
+      
+      
+                <!-- <h3 class="title-paragraph-about"> Maybe it's because I'm an INFJ(@MBTI), I am very empathetic and logical in the same time.  </h3> -->
+    
+        
+  
+
+    
+        </div>
+
+
+        
+
+   <div class="row">
                 <div class="lg-4 tab-12 column">
                     <div class="image-container">
                         <div class="tags-group special-badge">
@@ -1193,7 +1012,12 @@ order: -1;
                     </ul>
                 </div>
             </div>
-        </section>
+    </div>
+       
+
+</section>
+
+
 
         <section class="content-paragraph yellow">
             <div class="row">
@@ -1531,8 +1355,8 @@ order: -1;
                 <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
                     <div class="column lg-12 image-caption-left">
                         <figure>
-                            <img class="big-image" src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                            <img class="big-image" src="images/wheel-500.jpg">
+                                
                         </figure>
                         <h4>Challenges with Vendors Transitioning</h4>
                         <p>Unfortunately we needed to change vendor and restart the whole development. With prior experience, we managed to maintain the delivery quality by thorough explanation sessions and small milestones.</p>
@@ -1543,8 +1367,7 @@ order: -1;
                 <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
                     <div class="column lg-12 image-caption-left">
                         <figure>
-                            <img class="big-image" src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                            <img class="big-image" src="images/wheel-500.jpg">
                         </figure>
                         <h4>Design System</h4>
                         <p>To facilitate developments and individual schools to customize the sites themselves, we make all the design as components with clear guidelines in a design system.</p>

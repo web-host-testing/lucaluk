@@ -6,7 +6,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Luca Luk</title>
+    <title>About</title>
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
        <style>
+
+
+.remove-margin{
+    margin: 0;
+}
 
     body{
         background-color: transparent;
@@ -176,28 +181,47 @@ line-height: 180%;
     
     }
 
-.linkedIn-card {
-    background: transparent !important;
-    border: 1.5px solid #000000;
-    color: #000000;
-    padding: 24px 60px;
-    margin: 0;
-    height: 160px;
-    width: auto;
-    display: block;
-    width: auto;
-    object-fit: contain;
-    margin-top: 16px;
-}
 
-.footer-contact-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    text-align: center;
-}
+    .linkedIn-card {
+ 
+        margin: 0;
+        height: 160px;
+        display: block;
+        object-fit: contain;
+        margin-top: 16px;
+    }
+
+    .footer-contact-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+    }
+
+    .footer-image {
+        margin-bottom: 40px;
+        display: block;
+        height: 240px;
+        width: auto;
+        margin-top: -80px;
+    }
+
+    .email-link svg {
+        margin-right: 8px;
+    }
+
+    .footer-contact-wrap .email-link {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+    }
+
+
+
 
 .center-image {
     margin-bottom: 20px;
@@ -211,20 +235,8 @@ line-height: 180%;
 }
 
 
-.footer-contact-wrap .email-link {
-    margin-top: 20px; /* Add margin to separate the elements */
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-}
 
-.footer-image {
-    margin-bottom: 20px;
-    display: block;
-    width: 40svw;
-    margin-bottom: 24px;
-}
+
 
 @media screen and (max-width: 600px) {
 
@@ -239,11 +251,15 @@ line-height: 180%;
     width: 60svw;
 }
 
-.linkedIn-card {
- 
-    padding: 4px 24px;
-  
-}
+         .footer-image {
+        margin-bottom: 40px;
+        display: block;
+        height: 200px;
+        width: auto;
+        /* margin-top: -80px; */
+    }
+
+
 
 .big-image{
     height: 100%;
@@ -383,6 +399,14 @@ margin-left: -16px;
  .center-image {
     width: 80svw;
 }
+
+         .footer-image {
+        margin-bottom: 40px;
+        display: block;
+        height: 160px;
+        width: auto;
+        /* margin-top: -80px; */
+    }
 
 }
 
@@ -670,7 +694,7 @@ padding-bottom: 100px;
 }
 }
 
-}
+
 
 
 
@@ -682,15 +706,13 @@ padding-bottom: 100px;
 
     <!-- <link rel="stylesheet" href="css/base.css"> -->
     <!-- <link rel="stylesheet" href="css/main.css"> -->
-
-    <!-- favicons
+   <!-- favicons
     ================================================== -->
-  <link rel="icon" href="/images/favicon_luca.png" type="image/png">
-
+   <link rel="icon" href="images/favicon_luca.png" type="image/png">
 </head>
 
 
-<body id="top-about" class="about-page">
+<body id="top" class="about-page">
 
  <!-- preloader
     ================================================== -->
@@ -703,57 +725,74 @@ padding-bottom: 100px;
     ================================================== -->
     <div id="page" class="s-pagewrap">
 
+  <!-- Site Header -->
+<header id="masthead" class="s-header">
+    <div class="s-hader__block">
+        <div class="s-header__branding">
+            <p class="site-title">
+                <a href="index.html" rel="home">Luca Luk</a>
+            </p>
+        </div>
+        <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+    </div> <!-- end s-header__block -->
 
-        <!-- # site header 
-        ================================================== -->
-        <header id="masthead" class="s-header">
+    <div class="row s-header__nav-wrap">
+        <nav class="s-header__nav">
+            <ul>
+                <!-- Dropdown Menu for Work -->
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">
+        Work
+        <img src="images/arrow-down.svg" alt="Dropdown Arrow" class="dropdown-arrow">
+    </a>
+    <div class="dropdown-content ">
 
-             <div class="s-header__block">
-                <div class="s-header__branding">
-                    <p class="site-title">
-                        <a href="index.html" rel="home">Luca Luk</a>
-                    </p>
-                </div>
+        <a href="mobile-cheque-deposit.html">
+       <p class="badge remove-margin-bottom" style="color: white; text-decoration: none;">UX</p>
+        <p>Mobile Cheque Deposit Feature</p>
+        </a>
 
-                <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
-            </div> <!-- end s-header__block -->
+        <div style="clear: both;"></div> 
 
-            <div class="row s-header__nav-wrap">
+        <a href="corporate-banking-revamp.html">
+       <p class="badge remove-margin-bottom" style="color: white; text-decoration: none;">Research</p>
+        <p>Corporate Banking App</p>
+        </a>
 
-                <nav class="s-header__nav">
-                    <ul>
-                        <!-- <li class="current"><a href="" class="smoothscroll">Home</a></li> -->
-                        <li>
-                            <a href="index.html#all_works" class="">Home</a>
-                        </li>
-                        
-                        <li><a href="about.html" class="current">About</a></li>
-                        <li><a href="Luca-Luk-CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
-                    </ul>
-                </nav> <!-- end s-header__nav -->
+        <div style="clear: both;"></div> 
 
-                <ul class="s-header__social">
-                    <li>
-                        <a href="https://www.linkedin.com/in/lucaluk" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="linkedin-icon" width="24" height="24" viewBox="0 0 24 24">
-                                <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.5 20h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75c.96 0 1.75.79 1.75 1.75s-.79 1.76-1.75 1.76zm14.5 12.27h-3v-5.66c0-1.35-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.98v5.75h-3v-11h2.87v1.5h.04c.4-.75 1.37-1.54 2.81-1.54 3.01 0 3.57 1.98 3.57 4.55v6.49z"/>
-                            </svg>
-                            <span class="u-screen-reader-text">LinkedIn</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:luca.kahim.luk@gmail.com" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path d="M20 4h-16c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-12c0-1.1-.9-2-2-2zm0 4-8 5-8-5v-2l8 5 8-5v2z"/>
-                            </svg>
-                            <span class="u-screen-reader-text">Email</span>
-                        </a>
-                    </li>
-                </ul> 
+        <a href="education-website-revamp.html">
+       <p class="badge remove-margin-bottom" style="color: white; text-decoration: none;">UIUX</p>
+        <p>Education Network Website</p>
+        </a>
 
-            </div> <!-- end s-header__nav-wrap -->
 
-        </header> <!-- end s-header -->
+    </div>
+</li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Luca-Luk-CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+            </ul>
+        </nav> <!-- end s-header__nav -->
+
+        <ul class="s-header__social">
+            <li>
+                <a href="https://www.linkedin.com/in/lucaluk" target="_blank">
+                    <img src="images/icons/linkedin.svg" alt="" class="nav-icon">
+                    <span class="u-screen-reader-text">LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                
+                
+<a href="javascript:void(0);" onclick="copyEmailToClipboard()" style="position: relative;">
+    <img src="images/icons/email-link.svg" alt="" class="nav-icon">
+    <span class="u-screen-reader-text">Email</span>
+    <span id="tooltip" class="tooltip-text">Email copied!</span> <!-- Tooltip -->
+</a>
+            </li>
+        </ul>  
+    </div> <!-- end s-header__nav-wrap -->
+</header> <!-- end s-header -->
 
 
 
@@ -805,16 +844,16 @@ padding-bottom: 100px;
 
 
     <div class="column lg-7 md-6 tab-12 padding-left" data-animate-el>
-        <p> I often reflect deeply on myself, gaining insights into why I act a certain way. My curiosity about how others think and feel, along with my empathy, makes me a great listener and confidant.
+        <p> Reflecting deeply on my actions, I’m driven by a curiosity about how others think and feel, making me a great <b>listener</b> and trusted friend.
         </p>
-                <h3 class="title-paragraph-about"> As an INFJ, I balance empathy with logic, understanding diverse perspectives and respecting others’ choices. </h3>
-        <p> Being able to think from different perspectives and listening to why others think a certain way helps me avoid blind judgments and truly respect others’ choices. </p>
+                <h3 class="title-paragraph-about"> As an INFJ, I balance empathy with logic, <b>respecting diverse perspectives</b> and <b>avoiding judging right away</b>.</h3>
+        <p> This combination helps me understand and <b>respect others’ choices</b> genuinely. </p>
         
         
         
         <div class="hide-on-md">
 
-                <figure >
+                <figure class="remove-margin" >
                     <img src="images/wheel-500.jpg" 
                    class="caption-image">
 
@@ -870,9 +909,9 @@ padding-bottom: 100px;
 
 
     <div class="column lg-7 md-6 tab-12 padding-left" data-animate-el>
-         <p>As an AI enthusiast, I’m always excited to explore smart ways to generate new ideas and avoid blind spots.</p>
-                <h3 class="title-paragraph-about">  I believe the true value of UX comes from understanding real people, viewing users as humans rather than data. </h3>
-        <p> Talking to real people, we gain insights that help us see users as human beings, not just data. This deep exploration uncovers the problems and opportunities that can truly set a business apart.
+         <p>As an <b>AI enthusiast</b>, I love exploring smart ways to generate <b>fresh ideas and avoid blind spots</b>.</p>
+                <h3 class="title-paragraph-about">  I believe the true value of UX lies in <b>understanding users as people, not just data.</b> </h3>
+        <p> Engaging with real users <b>uncovers insights that reveal key opportunities</b>, setting businesses apart.
         
            </p>
         
@@ -880,11 +919,8 @@ padding-bottom: 100px;
         
         <div class="hide-on-md">
 
-                <figure  class="caption-image">
-                    <img src="images/wheel-500.jpg" 
-                    srcset="images/wheel-1000.jpg 1000w, 
-                    images/wheel-500.jpg 500w" 
-                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                <figure  class=" remove-margin">
+                    <img src="images/wheel-500.jpg"class="caption-image"  alt="">
 
                 </figure>
 
@@ -1003,32 +1039,25 @@ padding-bottom: 100px;
                 
 
 
-        <!-- # site footer
+
+           <!-- # site footer
         ================================================== -->
-       <footer id="colophon" class="s-footer" style="padding-top: 10rem;">
+       <footer id="colophon" class="s-footer">
     <div class="row s-footer__contact-header">
         <div class="column lg-12">
           
             <div class="footer-contact-wrap">
-                <img src="images/wheel-500.jpg" class="center-image" alt="Profile Image">
+                <img src="images/ear.png" class="footer-image" alt="Profile Image">
 
                       <h2 class="text-big-title center remove-margin-top">
-                Connect before you leave!
+                Let's Connect!
             </h2>
         
 
                         <div class=" footer-contact-wrap">
                              <a href="www.linkedin.com/in/lucaluk" target="_blank" class=""><img  src="  ./images/LinkedInStyleContactCard.png" class="linkedIn-card " alt=""></a>
                              
-                             
-                              <a href="mailto:luca.kahim.luk@gmail.com" target="_blank" class="email-link">
-                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path d="M20 4h-16c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-12c0-1.1-.9-2-2-2zm0 4-8 5-8-5v-2l8 5 8-5v2z"/>
-                                 </svg>
-
-                                luca.kahim.luk@gmail.com
-                                <span class="u-screen-reader-text">Email</span>
-                            </a>
+ 
                        
                          </div>
                           
@@ -1039,7 +1068,7 @@ padding-bottom: 100px;
 
             <div class="row s-footer__bottom">
                 <div class="column ss-copyright">
-                    <span>© Copyright Luca Luk 2024</span> 
+                    <p>© 2024 Luca Luk / luca.kahim.luk@gmail.com </p> 
                   
                 </div>
 

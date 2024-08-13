@@ -1542,7 +1542,7 @@ figure img+figcaption {
 figcaption {
     /* font-style: italic; */
     font-size     : var(--text-sm);
-    text-align    : center;
+    text-align    : left;
     margin-bottom : 0;
     margin-top: 12px;
 }
@@ -4743,7 +4743,7 @@ height: 120px;
       color: var(--secondary-color);
       text-underline-offset: 4px;
     text-decoration : underline dotted;
-    font-weight: 600;
+    /* font-weight: 600; */
 
 .comics-narrative{
     background-color: rgb(246, 245, 232);
@@ -4766,7 +4766,7 @@ height: 120px;
 
 .tags-group{
     flex-direction: row;
-   display: flex;
+   display: inline-flex;
    gap: 16px;
   align-items: center;
   margin-bottom: 24px;
@@ -5403,6 +5403,7 @@ body{
 
 .case-intro .tags-group{
     justify-content: center;
+    display: inline-flex;
 }
 
 .case-intro h1{
