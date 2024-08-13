@@ -113,6 +113,8 @@
             }, 2000);
         }
 
+        
+
         // Attach event listener to email icon
         const emailIcon = document.querySelector('[onclick="copyEmailToClipboard()"]');
         if (emailIcon) {

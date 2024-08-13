@@ -3104,7 +3104,7 @@ line-height       : 1.0638;
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Align items from the left */
-    gap: 20px; /* Consistent spacing between items */
+    gap: 40px; /* Consistent spacing between items */
     /* align-items: center; */
 }
 
@@ -4291,7 +4291,7 @@ display: block;
 }
 
 .s-footer__bottom {
-    padding-top : 60px;
+    padding-top : 2rem;
     font-size   : var(--text-sm);
     line-height : var(--vspace-0_75);
     color       : var(--color-gray-14);
@@ -5087,6 +5087,9 @@ height: 100px;
 
 }
 
+.ss-copyright{
+    display: inline-flex;
+}
 
 @media screen and (max-width: 600px) {
 
@@ -5100,6 +5103,8 @@ height: 100px;
  .center-image {
     width: 60svw;
 }
+
+
 
 .linkedIn-card {
  
