@@ -995,7 +995,7 @@ td {
        <div class=" column case-study-paragraph-wrap overview-item" >
     <h4>Executive Summary</h4>
           <p class="padding-bottom">Created detailed Customer Journey Maps (CJM) to keep the team aligned in a project with complex roles and scenarios.</p>
-          <p class="padding-bottom">Handled 23 challenging flows and quickly resolved unexpected IT issues, showing strong problem-solving and adaptability.</p>
+          <p class="padding-bottom">Handled 20+ challenging flows and quickly resolved unexpected IT issues in agile environment</p>
           <p>It demonstrates my ability to manage complex logic and handle unexpected challenges effectively.</p>
                 
                 <!-- <h3 class="title-paragraph-about"> As an INFJ, I balance empathy with logic, <b>respecting diverse perspectives</b> and <b>avoiding judging right away</b>.</h3>
@@ -1157,7 +1157,7 @@ start of content paragraph section
     </div>
     <div class="column lg-3 md-4 tab-12 image-caption-right">
         <h4>20+ Unhappy Flows</h4>
-        <p>hile mapping the journey, we discovered many missed flows with the multi-layer limit and cheque checkings.</p>
+        <p>While mapping the journey, we discovered many missed flows with the multi-layer limit and cheque checkings.</p>
     </div>
 </div>
 </div>
@@ -1229,7 +1229,7 @@ start of content paragraph section
                     <p class="badge remove-margin-bottom" >Logic & Usability</p>
                  </div>
 
-     <h3 class="text-big-title reduced-margin-bottom"> Error Scenarios</h3>
+     <h3 class="text-big-title reduced-margin-bottom"> Multiple Errors</h3>
        
         </div>
     
@@ -1440,7 +1440,7 @@ start of content paragraph section
     <img class="impact-icon" src="/images/ear.png" 
                 srcset="images/ear.png "  alt="">
 
-                <h3 class="white-text">Increase Mobile App Usage</h3>
+                <h3 class="white-text">Increase App Usage</h3>
 
          <p>Gave customers a reason to start using the mobile app, to save time and hassle depositing in the branch.</p>
    
@@ -1475,12 +1475,12 @@ start of content paragraph section
 
 
             <div class="column lg-12" >
-
+<!-- 
             <figure style="margin-bottom: 8rem;">
                 <img class="big-image" src="images/wheel-500.jpg" 
                 srcset="images/wheel-1000.jpg 1000w, 
                 images/wheel-500.jpg 500w"  >
-            </figure>
+            </figure> -->
          
                 
                 <h2 class="text-huge-title " style="margin-bottom: 4rem;"> What I Learned </h2>
@@ -1611,7 +1611,43 @@ start of content paragraph section
     </div> <!-- end s-pagewrap -->
 
 
- 
+  
+<script>
+
+
+        // Copy email to clipboard and show tooltip
+        function copyEmailToClipboard() {
+            const email = "luca.kahim.luk@gmail.com";
+
+            // Copy email to clipboard
+            const tempInput = document.createElement("input");
+            tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+            tempInput.value = email;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            // Show tooltip
+            const tooltip = document.getElementById("tooltip");
+            tooltip.classList.add("tooltip-visible");
+
+            // Hide tooltip after 2 seconds
+            setTimeout(function() {
+                tooltip.classList.remove("tooltip-visible");
+            }, 2000);
+        }
+
+        
+
+        // Attach event listener to email icon
+        const emailIcon = document.querySelector('[onclick="copyEmailToClipboard()"]');
+        if (emailIcon) {
+            emailIcon.addEventListener('click', copyEmailToClipboard);
+        }
+    ;
+
+</script>
 
 
     <!-- Java Script

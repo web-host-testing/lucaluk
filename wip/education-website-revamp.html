@@ -1664,7 +1664,43 @@ td {
     </div> <!-- end s-pagewrap -->
 
 
+ 
+<script>
 
+
+        // Copy email to clipboard and show tooltip
+        function copyEmailToClipboard() {
+            const email = "luca.kahim.luk@gmail.com";
+
+            // Copy email to clipboard
+            const tempInput = document.createElement("input");
+            tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+            tempInput.value = email;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            // Show tooltip
+            const tooltip = document.getElementById("tooltip");
+            tooltip.classList.add("tooltip-visible");
+
+            // Hide tooltip after 2 seconds
+            setTimeout(function() {
+                tooltip.classList.remove("tooltip-visible");
+            }, 2000);
+        }
+
+        
+
+        // Attach event listener to email icon
+        const emailIcon = document.querySelector('[onclick="copyEmailToClipboard()"]');
+        if (emailIcon) {
+            emailIcon.addEventListener('click', copyEmailToClipboard);
+        }
+    ;
+
+</script>
 
 
     <!-- Java Script
