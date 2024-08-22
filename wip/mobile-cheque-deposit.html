@@ -400,13 +400,15 @@ margin-bottom: 0;
     position: relative;
     height: 100svh;
     width: 100%;
-    /* overflow: hidden; */
+    overflow:visible;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     /* margin-top: 5svh;  */
 }
+
+
 
 .case-study-hero-image {
     position: absolute;
@@ -562,8 +564,8 @@ padding: 100px 0;
 
 .tags-group.special-badge {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 20px;
     z-index: 10;
 }
 
@@ -644,8 +646,8 @@ td {
 }
 
 .impact-icon {
-    width: 20rem;
-    padding: 8rem 0 4rem 0;
+    width: 30rem;
+    padding: 0;
     margin: 0;
 }
 
@@ -884,15 +886,13 @@ td {
 
 <section class="case-study-hero">
     <picture>
-        <source srcset="images/comics_placeholder.png" media="(min-width: 1024px)">
-        <source srcset="images/comics_placeholder.png" media="(min-width: 768px)">
-        <source srcset="images/comics_placeholder.png">
-        <img src="images/comics_placeholder.png" alt="Hero Image" class="case-study-hero-image">
+
+        <img src="images/mobile-cheque-deposit/hero-bg.svg" alt="Hero Image" class="case-study-hero-image">
     </picture>
 
     <figure class="additional-hero-image animate-on-load">
-        <img class="hero-image" src="images/wheel-500.jpg"
-            srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w" alt="Additional Hero Image">
+        <img class="hero-image" src="images/mobile-cheque-deposit/hero-phone-cheque.png"
+             alt="Additional Hero Image">
     </figure>
 
       <!-- <div class=" tags-group animate-on-load">
@@ -983,7 +983,7 @@ td {
                  <h4>Contribution</h4>
                     <ul>
                  <li>Industry Benchmarking</li>
-                 <li>End to end customer journey</li>
+                 <li>Customer journeys</li>
                  <li>Mockup Design</li>
                  <li>Usability Tests</li>
                  <li>UAT Feedbacks</li>
@@ -991,15 +991,32 @@ td {
                  </ul>
                 </div>
       </div>
+            
+    <div class="image-container">
+        <!-- <div class="tags-group special-badge">
+            <p class="badge remove-margin-bottom">Problem</p>
+        </div> -->
+        <figure class="padding-bottom">
+            <img src="images/mobile-cheque-deposit/executive-summary.jpg" >
+        </figure>
+    </div>
+
 
        <div class=" column case-study-paragraph-wrap overview-item" >
     <h4>Executive Summary</h4>
-          <p class="padding-bottom">Created detailed Customer Journey Maps (CJM) to keep the team aligned in a project with complex roles and scenarios.</p>
-          <p class="padding-bottom">Handled 20+ challenging flows and quickly resolved unexpected IT issues in agile environment</p>
-          <p>It demonstrates my ability to manage complex logic and handle unexpected challenges effectively.</p>
-                
-                <!-- <h3 class="title-paragraph-about"> As an INFJ, I balance empathy with logic, <b>respecting diverse perspectives</b> and <b>avoiding judging right away</b>.</h3>
-        <p> This combination helps me understand and <b>respect others’ choices</b> genuinely. </p> -->
+          <p class="padding-bottom"> </b>Joined the project during the requirements phase, where our team worked on visualizing user needs, <b>completing missing scenarios</b>, and <b>refining the logic</b>, and ensured design alignment by <b>reviewing UAT</b> through to launch </p>
+          <p class="padding-bottom">The project was <b>complex due to numerous checks needed </b> to ensure account quotas and cheque validity, as well as the challenge of <b>guiding users through resolving these issues.</b> </p>
+
+          
+          <p class="padding-bottom" >Successfully handled <b>20+ challenging flows</b> and quickly resolved <b>unexpected IT issues</b> in <b>agile environment</b>.</p>
+  
+  
+
+ 
+          <a class="btn btn--stroke" href="#final-outcomess">Final Outcome</a>
+
+
+
         </div>
     
                 
@@ -1028,15 +1045,17 @@ td {
             <p class="badge remove-margin-bottom">Problem</p>
         </div>
         <figure>
-            <img src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w" 
-                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+            <img src="images/mobile-cheque-deposit/many-customers-bring-many-paper-cheques-to-bank-br (2).jpg" 
+                 
+                >
         </figure>
     </div>
-<p>
-Customers can only deposit cheques in branches, taking up a lot of time and creating long queues
-</p>
+    <ul class="list-paragraph">
+                 <li>Cheques can be deposit offline only </li>
+                 <li> Time-consuming and leads to long queues at branches</li>
+        </ul>
+
+
 
       
   
@@ -1049,15 +1068,16 @@ Customers can only deposit cheques in branches, taking up a lot of time and crea
             <p class="badge remove-margin-bottom">Solution</p>
         </div>
         <figure>
-            <img src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w" 
-                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+            <img src="images/mobile-cheque-deposit/take-picture-of-a--cheque-with-phone.jpg" 
+                 
+                >
         </figure>
     </div>
-
-         <p>Allow customers to take a picture of the cheque and deposit it via the bank’s mobile app</p>
-   
+  <ul class="list-paragraph">
+                 <li>Deposit cheques by taking a picture in the mobile app</li>
+              
+        </ul>
+    
 </div>
 
 
@@ -1069,10 +1089,9 @@ Customers can only deposit cheques in branches, taking up a lot of time and crea
             <p class="badge remove-margin-bottom">Goal</p>
         </div>
         <figure>
-            <img src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w" 
-                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+            <img src="images/mobile-cheque-deposit/reduce-handling-cost.jpg" 
+                 
+                >
         </figure>
     </div>
        <ul class="list-paragraph">
@@ -1096,15 +1115,15 @@ start of content paragraph section
 <section class="content-paragraph yellow">
        
     <!-- start of text section             -->
-    <div class="row row-y-top  block-stack-on-900 horizontal-center  " >
+    <div class="row row-y-center  block-stack-on-900 horizontal-center  " >
        
     
 
       <div class="column lg-4 md-4 tab-12 case-study-paragraph-wrap">
                 <div class=" tags-group">
-                    <p class="badge remove-margin-bottom" >Project Nature</p>
+                    <p class="badge remove-margin-bottom" >Complexity</p>
                  </div>
-                    <h3 class="text-big-title reduced-margin-bottom"> Complex Scenarios </h3>
+                    <h3 class="text-big-title reduced-margin-bottom "> Complicated Scenarios </h3>
                 </div>
 
      
@@ -1112,12 +1131,14 @@ start of content paragraph section
     
 
 
-    <div class="column lg-8 md-8 tab-12  case-study-paragraph-wrap" >
-    <strong>Challenge</strong>
-         <p class="padding-bottom">User requirements revealed the project’s complexity with multiple roles and scenarios. </p>
-
+    <div class="column lg-8 md-8 tab-12  case-study-paragraph-wrap padding-left" >
+    <h4>9 critical checking</h4>
+    <!-- <strong>9 critical checking</strong> -->
+         <p class="padding-bottom">The process include checkings like account deposit limits, user and company thresholds, and the validity and readability of cheque information. </p>
+<!--    
          <strong>Approach</strong>
-         <p>Created detailed Customer Journey Maps (CJM) showing all cases to align everyone in the team.</p>
+         <p class="padding-bottom">Developed comprehensive end-to-end customer journey maps that covered all potential unhappy flows and scenarios, aiming to minimize any gaps in the process.</p>
+        -->
 
                 <!-- <h3 class="title-paragraph-about"> Shocking number of combinations! </h3> -->
     
@@ -1132,18 +1153,12 @@ start of content paragraph section
       <div class="row" style="margin-bottom: 16px;">
           
             <figure >
-                <img class="big-image" src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w"  >
+                <img class="big-image" src="images/mobile-cheque-deposit/complicated-scenarios.svg"  >
             </figure>
         </div>
 
         <!-- end of big image  -->
        
-
-       
-
-
 
           <!-- start of caption image right             -->
 <div class="row">
@@ -1151,13 +1166,13 @@ start of content paragraph section
   <div class="row row-y-bottom block-stack-on-900 big-image-with-caption" >
     <div class="column lg-9 md-8 tab-12  " >
         <figure>
-            <img class="big-image"  src="images/wheel-500.jpg"
-                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+            
+             <img class="big-image"  src="images/mobile-cheque-deposit/industry-benchmarking.jpg">
         </figure>
     </div>
     <div class="column lg-3 md-4 tab-12 image-caption-right">
-        <h4>20+ Unhappy Flows</h4>
-        <p>While mapping the journey, we discovered many missed flows with the multi-layer limit and cheque checkings.</p>
+        <h4>Benchmarking</h4>
+        <p>Analyzed similar features from competitors, but their simpler single cheque and single currency deposits offered limited reference value.</p>
     </div>
 </div>
 </div>
@@ -1179,19 +1194,18 @@ start of content paragraph section
 
   <div class="row row-y-bottom block-stack-on-900 big-image-with-caption" >
     <div class="column lg-3 md-4 tab-12 image-caption-left " >
+         <h4>Addressing Complexity with Dev  </h4>
+        <p>Identified 20+ unhappy flows and worked with developers to refine them, ensuring logical and user-friendly outcomes. </p>
        
-       
-        <h4>Questioning Logic with Dev</h4>
-          <p>We checked the flow repeatedly with a dev in our team and fix issues from our blind spots</p>
-       
+      
 
     </div>
 
 
     <div class="column lg-9 md-8 tab-12  ">
  <figure>
-            <img class="big-image"  src="images/wheel-500.jpg"
-                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+             <img class="big-image"  src="images/mobile-cheque-deposit/cjm-zoom-in.jpg">
+             
         </figure>
 
 
@@ -1202,6 +1216,33 @@ start of content paragraph section
 
   <!-- end of caption image left  -->
   
+
+
+
+
+       
+
+          <!-- start of caption image right             -->
+<div class="row">
+
+  <div class="row row-y-bottom block-stack-on-900 big-image-with-caption" >
+    <div class="column lg-9 md-8 tab-12  " >
+        <figure>
+           <img class="big-image"  src="images/mobile-cheque-deposit/end-to-end-cjm.jpg">
+        </figure>
+    </div>
+    <div class="column lg-3 md-4 tab-12 image-caption-right">
+         <h4>End-to-end Customer Journey</h4>
+          <p>Covering all potential unhappy flows and scenarios, aiming to identify and minimize any gaps in the process.</p>
+       
+    </div>
+</div>
+</div>
+   <!-- end of caption image right             -->
+
+
+
+
 
 
 
@@ -1220,7 +1261,7 @@ start of content paragraph section
 <section class="content-paragraph ">
        
     <!-- start of text section             -->
-    <div class="row row-y-top  block-stack-on-900 horizontal-center  " >
+    <div class="row row-y-center  block-stack-on-900 horizontal-center  " >
        
         
      
@@ -1237,13 +1278,15 @@ start of content paragraph section
 
     <div class="column lg-6 md-8 tab-12 case-study-paragraph-wrap" >
 
-    <strong>Challenge</strong>
-    
-         <p class="padding-bottom">Multiple errors happening at once can confuse users  </p>
+     <h4>What Happens if a Checking Fails?</h4>
 
-               <strong>Approach</strong>
+    <!-- <strong>Challenge</strong> -->
     
-         <p class="reduced-margin-bottom">Designed clear error pages with 2 rounds of usability tests </p>
+         <p class="padding-bottom"> The challenge isn’t just deciding which screen to show next, but ensuring the user understands the issue and knows how to resolve it, if possible. </p>
+
+               <!-- <strong>Approach</strong>
+    
+         <p class="reduced-margin-bottom">Designed clear error pages with 2 rounds of usability tests </p> -->
 
          
         </div>
@@ -1258,9 +1301,8 @@ start of content paragraph section
       <div class="row" style="margin-bottom: 16px;">
           
             <figure >
-                <img class="big-image" src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w"  >
+                <img class="big-image" src="images/mobile-cheque-deposit/error-scenarios.jpg" 
+                  >
             </figure>
         </div>
 
@@ -1274,13 +1316,14 @@ start of content paragraph section
   <div class="row row-y-bottom block-stack-on-900 big-image-with-caption" >
     <div class="column lg-9 md-8 tab-12   " >
         <figure>
-            <img class="big-image"  src="images/wheel-500.jpg"
-                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+        
+            <img class="big-image"  src="images/mobile-cheque-deposit/usability-test.jpg" >
+          
         </figure>
     </div>
     <div class="column lg-3 md-4 tab-12 image-caption-right">
-        <h4>Make it clear about current situation</h4>
-        <p>Explain why the cheque can't be deposted and what can be done.</p>
+        <h4>Usability Tests </h4>
+        <p>Our tests revealed that displaying errors one by one is less overwhelming for users, helping them process the information more easily. </p>
     </div>
 </div>
 </div>
@@ -1299,8 +1342,8 @@ start of content paragraph section
     <div class="column lg-3 md-4 tab-12  image-caption-left " >
        
        
-      <h4>Usability Tests</h4>
-        <p> We learned that showing the errors one by one is less overwhelming to users. </p>
+      <h4>Resove one by one</h4>
+        <p> Informs users of failed deposits, with clear actions for each error type and step-by-step guidance to resolve them.</p>
        
 
     </div>
@@ -1308,8 +1351,7 @@ start of content paragraph section
 
     <div class="column lg-9 md-8 tab-12  ">
  <figure>
-            <img class="big-image"  src="images/wheel-500.jpg"
-                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+   <img class="big-image"  src="images/mobile-cheque-deposit/error-flow-zoom-in.jpg">
         </figure>
 
 
@@ -1351,15 +1393,16 @@ start of content paragraph section
        
         </div>
     
-
+  
 
     <div class="column lg-7 md-8 tab-12  case-study-paragraph-wrap" >
-    <strong>Challenge</strong>
-         <p class="padding-bottom">Received a drastically altered design from IT, claiming the original design was unfeasible.   </p>
+    <!-- <strong>Challenge</strong> -->
+
+       <h4  >Workarounds for Unfeasible Designs</h4>
+
+         <p class="padding-bottom">When IT drastically altered the original design, claiming it was unfeasible, we quickly held an emergency meeting and developed actionable workarounds that maintained a positive user experience. </p>
 
 
-<strong>Approach</strong>
- <p class="reduced-margin-bottom">Held an emergency meeting and created actionable workarounds with acceptable user experience.  </p>
     
         </div>
 
@@ -1372,9 +1415,8 @@ start of content paragraph section
       <div class="row" style="margin-bottom: 16px;">
           
             <figure >
-                <img class="big-image" src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w"  >
+                <img class="big-image" src="images/mobile-cheque-deposit/uat-vs-design.jpg" 
+                  >
             </figure>
         </div>
 
@@ -1389,8 +1431,8 @@ start of content paragraph section
          <p class="padding-bottom"> Created a detailed guide pointing out areas to adjust, with priotization for devs to work for best results before deadline. </p>
 
         <figure>
-            <img class="big-image"  src="images/wheel-500.jpg"
-                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+            <img class="big-image"  src="images/mobile-cheque-deposit/UI-adjustment-guide.jpg"
+                >
         </figure>
 
 
@@ -1403,7 +1445,49 @@ start of content paragraph section
 
 
 
+   <section class="content-paragraph " id="final-outcomes">
+            <div class="row">
+                <div class="row row-y-top block-stack-on-900 horizontal-center">
+                    <div class="column lg-12 ">
+                       <div class=" tags-group">
+                    <p class="badge remove-margin-bottom" >Solution</p>
+                 </div>
+                        <h3 class="text-big-title reduced-margin-bottom"> Final Outcomes </h3>
+                    </div>
 
+
+                    <!-- <div class="column lg-8 md-8 tab-12 case-study-paragraph-wrap">
+                    <h3 class="title-paragraph-about">Features bring most value and easy to build:</h3>
+                      <ul>
+                        <li>Allow users reach essential information</li>
+                        <li>Helps parents envision their children’s promising futures</li>
+                        <li>Highlights the connections between schools within the same network</li>
+                      </ul>
+                    </div> -->
+                </div>
+
+               
+                   <div class="image-container">
+                            <figure>
+                                <img src="images/mobile-cheque-deposit/outcome-capture.jpg"
+                                    
+                                    >
+                            </figure>
+                    </div>
+
+                       <div class="image-container">
+                            <figure>
+                                <img src="images/mobile-cheque-deposit/outcome-key-screens.jpg">
+                            </figure>
+                    </div>
+
+                    </div>
+
+              
+            
+              
+            </div>
+        </section>
 
 
 
@@ -1415,19 +1499,18 @@ start of content paragraph section
             <div class="column lg-12">
          
                 
-                <h2 class="text-huge-title white-text"> Impacts </h2>
-                <p>The feature was not shipped until I left the company, but it is expected to:</p>
+                <h2 class="text-huge-title white-text padding-bottom"> Expected Impacts </h2>
+                <!-- <p>The feature was not shipped until I left the company, but it is expected to:</p> -->
             </div>
 
 
                  
  <div class="lg-4   tab-12 column">
-    <img class="impact-icon" src="/images/ear.png" 
-                srcset="images/ear.png "  alt="">
+    <img class="impact-icon" src="images/mobile-cheque-deposit/satisfied-customer.png" >
 
-                <h3 class="white-text">Reduce Branch Handling Cost</h3>
+                <h3 class="white-text">Improve Customer Satisfaction</h3>
 
-         <p>Staffs will spend less time on cheque deposits, possibly shorten the queues in branches and increase customer satisfactions.</p>
+         <p>Shorten the queues in branches and increase customer satisfactions.</p>
    
 </div>
 
@@ -1437,24 +1520,22 @@ start of content paragraph section
     
     
  <div class="lg-4 tab-12 column">
-    <img class="impact-icon" src="/images/ear.png" 
-                srcset="images/ear.png "  alt="">
+    <img class="impact-icon" src="images/mobile-cheque-deposit/many-happy-and-user-using-the-phone.png" >
 
-                <h3 class="white-text">Increase App Usage</h3>
+                <h3 class="white-text">Increase Mobile App Usage</h3>
 
-         <p>Gave customers a reason to start using the mobile app, to save time and hassle depositing in the branch.</p>
+         <p>Encourage the use the mobile app to save time and hassle in the branch.</p>
    
 </div>
 
 
     
  <div class="lg-4 tab-12 column">
-    <img class="impact-icon" src="/images/ear.png" 
-                srcset="images/ear.png "  alt="">
+    <img class="impact-icon" src="images/mobile-cheque-deposit/ranking-high-in-competition.png">
 
-                <h3 class="white-text">Advantage over other Banks</h3>
+                <h3 class="white-text">Competitive Edge</h3>
 
-         <p>More comprehensive features and limits than others, attracting potential customers.</p>
+         <p>Draw customers from competitors with unmatched features.</p>
    
 </div>
     
@@ -1478,8 +1559,7 @@ start of content paragraph section
 <!-- 
             <figure style="margin-bottom: 8rem;">
                 <img class="big-image" src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w"  >
+                  >
             </figure> -->
          
                 
@@ -1492,8 +1572,7 @@ start of content paragraph section
 
                  
  <div class="lg-4   tab-12 column learning-item">
-    <!-- <img class="impact-icon" src="/images/ear.png" 
-                srcset="images/ear.png "  alt=""> -->
+    <img class="impact-icon" src="images/mobile-cheque-deposit/complex-logics.png" >
 
                 <h3>Handle Complex Flows</h3>
 
@@ -1505,8 +1584,7 @@ start of content paragraph section
     
     
  <div class="lg-4 tab-12 column learning-item">
-    <!-- <img class="impact-icon" src="/images/ear.png" 
-                srcset="images/ear.png "  alt=""> -->
+    <img class="impact-icon" src="images/mobile-cheque-deposit/work-with-IT.png" >
 
                 <h3>Involve IT Early On</h3>
 
@@ -1517,8 +1595,7 @@ start of content paragraph section
 
     
  <div class="lg-4 tab-12 column learning-item">
-    <!-- <img class="impact-icon" src="/images/ear.png" 
-                srcset="images/ear.png "  alt=""> -->
+    <img class="impact-icon" src="images/mobile-cheque-deposit/handle-surprises.png" ">
 
                 <h3>Handle Suprises</h3>
 
@@ -1575,7 +1652,7 @@ start of content paragraph section
             <div class="footer-contact-wrap">
                 <img src="images/ear.png" class="footer-image" alt="Profile Image">
 
-                      <h2 class="text-big-title center remove-margin-top">
+                      <h2 class="text-huge-title center remove-margin-top">
                 Let's Connect!
             </h2>
         
@@ -1594,7 +1671,7 @@ start of content paragraph section
 
             <div class="row s-footer__bottom">
                 <div class="column ss-copyright">
-                    <p>© 2024 Luca Luk / luca.kahim.luk@gmail.com </p> 
+                    <p> < / >  code by me  </p> 
                   
                 </div>
 
