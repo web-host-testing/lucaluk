@@ -19,11 +19,10 @@
     <link rel="stylesheet" href="css/styles.css">
 
 
-      
-         <style>
+           <style>
 :root {
             --primary-color: #ffe81d; 
-    --secondary-color :#7b31c0;
+     --secondary-color :#175bd1;
 }
 
     body {
@@ -232,6 +231,10 @@
 
     @media screen and (max-width: 900px) {
 
+          .image-caption-right {
+            padding-left: 2rem;
+        }
+
         .comics-narrative {
             justify-self: center;
         }
@@ -267,9 +270,11 @@
             width: 100%;
         }
 
+      
+
         .image-caption-left,
         .image-caption-right {
-            padding: 0 2rem 24px 2rem;
+            /* padding: 0 2rem 24px 2rem; */
             order: -1;
         }
 
@@ -302,6 +307,19 @@ text-align: center;
     margin: 0;
 }
 
+.impact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Ensures text is centered */
+    padding: 20px; /* Adds some padding for spacing */
+}
+
+
+    .impact-item p{
+        max-width: 60vw;
+    }
 
 
 }
@@ -396,13 +414,15 @@ margin-bottom: 0;
     position: relative;
     height: 100svh;
     width: 100%;
-    /* overflow: hidden; */
+    /* overflow:visible; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     /* margin-top: 5svh;  */
 }
+
+
 
 .case-study-hero-image {
     position: absolute;
@@ -412,6 +432,7 @@ margin-bottom: 0;
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    overflow: visible;
 }
 
 .padding-bottom {
@@ -558,8 +579,8 @@ padding: 100px 0;
 
 .tags-group.special-badge {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 20px;
     z-index: 10;
 }
 
@@ -630,7 +651,7 @@ td {
 }
 
 .image-caption-right {
-    padding-left: 4rem;
+    padding-left: 2rem;
     padding-bottom: 24px;
 }
 
@@ -640,8 +661,16 @@ td {
 }
 
 .impact-icon {
-    width: 20rem;
-    padding: 8rem 0 4rem 0;
+    width: 12rem;
+    padding: 6rem 0 2rem 0;
+    margin: 0;
+}
+
+
+
+.learnings-icon {
+    width: 30rem;
+    padding: 0;
     margin: 0;
 }
 
@@ -766,8 +795,21 @@ td {
 @media screen and (max-width: 800px) {
     .learning-item {
         margin-bottom: 40px;
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Ensures text is centered */
+    padding: 20px; /* Adds some padding for spacing */
+    }
+
+    .learning-item p{
+        max-width: 60vw;
     }
 }
+
+
+
 
 @media screen and (max-width: 900px) {
     .case-intro .text-wrapper p {
@@ -785,7 +827,6 @@ td {
 }
 
 </style>
-
     <!-- <link rel="stylesheet" href="css/base.css"> -->
     <!-- <link rel="stylesheet" href="css/main.css"> -->
 
@@ -835,7 +876,7 @@ td {
 
         <a href="mobile-cheque-deposit.html">
        <p class="badge remove-margin-bottom" style="color: white; text-decoration: none;">UX</p>
-        <p>Mobile Cheque Deposit Feature</p>
+        <p> Cheque Deposit Feature</p>
         </a>
 
         <div style="clear: both;"></div> 
@@ -882,16 +923,12 @@ td {
 
 <section class="case-study-hero">
     <picture>
-        <source srcset="images/comics_placeholder.png" media="(min-width: 1024px)">
-        <source srcset="images/comics_placeholder.png" media="(min-width: 768px)">
-        <source srcset="images/comics_placeholder.png">
-        <img src="images/comics_placeholder.png" alt="Hero Image" class="case-study-hero-image">
+        <img src="images/corp-bank/hero-bg.svg" alt="Hero Image" class="case-study-hero-image ">
     </picture>
 
     <figure class="additional-hero-image animate-on-load">
     
-        <img class="hero-image" src="images/wheel-500.jpg"
-            srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w" alt="Additional Hero Image">
+        <img class="hero-image" src="images/corp-bank/corp-bank-hero.png"  alt="Additional Hero Image">
     </figure>
 
       <!-- <div class=" tags-group animate-on-load">
@@ -987,13 +1024,23 @@ td {
     
             </div>
 
+  <div class="image-container">
+        <!-- <div class="tags-group special-badge">
+            <p class="badge remove-margin-bottom">Problem</p>
+        </div> -->
+        <figure class="padding-bottom">
+            <img src="images/corp-bank/executive-summary.jpg" >
+        </figure>
+    </div>
+
+
        <div class=" column case-study-paragraph-wrap overview-item" >
     <h4>Executive Summary</h4>
           <p class="padding-bottom">Revamped the corporate banking app for 130k customers, focusing on critical pain points identified through UX research.</p>
           <p class="padding-bottom">Collaborated closely with IT and business teams to ensure solutions balanced business goals with user needs, delivering practical and cost-effective implementations.</p>
           <p class="padding-bottom">This project showcases my ability to align business objectives with user-centered design and work seamlessly with IT to drive impactful results.</p>
       
-                
+                   <a class="btn btn--stroke smoothscroll" href="#final-outcome">Final Outcome</a>
                 <!-- <h3 class="title-paragraph-about"> As an INFJ, I balance empathy with logic, <b>respecting diverse perspectives</b> and <b>avoiding judging right away</b>.</h3>
         <p> This combination helps me understand and <b>respect others’ choices</b> genuinely. </p> -->
         </div>
@@ -1024,10 +1071,7 @@ td {
             <p class="badge remove-margin-bottom">Problem</p>
         </div>
         <figure>
-            <img src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w" 
-                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+            <img src="images/corp-bank/negative-feedbacks.jpg" >
         </figure>
     </div>
 <p>
@@ -1045,10 +1089,7 @@ Low ratings with negative feedbacks from varioius channels.
             <p class="badge remove-margin-bottom">Problem</p>
         </div>
         <figure>
-            <img src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w" 
-                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+            <img src="images/corp-bank/cs-agent.jpg" >
         </figure>
     </div>
 
@@ -1064,10 +1105,7 @@ Low ratings with negative feedbacks from varioius channels.
             <p class="badge remove-margin-bottom">Goals</p>
         </div>
         <figure>
-            <img src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w" 
-                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+            <img src="images/corp-bank/select-task.jpg" >
         </figure>
     </div>
        <ul class="list-paragraph">
@@ -1134,9 +1172,7 @@ start of content paragraph section
       <div class="row" style="margin-bottom: 16px;">
           
             <figure >
-                <img class="big-image" src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w"  >
+                <img class="big-image" src="images/corp-bank/data-gathering.jpg"   >
             </figure>
         </div>
 
@@ -1153,8 +1189,7 @@ start of content paragraph section
   <div class="row row-y-bottom block-stack-on-900 big-image-with-caption" >
     <div class="column lg-9 md-8 tab-12  " >
         <figure>
-            <img class="big-image"  src="images/wheel-500.jpg"
-                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+            <img class="big-image"  src="images/corp-bank/mutual-help-collab.jpg">
         </figure>
     </div>
     <div class="column lg-3 md-4 tab-12 image-caption-right">
@@ -1189,8 +1224,7 @@ start of content paragraph section
 
     <div class="column lg-9 md-8 tab-12  ">
  <figure>
-            <img class="big-image"  src="images/wheel-500.jpg"
-                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+            <img class="big-image"  src="images/corp-bank/user-interviews.jpg">
         </figure>
 
 
@@ -1259,9 +1293,7 @@ start of content paragraph section
       <div class="row" style="margin-bottom: 16px;">
           
             <figure >
-                <img class="big-image" src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w"  >
+                <img class="big-image" src="images/corp-bank/pain-point-analysis.jpg"   >
             </figure>
         </div>
 
@@ -1275,8 +1307,7 @@ start of content paragraph section
   <div class="row row-y-bottom block-stack-on-900 big-image-with-caption" >
     <div class="column lg-9 md-8 tab-12   " >
         <figure>
-            <img class="big-image"  src="images/wheel-500.jpg"
-                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+            <img class="big-image"  src="images/corp-bank/distinct-customer-needs.jpg">
         </figure>
     </div>
     <div class="column lg-3 md-4 tab-12 image-caption-right">
@@ -1309,8 +1340,7 @@ start of content paragraph section
 
     <div class="column lg-9 md-8 tab-12  ">
  <figure>
-            <img class="big-image"  src="images/wheel-500.jpg"
-                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+            <img class="big-image"  src="images/wheel-500.jpg">
         </figure>
 
 
@@ -1368,12 +1398,10 @@ start of content paragraph section
  <div class="lg-4 tab-12 column ">
     <div class="image-container">
         <div class="tags-group special-badge">
-            <p class="badge remove-margin-bottom">Metric</p>
+            <p class="badge-white remove-margin-bottom">Metric</p>
         </div>
         <figure>
-            <img src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w" 
+            <img src="images/corp-bank/MAU.jpg"  
                 sizes="(max-width: 1000px) 100vw, 1000px" alt="">
         </figure>
     </div>
@@ -1389,12 +1417,10 @@ Increase mobile app downloads and monthly active users
  <div class="lg-4 tab-12 column ">
     <div class="image-container">
         <div class="tags-group special-badge">
-            <p class="badge remove-margin-bottom">Metric</p>
+            <p class="badge-white remove-margin-bottom">Metric</p>
         </div>
         <figure>
-            <img src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w" 
+            <img src="images/corp-bank/mobile-tokens.jpg"  
                 sizes="(max-width: 1000px) 100vw, 1000px" alt="">
         </figure>
     </div>
@@ -1408,17 +1434,15 @@ Increase mobile app downloads and monthly active users
  <div class="lg-4 tab-12 column ">
     <div class="image-container">
         <div class="tags-group special-badge">
-            <p class="badge remove-margin-bottom">Metric</p>
+            <p class="badge-white remove-margin-bottom">Metric</p>
         </div>
         <figure>
-            <img src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w" 
+            <img src="images/corp-bank/customer-satisfaction.jpg"  
                 sizes="(max-width: 1000px) 100vw, 1000px" alt="">
         </figure>
     </div>
        <ul class="list-paragraph">
-                 <p>Reduce man-hours addressing SME digital issues</p>
+                 <p>Improve satisfaction of SME customers</p>
         </ul>
     
 </div>
@@ -1447,7 +1471,7 @@ start of content paragraph section
        <div class=" tags-group">
             <p class="badge remove-margin-bottom" >Collaboration</p>
         </div>
-     <h3 class="text-big-title reduced-margin-bottom"> Design Solutions </h3>
+     <h3 class="text-big-title reduced-margin-bottom"> Solution & Costs </h3>
        
         </div>
     
@@ -1475,9 +1499,7 @@ start of content paragraph section
       <div class="row" style="margin-bottom: 16px;">
           
             <figure >
-                <img class="big-image" src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w"  >
+                <img class="big-image" src="images/corp-bank/costs-to-build.jpg"   >
             </figure>
         </div>
 
@@ -1486,11 +1508,10 @@ start of content paragraph section
 
 
 <div class="row">
-  <div class="row row-y-bottom block-stack-on-900 big-image-with-caption" >
+  <!-- <div class="row row-y-bottom block-stack-on-900 big-image-with-caption" >
     <div class="column lg-9 md-8 tab-12   " >
         <figure>
-            <img class="big-image"  src="images/wheel-500.jpg"
-                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+            <img class="big-image"  src="images/wheel-500.jpg">
         </figure>
     </div>
     <div class="column lg-3 md-4 tab-12 image-caption-right">
@@ -1498,7 +1519,7 @@ start of content paragraph section
         <p>The business team defines their goals, we detail how to achieve them, and the IT product managers advice on its feasibility and recommend alternatives.</p>
 </div>
 
-</div>
+</div> -->
 
 
 
@@ -1509,11 +1530,10 @@ start of content paragraph section
     <div class="column lg-12  image-caption-left " >
        
      <h4  > Accurate Cost Estimation</h4>
-        <p style="margin-bottom: 40px;">We created the best possible and realistic customer journey flows for each potential feature for IT to estimate cost. </p>
+        <p style="margin-bottom: 40px;">The business team defines their goals, we detail how to achieve them, and the IT product managers advice on its feasibility and recommend alternatives. We created the best possible and realistic customer journey flows for each potential feature for IT to estimate cost. </p>
 
         <figure>
-            <img class="big-image"  src="images/wheel-500.jpg"
-                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+            <img class="big-image"  src="images/corp-bank/accurate-cost-estimation.jpg">
         </figure>
 
 
@@ -1558,9 +1578,7 @@ start of content paragraph section
             <p class="badge remove-margin-bottom">Metric</p>
         </div> -->
         <figure>
-            <img src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w" 
+            <img src="images/corp-bank/reset-pw.jpg"  
                 sizes="(max-width: 1000px) 100vw, 1000px" alt="">
         </figure>
     </div>
@@ -1580,9 +1598,7 @@ Online reset with biometrics and ID card
             <p class="badge remove-margin-bottom">Metric</p>
         </div> -->
         <figure>
-            <img src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w" 
+            <img src="images/corp-bank/mobile-dashboard.jpg"  
                 sizes="(max-width: 1000px) 100vw, 1000px" alt="">
         </figure>
     </div>
@@ -1605,9 +1621,7 @@ Optimize archetechrue and include useful functionalities like monthly statements
             <p class="badge remove-margin-bottom">Metric</p>
         </div> -->
         <figure>
-            <img src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w" 
+            <img src="images/corp-bank/link-companies.jpg"  
                 sizes="(max-width: 1000px) 100vw, 1000px" alt="">
         </figure>
     </div>
@@ -1627,9 +1641,7 @@ Allow single phone login for multiple companies
             <p class="badge remove-margin-bottom">Metric</p>
         </div> -->
         <figure>
-            <img src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w" 
+            <img src="images/corp-bank/payment.jpg"  
                 sizes="(max-width: 1000px) 100vw, 1000px" alt="">
         </figure>
     </div>
@@ -1693,9 +1705,7 @@ start of content paragraph section
       <div class="row" style="margin-bottom: 16px;">
           
             <figure >
-                <img class="big-image" src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w"  >
+                <img class="big-image" src="images/corp-bank/test-flow.jpg"   >
             </figure>
         </div>
 
@@ -1712,8 +1722,7 @@ start of content paragraph section
   <div class="row row-y-bottom block-stack-on-900 big-image-with-caption" >
     <div class="column lg-9 md-8 tab-12  " >
         <figure>
-            <img class="big-image"  src="images/wheel-500.jpg"
-                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+            <img class="big-image"  src="images/corp-bank/prototype.jpg">
         </figure>
     </div>
     <div class="column lg-3 md-4 tab-12 image-caption-right">
@@ -1739,7 +1748,7 @@ start of content paragraph section
     <div class="column lg-3 md-4 tab-12 image-caption-left " >
        
        
-        <h4>Focus Groups</h4>
+        <h4>Test Focus</h4>
         <p> Tested with 9 existing users, including 4 with multiple company accounts</p>
        
 
@@ -1748,8 +1757,7 @@ start of content paragraph section
 
     <div class="column lg-9 md-8 tab-12  ">
  <figure>
-            <img class="big-image"  src="images/wheel-500.jpg"
-                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+            <img class="big-image"  src="images/corp-bank/research-focus.jpg">
         </figure>
 
 
@@ -1774,6 +1782,55 @@ start of content paragraph section
 
 
 
+   <section class="content-paragraph " id="final-outcome">
+            <div class="row">
+                <div class="row row-y-top block-stack-on-900 horizontal-center">
+                    <div class="column lg-12 ">
+                       <div class=" tags-group">
+                    <p class="badge remove-margin-bottom" >Solution</p>
+                 </div>
+                        <h3 class="text-big-title reduced-margin-bottom"> Final Outcomes </h3>
+                    </div>
+
+
+                    <!-- <div class="column lg-8 md-8 tab-12 case-study-paragraph-wrap">
+                    <h3 class="title-paragraph-about">Features bring most value and easy to build:</h3>
+                      <ul>
+                        <li>Allow users reach essential information</li>
+                        <li>Helps parents envision their children’s promising futures</li>
+                        <li>Highlights the connections between schools within the same network</li>
+                      </ul>
+                    </div> -->
+                </div>
+
+               
+                   <div class="image-container">
+                            <figure>
+                                <img src="images/corp-bank/key-screens.jpg">
+                            </figure>
+                    </div>
+
+                       <div class="image-container">
+                            <figure>
+                                <img src="images/corp-bank/dashboard-widgets.jpg">
+                            </figure>
+                    </div>
+                       <div class="image-container">
+                            <figure>
+                                <img src="images/corp-bank/desktop-screens.jpg">
+                            </figure>
+                    </div>
+
+                    </div>
+
+              
+            
+              
+            </div>
+        </section>
+
+
+
 <section class="black white-text">
 
 
@@ -1791,8 +1848,7 @@ start of content paragraph section
             </div>
 
  <div class="lg-4 tab-12 column">
-    <img class="impact-icon" src="/images/ear.png" 
-                srcset="images/ear.png "  alt="">
+    <img class="impact-icon" src="images/corp-bank/huge-improvement.png" >
 
                 <h3 class="white-text padding-bottom">Huge improvement in home page</h3>
 
@@ -1806,8 +1862,7 @@ start of content paragraph section
 
     
  <div class="lg-4 tab-12 column">
-    <img class="impact-icon" src="/images/ear.png" 
-                srcset="images/ear.png "  alt="">
+    <img class="impact-icon" src="images/corp-bank/nice-touches.png" >
 
                 <h3 class="padding-bottom white-text">Many nice touches in new payment process</h3>
     <div class="padding-bottom"> <p>"I didn't know how to set an unauthorized payee, this version is way easier!"</p></div>
@@ -1820,8 +1875,7 @@ start of content paragraph section
 
                          
  <div class="lg-4   tab-12 column">
-    <img class="impact-icon" src="/images/ear.png" 
-                srcset="images/ear.png "  alt="">
+    <img class="impact-icon" src="images/corp-bank/insights.png" >
 
                 <h3 class="white-text padding-bottom">Insights on Usability Optimization</h3>
 
@@ -1850,12 +1904,10 @@ start of content paragraph section
 
             <div class="column lg-12" >
 
-            <figure style="margin-bottom: 8rem;">
-                <img class="big-image" src="images/wheel-500.jpg" 
-                srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w"  >
+            <!-- <figure style="margin-bottom: 8rem;">
+                <img class="big-image" src="images/wheel-500.jpg"   >
             </figure>
-         
+          -->
                 
                 <h2 class="text-huge-title " style="margin-bottom: 4rem;"> What I learned </h2>
                  
@@ -1866,8 +1918,8 @@ start of content paragraph section
 
                  
  <div class="lg-4   tab-12 column learning-item">
-    <!-- <img class="impact-icon" src="/images/ear.png" 
-                srcset="images/ear.png "  alt=""> -->
+       <img class="learnings-icon" src="images/corp-bank/mutual-help.png" >
+
 
                 <h3>Mutual Help</h3>
 
@@ -1879,8 +1931,8 @@ start of content paragraph section
     
     
  <div class="lg-4 tab-12 column learning-item">
-    <!-- <img class="impact-icon" src="/images/ear.png" 
-                srcset="images/ear.png "  alt=""> -->
+    <img class="learnings-icon" src="images/corp-bank/focus.png" >
+
 
                 <h3>Focus on data that matters</h3>
 
@@ -1891,8 +1943,8 @@ start of content paragraph section
 
     
  <div class="lg-4 tab-12 column learning-item">
-    <!-- <img class="impact-icon" src="/images/ear.png" 
-                srcset="images/ear.png "  alt=""> -->
+       <img class="learnings-icon" src="images/corp-bank/IT-expertise.png" >
+
 
                 <h3>Seek IT expertise</h3>
 
@@ -1934,22 +1986,29 @@ start of content paragraph section
 
 
 
-                
-          <!-- # site footer
+ 
+        <!-- # site footer
         ================================================== -->
        <footer id="colophon" class="s-footer">
     <div class="row s-footer__contact-header">
         <div class="column lg-12">
+
+        
+          
           
             <div class="footer-contact-wrap">
-                <img src="images/ear.png" class="footer-image" alt="Profile Image">
+           
 
-                      <h2 class="text-big-title center remove-margin-top">
-                Let's Connect!
-            </h2>
+                <img src="images/footer-bye.png" class="footer-image" alt="Profile Image">
+
+           
         
 
                         <div class=" footer-contact-wrap">
+<h2 class="text-home-title center remove-margin-top">
+              Let's Connect!
+            </h2>
+
                              <a href="www.linkedin.com/in/lucaluk" target="_blank" class=""><img  src="  ./images/LinkedInStyleContactCard.png" class="linkedIn-card " alt=""></a>
                              
  
@@ -1963,7 +2022,8 @@ start of content paragraph section
 
             <div class="row s-footer__bottom">
                 <div class="column ss-copyright">
-                    <p>© 2024 Luca Luk / luca.kahim.luk@gmail.com </p> 
+                      <p> < / >  code by me 🤟 </p> 
+                <!-- <a href="mailto: luca.kahim.luk@gmail.com " class="caption-link footer-email">  luca.kahim.luk@gmail.com </a>  -->
                   
                 </div>
 
@@ -1975,7 +2035,6 @@ start of content paragraph section
             </div> <!-- end s-footer__bottom-->
 
         </footer> <!-- end s-footer -->
-
 
     </div> <!-- end s-pagewrap -->
 

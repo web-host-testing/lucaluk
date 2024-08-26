@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mobile Cheque Deposit</title>
 
-    <!-- <script>
+    <script>
         document.documentElement.classList.remove('no-js');
         document.documentElement.classList.add('js');
-    </script> -->
+    </script>
 
     <!-- CSS
     ================================================== -->
@@ -27,7 +27,7 @@
          <style>
 :root {
             --primary-color: #ffe81d; 
-    --secondary-color :#7b31c0;
+     --secondary-color :#175bd1;
 }
 
     body {
@@ -236,6 +236,10 @@
 
     @media screen and (max-width: 900px) {
 
+          .image-caption-right {
+            padding-left: 2rem;
+        }
+
         .comics-narrative {
             justify-self: center;
         }
@@ -271,9 +275,11 @@
             width: 100%;
         }
 
+      
+
         .image-caption-left,
         .image-caption-right {
-            padding: 0 2rem 24px 2rem;
+            /* padding: 0 2rem 24px 2rem; */
             order: -1;
         }
 
@@ -306,6 +312,19 @@ text-align: center;
     margin: 0;
 }
 
+.impact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Ensures text is centered */
+    padding: 20px; /* Adds some padding for spacing */
+}
+
+
+    .impact-item p{
+        max-width: 60vw;
+    }
 
 
 }
@@ -418,6 +437,7 @@ margin-bottom: 0;
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    overflow: visible;
 }
 
 .padding-bottom {
@@ -636,7 +656,7 @@ td {
 }
 
 .image-caption-right {
-    padding-left: 4rem;
+    padding-left: 2rem;
     padding-bottom: 24px;
 }
 
@@ -646,6 +666,14 @@ td {
 }
 
 .impact-icon {
+    width: 12rem;
+    padding: 6rem 0 2rem 0;
+    margin: 0;
+}
+
+
+
+.learnings-icon {
     width: 30rem;
     padding: 0;
     margin: 0;
@@ -772,8 +800,21 @@ td {
 @media screen and (max-width: 800px) {
     .learning-item {
         margin-bottom: 40px;
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Ensures text is centered */
+    padding: 20px; /* Adds some padding for spacing */
+    }
+
+    .learning-item p{
+        max-width: 60vw;
     }
 }
+
+
+
 
 @media screen and (max-width: 900px) {
     .case-intro .text-wrapper p {
@@ -838,7 +879,7 @@ td {
 
         <a href="mobile-cheque-deposit.html">
        <p class="badge remove-margin-bottom" style="color: white; text-decoration: none;">UX</p>
-        <p>Mobile Cheque Deposit Feature</p>
+        <p>Cheque Deposit Feature</p>
         </a>
 
         <div style="clear: both;"></div> 
@@ -1045,9 +1086,7 @@ td {
             <p class="badge remove-margin-bottom">Problem</p>
         </div>
         <figure>
-            <img src="images/mobile-cheque-deposit/many-customers-bring-many-paper-cheques-to-bank-br (2).jpg" 
-                 
-                >
+            <img src="images/mobile-cheque-deposit/long-queues.jpg" >
         </figure>
     </div>
     <ul class="list-paragraph">
@@ -1132,7 +1171,7 @@ start of content paragraph section
 
 
     <div class="column lg-8 md-8 tab-12  case-study-paragraph-wrap padding-left" >
-    <h4>9 critical checking</h4>
+    <h4>9 critical checkings</h4>
     <!-- <strong>9 critical checking</strong> -->
          <p class="padding-bottom">The process include checkings like account deposit limits, user and company thresholds, and the validity and readability of cheque information. </p>
 <!--    
@@ -1496,16 +1535,16 @@ start of content paragraph section
     <div class="articles ">
 
         <div class="row ">
-            <div class="column lg-12">
+            <div class="column lg-12 impact-item">
          
                 
-                <h2 class="text-huge-title white-text padding-bottom"> Expected Impacts </h2>
+                <h2 class="text-huge-title white-text padding-bottom "> Expected Impacts </h2>
                 <!-- <p>The feature was not shipped until I left the company, but it is expected to:</p> -->
             </div>
 
 
                  
- <div class="lg-4   tab-12 column">
+ <div class="lg-4   tab-12 column  impact-item">
     <img class="impact-icon" src="images/mobile-cheque-deposit/satisfied-customer.png" >
 
                 <h3 class="white-text">Improve Customer Satisfaction</h3>
@@ -1519,8 +1558,8 @@ start of content paragraph section
 
     
     
- <div class="lg-4 tab-12 column">
-    <img class="impact-icon" src="images/mobile-cheque-deposit/many-happy-and-user-using-the-phone.png" >
+ <div class="lg-4 tab-12 column impact-item">
+    <img class="impact-icon" src="images/mobile-cheque-deposit/increase-app-usage.png" >
 
                 <h3 class="white-text">Increase Mobile App Usage</h3>
 
@@ -1530,7 +1569,7 @@ start of content paragraph section
 
 
     
- <div class="lg-4 tab-12 column">
+ <div class="lg-4 tab-12 column impact-item">
     <img class="impact-icon" src="images/mobile-cheque-deposit/ranking-high-in-competition.png">
 
                 <h3 class="white-text">Competitive Edge</h3>
@@ -1572,7 +1611,7 @@ start of content paragraph section
 
                  
  <div class="lg-4   tab-12 column learning-item">
-    <img class="impact-icon" src="images/mobile-cheque-deposit/complex-logics.png" >
+    <img class="learnings-icon" src="images/mobile-cheque-deposit/complex-logics.png" >
 
                 <h3>Handle Complex Flows</h3>
 
@@ -1584,7 +1623,7 @@ start of content paragraph section
     
     
  <div class="lg-4 tab-12 column learning-item">
-    <img class="impact-icon" src="images/mobile-cheque-deposit/work-with-IT.png" >
+    <img class="learnings-icon" src="images/mobile-cheque-deposit/work-with-IT.png" >
 
                 <h3>Involve IT Early On</h3>
 
@@ -1595,7 +1634,7 @@ start of content paragraph section
 
     
  <div class="lg-4 tab-12 column learning-item">
-    <img class="impact-icon" src="images/mobile-cheque-deposit/handle-surprises.png" ">
+    <img class="learnings-icon" src="images/mobile-cheque-deposit/handle-surprises.png" ">
 
                 <h3>Handle Suprises</h3>
 
@@ -1643,21 +1682,29 @@ start of content paragraph section
                 
 
 
-           <!-- # site footer
+ 
+        <!-- # site footer
         ================================================== -->
        <footer id="colophon" class="s-footer">
     <div class="row s-footer__contact-header">
         <div class="column lg-12">
+
+        
+          
           
             <div class="footer-contact-wrap">
-                <img src="images/ear.png" class="footer-image" alt="Profile Image">
+           
 
-                      <h2 class="text-huge-title center remove-margin-top">
-                Let's Connect!
-            </h2>
+                <img src="images/footer-bye.png" class="footer-image" alt="Profile Image">
+
+           
         
 
                         <div class=" footer-contact-wrap">
+<h2 class="text-home-title center remove-margin-top">
+              Let's Connect!
+            </h2>
+
                              <a href="www.linkedin.com/in/lucaluk" target="_blank" class=""><img  src="  ./images/LinkedInStyleContactCard.png" class="linkedIn-card " alt=""></a>
                              
  
@@ -1671,7 +1718,8 @@ start of content paragraph section
 
             <div class="row s-footer__bottom">
                 <div class="column ss-copyright">
-                    <p> < / >  code by me  </p> 
+                      <p> < / >  code by me 🤟 </p> 
+                <!-- <a href="mailto: luca.kahim.luk@gmail.com " class="caption-link footer-email">  luca.kahim.luk@gmail.com </a>  -->
                   
                 </div>
 
@@ -1683,7 +1731,6 @@ start of content paragraph section
             </div> <!-- end s-footer__bottom-->
 
         </footer> <!-- end s-footer -->
-
 
     </div> <!-- end s-pagewrap -->
 

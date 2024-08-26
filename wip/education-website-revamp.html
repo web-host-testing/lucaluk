@@ -21,10 +21,10 @@
       
       
       
-         <style>
+          <style>
 :root {
             --primary-color: #ffe81d; 
-    --secondary-color :#7b31c0;
+     --secondary-color :#175bd1;
 }
 
     body {
@@ -184,9 +184,10 @@
         margin-top: 16px;
     }
 
-/* .ss-copyright{
+    /* .ss-copyright{
     display: inline-flex;
 } */
+
     .footer-contact-wrap {
         display: flex;
         flex-direction: column;
@@ -232,6 +233,10 @@
 
     @media screen and (max-width: 900px) {
 
+          .image-caption-right {
+            padding-left: 2rem;
+        }
+
         .comics-narrative {
             justify-self: center;
         }
@@ -267,9 +272,11 @@
             width: 100%;
         }
 
+      
+
         .image-caption-left,
         .image-caption-right {
-            padding: 0 2rem 24px 2rem;
+            /* padding: 0 2rem 24px 2rem; */
             order: -1;
         }
 
@@ -302,6 +309,19 @@ text-align: center;
     margin: 0;
 }
 
+.impact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Ensures text is centered */
+    padding: 20px; /* Adds some padding for spacing */
+}
+
+
+    .impact-item p{
+        max-width: 60vw;
+    }
 
 
 }
@@ -396,13 +416,15 @@ margin-bottom: 0;
     position: relative;
     height: 100svh;
     width: 100%;
-    /* overflow: hidden; */
+    /* overflow:visible; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     /* margin-top: 5svh;  */
 }
+
+
 
 .case-study-hero-image {
     position: absolute;
@@ -412,6 +434,7 @@ margin-bottom: 0;
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    overflow: visible;
 }
 
 .padding-bottom {
@@ -558,8 +581,8 @@ padding: 100px 0;
 
 .tags-group.special-badge {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 20px;
     z-index: 10;
 }
 
@@ -630,7 +653,7 @@ td {
 }
 
 .image-caption-right {
-    padding-left: 4rem;
+    padding-left: 2rem;
     padding-bottom: 24px;
 }
 
@@ -640,8 +663,16 @@ td {
 }
 
 .impact-icon {
-    width: 20rem;
-    padding: 8rem 0 4rem 0;
+    width: 12rem;
+    padding: 6rem 0 2rem 0;
+    margin: 0;
+}
+
+
+
+.learnings-icon {
+    width: 30rem;
+    padding: 0;
     margin: 0;
 }
 
@@ -766,8 +797,21 @@ td {
 @media screen and (max-width: 800px) {
     .learning-item {
         margin-bottom: 40px;
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Ensures text is centered */
+    padding: 20px; /* Adds some padding for spacing */
+    }
+
+    .learning-item p{
+        max-width: 60vw;
     }
 }
+
+
+
 
 @media screen and (max-width: 900px) {
     .case-intro .text-wrapper p {
@@ -823,7 +867,7 @@ td {
 
         <a href="mobile-cheque-deposit.html">
        <p class="badge remove-margin-bottom" style="color: white; text-decoration: none;">UX</p>
-        <p>Mobile Cheque Deposit Feature</p>
+        <p>Cheque Deposit Feature</p>
         </a>
 
         <div style="clear: both;"></div> 
@@ -871,14 +915,10 @@ td {
 
         <section class="case-study-hero">
             <picture>
-                <source srcset="images/comics_placeholder.png" media="(min-width: 1024px)">
-                <source srcset="images/comics_placeholder.png" media="(min-width: 768px)">
-                <source srcset="images/comics_placeholder.png">
-                <img src="images/comics_placeholder.png" alt="Hero Image" class="case-study-hero-image">
+                <img src="images/edu-network/hero-bg.svg" alt="Hero Image" class="case-study-hero-image ">
             </picture>
             <figure class="additional-hero-image animate-on-load">
-                <img class="hero-image" src="images/wheel-500.jpg"
-                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w" alt="Additional Hero Image">
+                <img class="hero-image" src="images/edu-network/edu-hero.png">
             </figure>
 
     <div class="hero-text ">
@@ -947,7 +987,7 @@ td {
 
        <div class=" column case-study-paragraph-wrap overview-item" >
     <h4>Executive Summary</h4>
-          <p class="padding-bottom">Led the revamp of 22 school websites, focusing on content strategy, information architecture, and a scalable design system..</p>
+          <p class="padding-bottom">Solo designer of the revamp of 22 school websites, focusing on content strategy, information architecture, and a scalable design system..</p>
           <p class="padding-bottom">As the sole designer and researcher, I developed a unified template and design system, creating actionable strategies that addressed the unique needs of different stakeholders.</p>
           <p class="padding-bottom">This work aligned business goals with user needs while ensuring consistency and flexibility across all schools.</p>
               
@@ -978,9 +1018,7 @@ td {
                             <p class="badge remove-margin-bottom">Brief</p>
                         </div>
                         <figure>
-                            <img src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
-                                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            <img src="images/edu-network/align-school-branding.jpg">
                         </figure>
                     </div>
                     <p>Align new branding across all 21 schools to present a unified and modernized online presence.</p>
@@ -991,9 +1029,7 @@ td {
                             <p class="badge remove-margin-bottom">Problem</p>
                         </div>
                         <figure>
-                            <img src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
-                                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            <img src="images/edu-network/bad-website-design.jpg">
                         </figure>
                     </div>
                     <p>Messy structure and outdated visuals of school websites lead to poor usability and make it hard for users to find needed information.</p>
@@ -1004,9 +1040,7 @@ td {
                             <p class="badge remove-margin-bottom">Goals</p>
                         </div>
                         <figure>
-                            <img src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
-                                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                            <img src="images/edu-network/increase-enrollment.jpg">
                         </figure>
                     </div>
                     <ul class="list-paragraph">
@@ -1037,9 +1071,7 @@ td {
                     <div class="lg-6 mob-12 column padding-bottom">
                         <div class="image-container">
                             <figure>
-                                <img src="images/wheel-500.jpg"
-                                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
-                                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                                <img src="images/edu-network/new-home.jpg">
                             </figure>
                         </div>
                         <h3>New</h3>
@@ -1047,9 +1079,7 @@ td {
                     <div class="lg-6 mob-12 column padding-bottom">
                         <div class="image-container">
                             <figure>
-                                <img src="images/wheel-500.jpg"
-                                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
-                                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                                <img src="images/edu-network/old-home.jpg">
                             </figure>
                         </div>
                         <h3>Old</h3>
@@ -1078,16 +1108,14 @@ td {
             </div>
             <div class="row" style="margin-bottom: 16px;">
                 <figure>
-                    <img class="big-image" src="images/wheel-500.jpg"
-                        srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                    <img class="big-image" src="images/edu-network/stakeholders.jpg">
                 </figure>
             </div>
             <div class="row">
                 <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
                     <div class="column lg-9 md-8 tab-12">
                         <figure>
-                            <img class="big-image" src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                            <img class="big-image" src="images/edu-network/school-structure.jpg">
                         </figure>
                     </div>
                     <div class="column lg-3 md-4 tab-12 image-caption-right">
@@ -1104,8 +1132,7 @@ td {
                     </div>
                     <div class="column lg-9 md-8 tab-12">
                         <figure>
-                            <img class="big-image" src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                            <img class="big-image" src="images/edu-network/analyze-existing-site.jpg">
                         </figure>
                     </div>
                 </div>
@@ -1114,8 +1141,7 @@ td {
                 <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
                     <div class="column lg-9 md-8 tab-12">
                         <figure>
-                            <img class="big-image" src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                            <img class="big-image" src="images/edu-network/align-business-goals.jpg">
                         </figure>
                     </div>
                     <div class="column lg-3 md-4 tab-12 image-caption-right">
@@ -1149,16 +1175,14 @@ td {
             </div>
             <div class="row" style="margin-bottom: 16px;">
                 <figure>
-                    <img class="big-image" src="images/wheel-500.jpg"
-                        srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                    <img class="big-image" src="images/edu-network/content-strategy.jpg">
                 </figure>
             </div>
             <div class="row">
                 <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
                     <div class="column lg-9 md-8 tab-12">
                         <figure>
-                            <img class="big-image" src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                            <img class="big-image" src="images/edu-network/market-reports.jpg">
                         </figure>
                     </div>
                     <div class="column lg-3 md-4 tab-12 image-caption-right">
@@ -1175,8 +1199,7 @@ td {
                     </div>
                     <div class="column lg-9 md-8 tab-12">
                         <figure>
-                            <img class="big-image" src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                            <img class="big-image" src="images/edu-network/social-listening.jpg">
                         </figure>
                     </div>
                 </div>
@@ -1185,8 +1208,7 @@ td {
                 <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
                     <div class="column lg-9 md-8 tab-12">
                         <figure>
-                            <img class="big-image" src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                            <img class="big-image" src="images/edu-network/root-cause-analysis.jpg">
                         </figure>
                     </div>
                     <div class="column lg-3 md-4 tab-12 image-caption-right">
@@ -1204,8 +1226,7 @@ td {
                     </div>
                     <div class="column lg-9 md-8 tab-12">
                         <figure>
-                            <img class="big-image" src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                            <img class="big-image" src="images/edu-network/competitor-analysis.jpg">
                         </figure>
                     </div>
                 </div>
@@ -1215,8 +1236,7 @@ td {
                 <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
                     <div class="column lg-12 image-caption-left">
                         <figure>
-                            <img class="big-image" src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                            <img class="big-image" src="images/edu-network/action-plan.jpg">
                         </figure>
                         <h4>Actionable Game Plan</h4>
                         <p style="margin-bottom: 40px;">Breakdown of what content, media and features to use to achieve each goal.</p>
@@ -1253,16 +1273,14 @@ td {
             </div>
             <div class="row" style="margin-bottom: 16px;">
                 <figure>
-                    <img class="big-image" src="images/wheel-500.jpg"
-                        srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                    <img class="big-image" src="images/edu-network/parents-goals.jpg">
                 </figure>
             </div>
             <div class="row">
                 <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
                     <div class="column lg-9 md-8 tab-12">
                         <figure>
-                            <img class="big-image" src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                            <img class="big-image" src="images/edu-network/tree-test.jpg">
                         </figure>
                     </div>
                     <div class="column lg-3 md-4 tab-12 image-caption-right">
@@ -1279,8 +1297,7 @@ td {
                     </div>
                     <div class="column lg-9 md-8 tab-12">
                         <figure>
-                            <img class="big-image" src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                            <img class="big-image" src="images/edu-network/structure-research.jpg">
                         </figure>
                     </div>
                 </div>
@@ -1289,8 +1306,7 @@ td {
                 <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
                     <div class="column lg-9 md-8 tab-12">
                         <figure>
-                            <img class="big-image" src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                            <img class="big-image" src="images/edu-network/card-sorting.jpg">
                         </figure>
                     </div>
                     <div class="column lg-3 md-4 tab-12 image-caption-right">
@@ -1303,8 +1319,7 @@ td {
                 <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
                     <div class="column lg-12 image-caption-left">
                         <figure>
-                            <img class="big-image" src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                            <img class="big-image" src="images/edu-network/sitemap.jpg">
                         </figure>
                         <h4>Simplified Structure</h4>
                         <p>Reduced from 40+ pages to 18 key pages, using tabs to streamline information access.</p>
@@ -1335,16 +1350,14 @@ td {
             </div>
             <div class="row" style="margin-bottom: 16px;">
                 <figure>
-                    <img class="big-image" src="images/wheel-500.jpg"
-                        srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                    <img class="big-image" src="images/edu-network/client-vendors.jpg">
                 </figure>
             </div>
             <div class="row">
                 <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
                     <div class="column lg-9 md-8 tab-12">
                         <figure>
-                            <img class="big-image" src="images/wheel-500.jpg"
-                                srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                            <img class="big-image" src="images/edu-network/content-creation.jpg">
                         </figure>
                     </div>
                     <div class="column lg-3 md-4 tab-12 image-caption-right">
@@ -1357,10 +1370,10 @@ td {
              <div class="row">
                 <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
                     <div class="column lg-12 image-caption-left">
-                        <figure>
-                            <img class="big-image" src="images/wheel-500.jpg">
+                        <!-- <figure>
+                            <img class="big-image" src="images/edu-network/design-system.jpg">
                                 
-                        </figure>
+                        </figure> -->
                         <h4>Challenges with Vendors Transitioning</h4>
                         <p>Unfortunately we needed to change vendor and restart the whole development. With prior experience, we managed to maintain the delivery quality by thorough explanation sessions and small milestones.</p>
                     </div>
@@ -1370,7 +1383,7 @@ td {
                 <div class="row row-y-bottom block-stack-on-900 big-image-with-caption">
                     <div class="column lg-12 image-caption-left">
                         <figure>
-                            <img class="big-image" src="images/wheel-500.jpg">
+                            <img class="big-image" src="images/edu-network/design-system.jpg">
                         </figure>
                         <h4>Design System</h4>
                         <p>To facilitate developments and individual schools to customize the sites themselves, we make all the design as components with clear guidelines in a design system.</p>
@@ -1402,23 +1415,19 @@ td {
                 </div>
                 <div class="row" style="margin-bottom: 16px;">
                     <figure>
-                        <img class="big-image" src="images/wheel-500.jpg"
-                            srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        <img class="big-image" src="images/edu-network/campus-mockup.jpg">
                     </figure>
                 </div>
                 <div class="row" style="margin-bottom: 16px;">
                     <figure>
-                        <img class="big-image" src="images/wheel-500.jpg"
-                            srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w">
+                        <img class="big-image" src="images/edu-network/mothership-mockup.jpg">
                     </figure>
                 </div>
                 <div class="row">
                     <div class="lg-6 mob-12 column padding-bottom">
                         <div class="image-container">
                             <figure>
-                                <img src="images/wheel-500.jpg"
-                                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
-                                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                                <img src="images/edu-network/quick-links.jpg">
                             </figure>
                         </div>
                         <h3>Quick Links</h3>
@@ -1427,9 +1436,7 @@ td {
                     <div class="lg-6 mob-12 column padding-bottom">
                         <div class="image-container">
                             <figure>
-                                <img src="images/wheel-500.jpg"
-                                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
-                                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                                <img src="images/edu-network/journey-of-students.jpg">
                             </figure>
                         </div>
                         <h3>Journey of Students</h3>
@@ -1440,9 +1447,7 @@ td {
                     <div class="lg-6 mob-12 column padding-bottom">
                         <div class="image-container">
                             <figure>
-                                <img src="images/wheel-500.jpg"
-                                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
-                                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                                <img src="images/edu-network/enquiry-form.jpg">
                             </figure>
                         </div>
                         <h3>Simplified Enquiry Form</h3>
@@ -1451,9 +1456,7 @@ td {
                     <div class="lg-6 mob-12 column padding-bottom">
                         <div class="image-container">
                             <figure>
-                                <img src="images/wheel-500.jpg"
-                                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
-                                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                                <img src="images/edu-network/campus-VR.jpg">
                             </figure>
                         </div>
                         <h3>Optimize Campus Facilities VR</h3>
@@ -1464,9 +1467,7 @@ td {
                     <div class="lg-6 mob-12 column padding-bottom">
                         <div class="image-container">
                             <figure>
-                                <img src="images/wheel-500.jpg"
-                                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
-                                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                                <img src="images/edu-network/school-switching.jpg">
                             </figure>
                         </div>
                         <h3>School Switching Dropdown</h3>
@@ -1475,12 +1476,10 @@ td {
                     <div class="lg-6 mob-12 column padding-bottom">
                         <div class="image-container">
                             <figure>
-                                <img src="images/wheel-500.jpg"
-                                    srcset="images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
-                                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                                <img src="images/edu-network/interactive-map.jpg">
                             </figure>
                         </div>
-                        <h3>Mothership Website</h3>
+                        <h3>Interactive Map</h3>
                         <p>Explain the structure of the sub-brands in the network.</p>
                     </div>
                 </div>
@@ -1494,17 +1493,17 @@ td {
                         <h2 class="text-huge-title white-text">Impact</h2>
                     </div>
                     <div class="lg-4 tab-12 column">
-                        <img class="impact-icon" src="/images/ear.png" srcset="images/ear.png" alt="">
+                        <img class="impact-icon" src="images/edu-network/increase-enquiries.png">
                         <h3 class="white-text">Increase in Admission Enquiries</h3>
                         <p class="white-text">More parents showed interest in the schools.</p>
                     </div>
                     <div class="lg-4 tab-12 column">
-                        <img class="impact-icon" src="/images/ear.png" srcset="images/ear.png" alt="">
+                        <img class="impact-icon" src="images/edu-network/brand-image.png" >
                         <h3 class="white-text">Improved Branding</h3>
                         <p class="white-text">Unified branding enhanced public perception.</p>
                     </div>
                     <div class="lg-4 tab-12 column">
-                        <img class="impact-icon" src="/images/ear.png" srcset="images/ear.png" alt="">
+                        <img class="impact-icon" src="images/edu-network/agency-reputation.png" >
                         <h3 class="white-text">Enhanced Agency Reputation</h3>
                         <As class="white-text">As the biggest client by that time, the success of this project marked the beginning of local recognition.</p>
                     </div>
@@ -1527,12 +1526,12 @@ td {
 
 
             <div class="column lg-12" >
-
+<!-- 
             <figure style="margin-bottom: 8rem;">
-                <img class="big-image" src="images/wheel-500.jpg" 
+                <img class="big-image" src="images/edu-network" 
                 srcset="images/wheel-1000.jpg 1000w, 
-                images/wheel-500.jpg 500w"  >
-            </figure>
+                images/edu-network 500w"  >
+            </figure> -->
          
                 
                 <h2 class="text-huge-title " style="margin-bottom: 4rem;"> What I Learned</h2>
@@ -1544,8 +1543,7 @@ td {
 
                  
  <div class="lg-4   tab-12 column learning-item">
-    <!-- <img class="impact-icon" src="/images/ear.png" 
-                srcset="images/ear.png "  alt=""> -->
+  <img class="learnings-icon" src="images/edu-network/actionable-plan.png" >
 
                 <h3>Actionable Plan</h3>
 
@@ -1557,8 +1555,7 @@ td {
     
     
  <div class="lg-4 tab-12 column learning-item">
-    <!-- <img class="impact-icon" src="/images/ear.png" 
-                srcset="images/ear.png "  alt=""> -->
+    <img class="learnings-icon" src="images/edu-network/milestones.png" >
 
                 <h3>Stakeholder management</h3>
 
@@ -1569,8 +1566,7 @@ td {
 
     
  <div class="lg-4 tab-12 column learning-item">
-    <!-- <img class="impact-icon" src="/images/ear.png" 
-                srcset="images/ear.png "  alt=""> -->
+    <img class="learnings-icon" src="images/edu-network/complex-info.png" >
 
                 <h3>Love in Complexness</h3>
 
@@ -1619,21 +1615,29 @@ td {
                 
 
 
-             <!-- # site footer
+
+        <!-- # site footer
         ================================================== -->
        <footer id="colophon" class="s-footer">
     <div class="row s-footer__contact-header">
         <div class="column lg-12">
+
+        
+          
           
             <div class="footer-contact-wrap">
-                <img src="images/ear.png" class="footer-image" alt="Profile Image">
+           
 
-                      <h2 class="text-big-title center remove-margin-top">
-                Let's Connect!
-            </h2>
+                <img src="images/footer-bye.png" class="footer-image" alt="Profile Image">
+
+           
         
 
                         <div class=" footer-contact-wrap">
+<h2 class="text-home-title center remove-margin-top">
+              Let's Connect!
+            </h2>
+
                              <a href="www.linkedin.com/in/lucaluk" target="_blank" class=""><img  src="  ./images/LinkedInStyleContactCard.png" class="linkedIn-card " alt=""></a>
                              
  
@@ -1647,7 +1651,8 @@ td {
 
             <div class="row s-footer__bottom">
                 <div class="column ss-copyright">
-                    <p>© 2024 Luca Luk / luca.kahim.luk@gmail.com </p> 
+                      <p> < / >  code by me 🤟 </p> 
+                <!-- <a href="mailto: luca.kahim.luk@gmail.com " class="caption-link footer-email">  luca.kahim.luk@gmail.com </a>  -->
                   
                 </div>
 
@@ -1659,7 +1664,6 @@ td {
             </div> <!-- end s-footer__bottom-->
 
         </footer> <!-- end s-footer -->
-
 
     </div> <!-- end s-pagewrap -->
 
