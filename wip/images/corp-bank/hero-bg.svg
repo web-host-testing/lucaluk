@@ -1,15 +1,1 @@
-<svg width="1440" height="1024" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_685_23707)">
-<rect x="1440" width="1004" height="1440" transform="rotate(90 1440 0)" fill="url(#paint0_linear_685_23707)"/>
-</g>
-<defs>
-<linearGradient id="paint0_linear_685_23707" x1="1440" y1="720" x2="2444" y2="720" gradientUnits="userSpaceOnUse">
-<stop stop-color="#C84E89"/>
-<stop offset="0.521485" stop-color="#F15F79"/>
-<stop offset="0.985" stop-color="#F19C5F" stop-opacity="0"/>
-</linearGradient>
-<clipPath id="clip0_685_23707">
-<rect width="1440" height="1024" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+<svg fill="none" height="1024" viewBox="0 0 1440 1024" width="1440" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="1440" x2="2444" y1="720" y2="720"><stop offset="0" stop-color="#c84e89"/><stop offset=".521485" stop-color="#f15f79"/><stop offset=".985" stop-color="#f19c5f" stop-opacity="0"/></linearGradient><clipPath id="b"><path d="m0 0h1440v1024h-1440z"/></clipPath><g clip-path="url(#b)"><path d="m1440 0h1004v1440h-1004z" fill="url(#a)" transform="matrix(0 1 -1 0 1440 -1440)"/></g></svg>
