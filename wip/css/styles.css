@@ -4461,7 +4461,114 @@ display: block;
     height: 100vh; /* Makes sure the section takes the full height of the viewport */
     text-align: center;
     padding-bottom: 2rem; /* Optional: Adds some spacing from the bottom */
+       text-align: center; /* Center-align text */
+    
 }
+
+
+/* line break 
+ */
+/* Remove enforced line break and adjust alignment */
+.hero-center p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.4; /* Adjust line-height for better spacing */
+    margin-top: 0; /* Remove any extra margin */
+}
+
+/* Tablet and mobile: Ensure text wraps properly without excessive spacing */
+@media screen and (max-width: 900px) {
+    .hero-center p {
+        white-space: normal;
+        word-wrap: break-word;
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: 1.5; /* Slightly looser line-height for smaller screens */
+        margin: 0;
+    }
+}
+
+/* Small screens: Ensure text continues to wrap and align correctly */
+@media screen and (max-width: 600px) {
+    .hero-center p {
+        white-space: normal;
+        word-wrap: break-word;
+        flex-wrap: wrap;
+        line-height: 1.4; /* Slightly tighter line-height for small screens */
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+  #home_intro {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+         height: 100%;
+         min-height: auto; /* Remove min-height to allow more flexibility */
+    }
+
+@media screen and (max-width: 900px) {
+
+
+    .hero-center h2 {
+       
+        margin-top: 1rem; /* Add margin to space out elements */
+    }
+
+    .hero-center p {
+      
+        line-height: 1.5; /* Improve readability */
+        text-align: center; /* Center text for better layout */
+        max-width: 90%; /* Limit width to prevent text stretching */
+        margin: 0 auto; /* Center-align paragraph */
+    }
+
+    #home_intro {
+        padding-top: 12rem;
+        padding-bottom: 2rem;
+         height: 80svh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  
+
+    .hero-center p {
+        
+        padding: 0 10px; /* Add horizontal padding for smaller screens */
+    }
+
+    .hero_image {
+        max-height: 40vh; /* Reduce image height further for small screens */
+    }
+
+    #home_intro {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+       height: 70vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+  
+
+    #home_intro {
+
+       height: 65vh;
+    }
+}
+
+
+
 
 .hero-center-about {
     display: flex;
@@ -4686,20 +4793,28 @@ figure img {
 /* Home */
 
 #home_intro{
-    padding-top: 4svh;
+    padding-top: 12svh;
     padding-bottom: 4svh;
-   min-height:  100svh;
+   max-height:  100svh;
 
 }
 
 .hero_image{
     height: 100%;
-    width: 100vw;
-    max-height: 60svh;
-    object-fit: cover;
+    width: auto;
+    margin-bottom: 20svh;
+    /* max-height: 60svh; */
+    /* object-fit: cover; */
     margin-top: 8svh;
-    margin-bottom: 4svh;
+    /* margin-bottom: 4svh; */
+        /* width: 100%; */
+    /* height: auto;  */
+    object-fit: contain; /* Prevent the image from being cropped */
+    max-height: 65svh; /* Limit max height on smaller screens */
+    margin: 0 auto; /* Center the image horizontally */
 }
+
+
 
 
 .big-image{
@@ -5051,6 +5166,7 @@ line-height: 140%;
    .testimonial-wrapper {
         width: 100%; /* Full width for smaller screens */
          /* padding: 3rem 0 ; */
+         padding: 0;
     }
 
     .tesminonail-paragraph {
@@ -5288,9 +5404,9 @@ margin: 0;
 }
 
 
-.caption-image{
+/* .caption-image{
     margin-top: 20rem;
-}
+} */
 
 
 #my-process{

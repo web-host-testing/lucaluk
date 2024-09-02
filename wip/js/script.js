@@ -1,5 +1,41 @@
 
     document.addEventListener('DOMContentLoaded', function () {
+        
+        
+        
+    // New preloader logic
+    const preloader = document.getElementById('preloader');
+    const aboveTheFoldElements = document.querySelectorAll('#masthead, #home_intro img'); // Select relevant above-the-fold elements
+
+    let elementsLoaded = 0;
+
+    aboveTheFoldElements.forEach((element) => {
+        if (element.complete || element.readyState === 'complete') {
+            elementsLoaded++;
+        } else {
+            element.addEventListener('load', () => {
+                elementsLoaded++;
+                if (elementsLoaded === aboveTheFoldElements.length) {
+                    hidePreloader();
+                }
+            });
+        }
+    });
+
+    // Hide the preloader if all elements are loaded already
+    if (elementsLoaded === aboveTheFoldElements.length) {
+        hidePreloader();
+    }
+
+    function hidePreloader() {
+        preloader.style.display = 'none';
+        document.body.classList.remove('preloader-active');
+    }
+
+        
+        
+        
+        
         let slideIndex = 1;
         handleResize();
 
