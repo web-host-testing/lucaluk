@@ -5,44 +5,7 @@
        const preloader = document.getElementById('preloader');
     const aboveTheFoldElements = document.querySelectorAll('#masthead, #home_intro img'); // Update with your critical elements
 
-    // Check if the elements are within the viewport using IntersectionObserver
-    const observerOptions = {
-        root: null, // Use the viewport as the root
-        threshold: 0.1 // Trigger when 10% of the element is visible
-    };
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                elementsLoaded++;
-                if (elementsLoaded >= aboveTheFoldElements.length) {
-                    hidePreloader();
-                    observer.disconnect(); // Stop observing once all elements are loaded
-                }
-            }
-        });
-    }, observerOptions);
-
-    let elementsLoaded = 0;
-    aboveTheFoldElements.forEach(element => {
-        if (element.complete || element.readyState === 'complete') {
-            elementsLoaded++;
-        } else {
-            observer.observe(element);
-        }
-    });
-
-    // Function to hide preloader
-    function hidePreloader() {
-        preloader.style.display = 'none';
-        document.body.classList.remove('preloader-active');
-    }
-
-    // Hide preloader immediately if all elements are already loaded
-    if (elementsLoaded >= aboveTheFoldElements.length) {
-        hidePreloader();
-    }
-});   
 
         
         
