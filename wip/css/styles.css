@@ -4577,11 +4577,13 @@ display: block;
 .hero-center-about {
     display: flex;
     flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 2vh;
     align-items: center;
     justify-content: center; /* Aligns the content to the bottom */
     height: 100vh; /* Makes sure the section takes the full height of the viewport */
     text-align: center;
-    padding-bottom: 2rem; /* Optional: Adds some spacing from the bottom */
+    /* padding-bottom: 2rem;  */
 }
 
 .hero-link{
@@ -5188,7 +5190,7 @@ line-height: 140%;
     width: auto;
 }
 .padding-left{
-    padding-left: 0px;
+    padding-left: 0;
     padding-right: 0;
 }
 }
@@ -5205,7 +5207,7 @@ line-height: 140%;
     width       : 100%;
     position    : relative;
      /* background-color: --primary-color; */
-     min-height: 70svh;
+     min-height: 60svh;
      height: auto;
      /* margin-bottom: 80px; */
      /* padding-bottom: 24px; */
@@ -5365,15 +5367,19 @@ margin-left: -16px;
 .about-page{
     background-color: white;
 }
+/* 
+.about-hero-text{
+    max-width: 400px;
+} */
 
 
 
 .about-hero{
-    padding-top : 5svh;
+    padding-top : 10svh;
     width       : 100%;
     position    : relative;
      /* background-color: --primary-color; */
-     min-height: 70svh;
+     /* min-height: 70svh; */
      height: auto;
      /* margin-bottom: 80px; */
      /* padding-bottom: 24px; */
@@ -5394,6 +5400,7 @@ margin-left: -16px;
 
 .content-paragraph{
 padding-top: 200px;
+padding-bottom: 200px;
 }
 
 
@@ -5527,13 +5534,23 @@ margin-bottom: 0;
 width: 80vw;
     }
 .articles{
-    padding: 8rem 3rem 8rem 3rem;
+    padding: 4rem 3rem 8rem 3rem;
     /* margin: 120px 0 120px 0; */
 }
 #tools-section .row{
      /* background-color: --primary-color; */
     padding: 8rem 3rem 8rem 3rem;
 }
+
+.about-text-wrap{
+    padding-top: 0;
+}
+
+.content-paragraph{
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
 }
 
 

@@ -568,21 +568,7 @@ margin-top: 0;
 margin-bottom: 0;
 }
 
-@media screen and (max-width: 600px) {
-    #about-hero img{
-width: 80vw;
-    }
-.articles{
-    padding: 8rem 3rem 8rem 3rem;
-    /* margin: 120px 0 120px 0; */
-}
-#tools-section .row{
-     /* background-color: #ffe81d; */
-    padding: 8rem 3rem 8rem 3rem;
-}
 
-
-}
 
 
 /* case study  */
@@ -672,11 +658,33 @@ body{
     padding-top: 4rem;
 }
 
-
 .padding-left{
     padding-left: 80px;
     padding-right: 0;
 }
+
+@media screen and (max-width: 600px) {
+    #about-hero img{
+width: 80vw;
+    }
+    
+.articles{
+    padding: 8rem 3rem 8rem 3rem;
+    /* margin: 120px 0 120px 0; */
+}
+#tools-section .row{
+     /* background-color: #ffe81d; */
+    padding: 8rem 3rem 8rem 3rem;
+}
+
+.about-text-wrap{
+    padding-top: 0;
+}
+
+}
+
+
+
 
 .caption-image{
     margin-top: 4rem;
@@ -694,10 +702,19 @@ padding-bottom: 100px;
    
 }
 
+.content-paragraph{
+padding-top: 100px;
+padding-bottom: 100px;
+}
+
 .padding-left{
     padding-left: 0px;
     padding-right: 0;
 }
+}
+
+.padding-bottom{
+    padding-bottom: 24px;
 }
 
 
@@ -814,7 +831,7 @@ padding-bottom: 100px;
             </figure>
 
 
-                <h2 class="animate-on-load ">Exploring my own behaviors and decision-making process is always fascinating!</h2>
+                <h2 class="animate-on-load " style="max-width: 600px;">Every door I open lets me see myself and others in a new light.</h2>
 
                
 
@@ -852,16 +869,16 @@ padding-bottom: 100px;
                 <p class="badge ">Personality</p>
                 
             </div>
-                <h3 class="text-big-title "> Logical & Empathetic </h3>
+                <h3 class="text-big-title "> Thinking & Feeling </h3>
         
         </div> 
 
 
     <div class="column lg-7 md-6 tab-12 padding-left" data-animate-el>
-        <p> Reflecting deeply on my actions, I’m driven by a curiosity about how others think and feel, making me a great <b>listener</b> and trusted friend.
+        <p><b>Reflecting deeply</b> on my actions, I’m driven by a <b>curiosity</b> about how others think and feel, making me a great listener and trusted friend.
         </p>
                 <h3 class="title-paragraph-about"> As an INFJ, I balance logic with empathy, <b>respecting diverse perspectives</b> and <b>avoiding judging right away</b>.</h3>
-        <p> This combination helps me understand and <b>respect others’ choices</b> genuinely. </p>
+        <p> This balance helps me genuinely understand the <b>decisions and experiences</b> of others. </p>
         
         
         
@@ -912,7 +929,7 @@ padding-bottom: 100px;
         <div class="column lg-5 md-6 tab-12 remove-paddings-margin" data-animate-el>
         
         <div class=" tags-group">
-                <p class="badge remove-margin-bottom">Thinking</p>
+                <p class="badge remove-margin-bottom">Belief</p>
                 
             </div>
                 <h3 class="text-big-title remove-margin-top"> My Take on AI</h3>
@@ -921,9 +938,9 @@ padding-bottom: 100px;
 
 
     <div class="column lg-7 md-6 tab-12 padding-left" data-animate-el>
-         <p>As an AI enthusiast, I love exploring smart ways to generate <b>fresh ideas and avoid blind spots</b>.</p>
-                <h3 class="title-paragraph-about">  I believe the true value of UX lies in <b>understanding users as people, not just data.</b> </h3>
-        <p> Engaging with real users uncovers insights that <b>reveal key opportunities</b>, setting businesses apart.
+         <p>My curiosity isn’t limited to people—it extends into technology, especially AI. I’m fascinated by how AI <b>uncovers fresh ideas and blind spots</b>.</p>
+                <h3 class="title-paragraph-about"> Like in life, understanding people is key — <b>UX is about seeing users as individuals, not just data.</b></h3>
+        <p> Engaging with users provides the insights needed to uncover <b>key opportunities that set businesses apart</b>.
         
            </p>
         
@@ -960,21 +977,37 @@ padding-bottom: 100px;
 
 
 
-<section id="fun-facts">
+<section id="">
 
-    <div class="articles ">
+    <div class="articles black">
 
         <div class="row ">
             <div class="column lg-12  ">
                  <div class=" tags-group">
-                <p class="badge remove-margin-bottom">Life Motto</p>
+                <p class="badge-white remove-margin-bottom">Motto</p>
                 
             </div>
             
                 
-                <h2 class="text-huge-title"> Live in the sunshine, swim the sea, drink the wild air </h2>
+                <h2 class="text-huge-title white-text "> Live in the sunshine, swim the sea, drink the wild air </h2>
+                <p class="white-text padding-bottom"><b>Happiness, for me, is as simple as a coffee under the blue sky</b>, my favorite music, and a perfectly fried egg with a runny yolk. I love feeling the breeze, watching leaves sway, and admiring the shadows on the ground.</p>
+                <p class="white-text">Always excited to explore — whether it’s a new country, the neighborhood, or trying a new activity or food — <b>life is always fresh and full of adventure.</b></p>
             </div>
         </div>
+ 
+
+
+
+</section>
+
+
+
+
+<section id="">
+
+    <div class="articles ">
+
+
  
     <!-- <h2 class="row section-title">Experience</h2> -->
     <div class="row  block-lg-one-half block-stack-on-900 horizontal-center image-paragraph-section" data-animate-block>
@@ -992,7 +1025,7 @@ padding-bottom: 100px;
             <h3 class="text-big-title  ">Travelled to 20+ countries solo</h3>
         </div>
            
-            <p> Traveling has given me my best memories, especially while I was doing exchange studies and working holiday in Sweden.
+            <p> Traveling has shown me that there’s no one way to live. My time in Sweden, surrounded by nature, taught me the beauty of simplicity and the <b>joy of being grateful for every moment</b>.
              </p>
 
     </div> <!-- end column -->
@@ -1013,7 +1046,7 @@ padding-bottom: 100px;
             <h3 class="text-big-title ">Passion in Life</h3>
         </div>
            
-            <p> I love exploring new things. One of my fondest memories is watching hockey in Canada, sharing the excitement and emotions with others. </p>
+            <p> I’m always <b>inspired by the passion of others</b>, especially in sports. Watching a live hockey playoff took my breath away—the raw energy, excitement, and emotion in the arena was an unforgettable experience. </p>
 
     </div> 
     <!-- end column -->
@@ -1035,16 +1068,12 @@ padding-bottom: 100px;
             <h3 class="text-big-title ">Tiny living dream</h3>
         </div>
             
-            <p> I’ve realized my ideal life is quite simple: living in a small house in nature, enjoying the sunlight and blue sky, trying new recipes, playing guitar, and painting.</p>
+            <p>While many dream of big houses, I’m drawn to tiny living—driving a campervan through hidden mountains, waking up in nature’s embrace, with just a cozy space and postcards I’ve collected over the years on the wall.</p>
 
     </div> <!-- end column -->
 </div>
 
 </section>
-
-
-
-
 
 
 
