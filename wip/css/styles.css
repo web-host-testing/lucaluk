@@ -2824,10 +2824,11 @@ img.u-pull-left {
 /* responsive video container
  */
 .video-container {
-    --aspect-ratio : 16/9;
+    --aspect-ratio : 15/9;
     position       : relative;
     height         : 0;
     overflow       : hidden;
+    object-fit: cover;
     padding-bottom : calc(100%/(var(--aspect-ratio)));
 }
 
@@ -5575,6 +5576,10 @@ padding-bottom: 40px;
 
 .padding-bottom{
     padding-bottom: 24px;
+}
+
+.padding-top{
+    padding-top: 24px;
 }
 
 
