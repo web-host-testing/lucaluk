@@ -4600,7 +4600,7 @@ display: block;
 }
 
 .hero-link:hover{
-    font-weight:500;
+    /* font-weight:500; */
       text-decoration : underline;
       /* text-decoration-color: rgb(167, 167, 167); */
       color: black;
