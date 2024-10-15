@@ -4573,6 +4573,17 @@ display: block;
 }
 
 
+@media screen and (max-width: 400px) {
+  
+
+    #home_intro {
+                max-height: 62vh;
+
+       /* height: 65vh; */
+    }
+}
+
+
 
 
 .hero-center-about {
