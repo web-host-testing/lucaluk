@@ -231,7 +231,7 @@
     .big-image {
         height: 100%;
         width: 100vw;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     @media screen and (max-width: 900px) {
@@ -275,8 +275,6 @@
             width: 100%;
         }
 
-      
-
         .image-caption-left,
         .image-caption-right {
             /* padding: 0 2rem 24px 2rem; */
@@ -289,6 +287,17 @@
     }
 
     }
+
+
+    @media screen and (max-width: 768px) {
+
+    .big-image {
+           margin-top: 24px;
+        }
+        .mid-image {
+           margin-top: 24px;
+        }
+}
 
     @media screen and (max-width: 700px) {
 
@@ -359,7 +368,7 @@ margin-bottom: 0;
         .big-image {
             height: 100%;
             width: 100vw;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 
@@ -1209,7 +1218,7 @@ start of content paragraph section
     <div class="column lg-8 tab-12  " >
         <figure>
             
-             <img loading="lazy" class="big-image"  src="images/mobile-cheque-deposit/industry-benchmarking.webp">
+             <img loading="lazy" class="mid-image"  src="images/mobile-cheque-deposit/industry-benchmarking.webp">
         </figure>
     </div>
     <div class="column lg-4 tab-12 image-caption-right padding-top">
@@ -1238,7 +1247,7 @@ start of content paragraph section
 
     <div class="column lg-8 tab-12  ">
  <figure>
-       <img loading="lazy" class=""  src="images/mobile-cheque-deposit/cjm-zoom-in.webp">
+       <img loading="lazy" class="mid-image"  src="images/mobile-cheque-deposit/cjm-zoom-in.webp">
         </figure>
 
 
@@ -1259,7 +1268,7 @@ start of content paragraph section
     <div class="column lg-8 tab-12  " >
         <figure>
             
-             <img loading="lazy" class="big-image"  src="images/mobile-cheque-deposit/end-to-end-cjm.webp">
+             <img loading="lazy" class="mid-image"  src="images/mobile-cheque-deposit/end-to-end-cjm.webp">
         </figure>
     </div>
     <div class="column lg-4 tab-12 image-caption-right padding-top padding-top">
@@ -1307,6 +1316,7 @@ start of content paragraph section
   
      Key part of the implementation is to help users understanding why their cheques couldn’t be deposited, especially in the case that there are multiple problems. </p>
 
+<h4>User Preference for Step-by-Step Error Resolution</h4>
  <p class="padding-bottom"> 
  We tested several solutions and found that users preferred resolving errors one by one, even if it required more steps, as it provided clarity and reduced confusion.</p>
     
@@ -1353,7 +1363,7 @@ start of content paragraph section
     <div class="column lg-8 tab-12   " >
         <figure>
         
-            <img loading="lazy" class="big-image"  src="images/mobile-cheque-deposit/usability-test.webp" >
+            <img loading="lazy" class="mid-image"  src="images/mobile-cheque-deposit/usability-test.webp" >
 
                <figcaption class="">
       2 rounds of usability tests with 14 internal users.
@@ -1468,7 +1478,7 @@ start of content paragraph section
     <div class="column lg-9 tab-12  " >
         <figure>
             
-             <img loading="lazy" class="big-image"  src="images/mobile-cheque-deposit/Re-solutioning.webp">
+             <img loading="lazy" class="mid-image"  src="images/mobile-cheque-deposit/Re-solutioning.webp">
         </figure>
     </div>
     <div class="column lg-3 tab-12 image-caption-right padding-top">
@@ -1575,7 +1585,7 @@ start of content paragraph section
             <div class="column lg-12 impact-item">
          
                 
-                <h2 class="text-huge-title white-text padding-bottom "> Expected Impacts </h2>
+                <h2 class="text-huge-title white-text padding-bottom ">  Impact </h2>
                 <!-- <p>The feature was not shipped until I left the company, but it is expected to:</p> -->
             </div>
 
@@ -1584,9 +1594,11 @@ start of content paragraph section
  <div class="lg-4   tab-12 column  impact-item">
     <img loading="lazy" class="impact-icon" src="images/mobile-cheque-deposit/satisfied-customer.webp" >
 
-                <h3 class="white-text">Improve Customer Satisfaction</h3>
+                <h3 class="white-text">75.8% Conversion</h3>
 
-         <p>Shorten the queues in branches and increase customer satisfactions.</p>
+         <p>Achieved a 75.8% capture success rate, outperforming HSBC’s 60% rate from their product launched two years ago.
+
+</p>
    
 </div>
 
@@ -1598,9 +1610,9 @@ start of content paragraph section
  <div class="lg-4 tab-12 column impact-item">
     <img loading="lazy" class="impact-icon" src="images/mobile-cheque-deposit/increase-app-usage.webp" >
 
-                <h3 class="white-text">Increase Mobile App Usage</h3>
+                <h3 class="white-text">43.8% increase in cheque clearance</h3>
 
-         <p>Encourage the use the mobile app to save time and hassle in the branch.</p>
+         <p>Following a July update, cheque deposits and clearance rates improved by 43.8%, streamlining the process.</p>
    
 </div>
 
@@ -1611,7 +1623,7 @@ start of content paragraph section
 
                 <h3 class="white-text">Competitive Edge</h3>
 
-         <p>Draw customers from competitors with unmatched features.</p>
+         <p>Introduced unmatched features like multi-currency and multi-cheque capabilities, drawing customers away from competitors.</p>
    
 </div>
     

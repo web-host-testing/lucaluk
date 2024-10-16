@@ -226,7 +226,7 @@
     .big-image {
         height: 100%;
         width: 100vw;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     @media screen and (max-width: 900px) {
@@ -284,6 +284,17 @@
     }
 
     }
+
+        @media screen and (max-width: 768px) {
+
+    .mid-image {
+           margin-top: 24px;
+        }
+
+        .metric-image{
+            margin-top: 60px;
+        }
+}
 
     @media screen and (max-width: 700px) {
 
@@ -354,7 +365,7 @@ margin-bottom: 0;
         .big-image {
             height: 100%;
             width: 100vw;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 
@@ -605,8 +616,9 @@ padding: 100px 0;
     text-align: center;
 }
 
+
 .case-study-paragraph-wrap {
-    padding: 0 0 24px 0;
+    padding: 0 24px 0 0;
 }
 
 .case-intro .text-wrapper p {
@@ -1065,7 +1077,7 @@ td {
 
 
     
- <div class="lg-4 tab-12 column">
+ <div class="lg-4 tab-12 column ">
     <div class="image-container">
         <div class="tags-group special-badge">
             <p class="badge remove-margin-bottom">Problem</p>
@@ -1083,7 +1095,7 @@ Low ratings with negative feedbacks from varioius channels.
 </div>
     
     
- <div class="lg-4 tab-12 column">
+ <div class="lg-4 tab-12 column metric-image">
     <div class="image-container">
         <div class="tags-group special-badge">
             <p class="badge remove-margin-bottom">Problem</p>
@@ -1099,7 +1111,7 @@ Low ratings with negative feedbacks from varioius channels.
 
 
     
- <div class="lg-4 tab-12 column">
+ <div class="lg-4 tab-12 column metric-image">
     <div class="image-container">
         <div class="tags-group special-badge">
             <p class="badge remove-margin-bottom">Goals</p>
@@ -1191,7 +1203,7 @@ start of content paragraph section
   <div class="row row-y-top block-stack-on-900 big-image-with-caption" >
     <div class="column lg-9 md-8 tab-12  " >
         <figure>
-        <img loading="lazy" class="big-image"  src="images/corp-bank/data-sources.webp">
+        <img loading="lazy" class="mid-image"  src="images/corp-bank/data-sources.webp">
             
         </figure>
     </div>
@@ -1227,7 +1239,7 @@ start of content paragraph section
 
     <div class="column lg-9 md-8 tab-12  ">
  <figure>
-            <img loading="lazy" class="big-image"  src="images/corp-bank/data-collect-challenge.webp">
+            <img loading="lazy" class="mid-image"  src="images/corp-bank/data-collect-challenge.webp">
         </figure>
 
 
@@ -1310,7 +1322,7 @@ start of content paragraph section
   <div class="row row-y-top block-stack-on-900 big-image-with-caption" >
     <div class="column lg-9 md-8 tab-12   " >
         <figure>
-            <img loading="lazy" class="big-image"  src="images/corp-bank/distinct-customer-needs.webp">
+            <img loading="lazy" class="mid-image"  src="images/corp-bank/distinct-customer-needs.webp">
         </figure>
     </div>
     <div class="column lg-3 md-4 tab-12 image-caption-right padding-top">
@@ -1408,8 +1420,8 @@ start of content paragraph section
         <div class="tags-group special-badge">
             <p class="badge-white remove-margin-bottom">Metric</p>
         </div>
-        <figure>
-            <img loading="lazy" src="images/corp-bank/MAU.webp"  
+        <figure >
+            <img loading="lazy" src="images/corp-bank/MAU.webp"   
                 sizes="(max-width: 1000px) 100vw, 1000px" alt="">
         </figure>
     </div>
@@ -1422,7 +1434,7 @@ Growth in app downloads and active monthly users
 </div>
     
     
- <div class="lg-4 tab-12 column ">
+ <div class="lg-4 tab-12 column metric-image">
     <div class="image-container">
         <div class="tags-group special-badge">
             <p class="badge-white remove-margin-bottom">Metric</p>
@@ -1439,7 +1451,7 @@ Growth in app downloads and active monthly users
 
 
     
- <div class="lg-4 tab-12 column ">
+ <div class="lg-4 tab-12 column metric-image">
     <div class="image-container">
         <div class="tags-group special-badge">
             <p class="badge-white remove-margin-bottom">Metric</p>
@@ -1516,7 +1528,7 @@ start of content paragraph section
 
 
        
-<div class="">
+<div class="row">
 
   <div class="row row-y-top block-stack-on-900 big-image-with-caption" >
     <div class="column lg-12  image-caption-left padding-top " >
@@ -1525,7 +1537,7 @@ start of content paragraph section
         <p style="margin-bottom: 40px;">To achieve this, we held regular meetings with business and IT teams. In these sessions, we reviewed customer journeys, with developers providing feasibility insights and suggesting implementation improvements. Business stakeholders made final decisions based on these discussions, aligning technical capabilities with business goals.</p>
 
         <figure>
-            <img loading="lazy" class="big-image"  src="images/corp-bank/accurate-cost-estimation.webp">
+            <img loading="lazy" class="mid-image"  src="images/corp-bank/accurate-cost-estimation.webp">
         </figure>
 
 
@@ -1737,12 +1749,12 @@ start of content paragraph section
 
     </div>
       <!-- end of text section             -->
-               
+<!--                
                    <div class="image-container ">
                             <figure>
                                 <img loading="lazy" src="images/corp-bank/pre-login.webp" class="remove-padding remove-margin">
                             </figure>
-                    </div>
+                    </div> -->
 
                        <div class="image-container">
                             <figure>
@@ -1779,26 +1791,46 @@ start of content paragraph section
             <div class="column lg-12">
          
                 
-                <h2 class="text-huge-title white-text "> User Feedbacks </h2>
+                <h2 class="text-huge-title white-text "> Impact </h2>
 
                 <!-- <li>Feedback shows notable improvements in user experience</li>
                 <li>New concepts overall well perceived </li> -->
                  
             </div>
 
- <div class="lg-4 md-4 tab-12 column">
+ <div class="lg-4 md-4  tab-12 column">
     <img loading="lazy" class="impact-icon" src="images/corp-bank/huge-improvement.webp" >
 
-                <h3 class="white-text padding-bottom">Huge improvement in home page</h3>
+        <h3 class="white-text padding-bottom">22% increase in app downloads</h3>
 
-         <p>"This version improved so much, I can now easily find balance and payment details."</p>
+        <p>Improved app downloads by 22% after redesigning dashboard navigation and introducing mobile-only features like password reset, enhancing user engagement on mobile.
+</p>
+   
+</div>
+
+
+ <div class="lg-4 md-4  tab-12 column">
+    <img loading="lazy" class="impact-icon" src="images/corp-bank/insights.webp" >
+
+        <h3 class="white-text padding-bottom">Save two full-time positions</h3>
+        <p>Introduced online password reset, reducing the need for staff to handle offline applications, saving the equivalent of two full-time positions and lowering operational costs.</p>
+   
+</div>
+
+
+ <div class="lg-4 md-4 tab-12 column">
+    <img loading="lazy" class="impact-icon" src="images/corp-bank/nice-touches.webp"  >
+
+                <h3 class="white-text padding-bottom">App Widely Appreciated by Users</h3>
+
+         <p>Received excellent customer feedback for usability improvements. A small-corp customer shared, “This version improved so much, I can now easily find balance and payment details.”</p>
    
 </div>
 
 
 
       
-
+<!-- 
     
  <div class="lg-4 md-4 tab-12 column">
     <img loading="lazy" class="impact-icon" src="images/corp-bank/nice-touches.webp" >
@@ -1806,23 +1838,13 @@ start of content paragraph section
                 <h3 class="padding-bottom white-text">Many nice touches in new payment process</h3>
     <div class="padding-bottom"> <p>"I didn't know how to set an unauthorized payee, this version is way easier!"</p></div>
      
-        <!-- <div><p>"Allowing downloading the confirmation is great."</p> -->
-</div>
+</div> -->
 
       
 
 
                          
- <div class="lg-4 md-4  tab-12 column">
-    <img loading="lazy" class="impact-icon" src="images/corp-bank/insights.webp" >
 
-                <h3 class="white-text padding-bottom">Insights on Usability Tweaks</h3>
-
-         <li>	Identify user-preffered info</li>
-         <li>Refine UI elements for usability</li>
-         <li>Improve copywriting for clarity</li>
-   
-</div>
 
 
 
