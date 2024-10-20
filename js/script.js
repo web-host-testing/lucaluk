@@ -1,146 +1,134 @@
-// // overlay
 
-// function openNav1() {
-//     document.getElementById("myNav1").style.display = "block";
-// }
-
-// function openNav2() {
-//     document.getElementById("myNav2").style.display = "block";
-// }
-
-// function openNav3() {
-//     document.getElementById("myNav3").style.display = "block";
-// }
-
-
-
-
-// function closeNav1() {
-//     document.getElementById("myNav1").style.display = "none";
-// }
-
-// function closeNav2() {
-//     document.getElementById("myNav2").style.display = "none";
-// }
-
-// function closeNav3() {
-//     document.getElementById("myNav3").style.display = "none";
-// }
-
-
-
-
-
-
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function () {
-//     var currentScrollPos = window.pageYOffset;
-//     if (prevScrollpos > currentScrollPos) {
-//         document.getElementById("navbar").style.top = "0";
-//     } else {
-//         document.getElementById("navbar").style.top = "-80px";
-//     }
-//     prevScrollpos = currentScrollPos;
-// }
-
-
-
-
-
-
-
-
-// if ($('.overlay').is(':visible')) {
-//     document.getElementsByClassName("nav").style.display = "none";
-// } else {
-//     document.getElementsByClassName("nav").style.display = "block";
-// }
-
-
-// if ($('.overlay').is(':invisible')) {
-//     document.getElementsByClassName("nav").style.display = "block";
-// } else {
-//     document.getElementsByClassName("nav").style.display = "none";
-// }
-
-
-
-
-
-
-
-// if ($(window).width() > 992) {
-//     $(window).scroll(function () {
-//         if ($(this).scrollTop() > 40) {
-//             $('#navbar').addClass("fixed-top");
-//             // add padding top to show content behind navbar
-//             $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
-//         } else {
-//             $('#navbar').removeClass("fixed-top");
-//             // remove padding top from body
-//             $('body').css('padding-top', '0');
-//         }
-//     });
-// }
-
-
-
-
-
-
-
-
-
-
-
-// video
-
-var vid1 = document.getElementById("video1");
-
-function playVid1() {
-    vid1.play();
-}
-
-function pauseVid1() {
-    vid1.pause();
-}
-
-
-
-
-var vid2 = document.getElementById("video2");
-
-function playVid2() {
-    vid2.play();
-}
-
-function pauseVid2() {
-    vid2.pause();
-}
-
-
-
-var vid3 = document.getElementById("video3");
-
-function playVid3() {
-    vid3.play();
-}
-
-function pauseVid3() {
-    vid3.pause();
-}
-
-
-
-
-
-var vid4 = document.getElementById("video4");
-
-function playVid4() {
-    vid4.play();
-}
-
-function pauseVid4() {
-    vid4.pause();
-}
+    document.addEventListener('DOMContentLoaded', function () {
+        
+        
+       const preloader = document.getElementById('preloader');
+    const aboveTheFoldElements = document.querySelectorAll('#masthead, #home_intro img'); // Update with your critical elements
+
+
+
+        
+        
+        
+        
+        let slideIndex = 1;
+        handleResize();
+
+        window.addEventListener('resize', debounce(handleResize, 250));
+
+        function handleResize() {
+            createSlides();
+            createDots();
+            showSlide(slideIndex);
+            bindSlideButtons();
+        }
+
+        function bindSlideButtons() {
+            document.querySelector('.prev').onclick = function() { changeSlide(-1); };
+            document.querySelector('.next').onclick = function() { changeSlide(1); };
+        }
+
+        function createSlides() {
+            const viewportWidth = window.innerWidth;
+            const perSlide = viewportWidth > 900 ? 2 : 1;
+            const testimonials = document.querySelectorAll('.testimonial-wrapper');
+            const sliderContainer = document.querySelector('.slides');
+            sliderContainer.innerHTML = '';
+
+            for (let i = 0; i < testimonials.length; i += perSlide) {
+                const slide = document.createElement('div');
+                slide.className = 'slide';
+                for (let j = 0; j < perSlide && (i + j) < testimonials.length; j++) {
+                    slide.appendChild(testimonials[i + j].cloneNode(true));
+                }
+                sliderContainer.appendChild(slide);
+            }
+        }
+
+        function createDots() {
+            const slides = document.getElementsByClassName("slide");
+            const dotsContainer = document.querySelector(".slider-dots");
+            dotsContainer.innerHTML = '';
+            for (let i = 0; i < slides.length; i++) {
+                const dot = document.createElement("span");
+                dot.classList.add("dot");
+                dot.onclick = function () { currentSlide(i + 1); };
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        function currentSlide(n) {
+            showSlide(slideIndex = n);
+        }
+
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function showSlide(n) {
+            const slides = document.getElementsByClassName("slide");
+            const dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            Array.from(slides).forEach(slide => slide.style.display = "none");
+            Array.from(dots).forEach(dot => dot.className = dot.className.replace(" active", ""));
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        function debounce(func, wait, immediate) {
+            let timeout;
+            return function() {
+                const context = this, args = arguments;
+                const later = function() {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                const callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
+        }
+
+        // Dropdown menu handling
+        const dropdown = document.querySelector('.dropdown');
+        const dropbtn = dropdown.querySelector('.dropbtn');
+        const arrow = document.querySelector('.dropdown-arrow');
+
+        dropbtn.addEventListener('click', function(event) {
+            arrow.classList.toggle('transformed');
+            dropdown.classList.toggle('expanded');
+        });
+
+        // Copy email to clipboard and show tooltip
+        function copyEmailToClipboard() {
+            const email = "luca.kahim.luk@gmail.com";
+
+            // Copy email to clipboard
+            const tempInput = document.createElement("input");
+            tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+            tempInput.value = email;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            // Show tooltip
+            const tooltip = document.getElementById("tooltip");
+            tooltip.classList.add("tooltip-visible");
+
+            // Hide tooltip after 2 seconds
+            setTimeout(function() {
+                tooltip.classList.remove("tooltip-visible");
+            }, 2000);
+        }
+
+        
+
+        // Attach event listener to email icon
+        const emailIcon = document.querySelector('[onclick="copyEmailToClipboard()"]');
+        if (emailIcon) {
+            emailIcon.addEventListener('click', copyEmailToClipboard);
+        }
+    });

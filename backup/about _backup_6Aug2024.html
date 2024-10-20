@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luca Luk</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+       <style>
+
+    body{
+        background-color: transparent;
+    }
+    
+    .tags-group{
+    flex-direction: row;
+   display: flex;
+   gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+
+.badge {
+    background-color: black;
+    border-width: 0.5px;
+    color: white;
+    padding: 4px 12px;
+    text-align: center;
+    font-size: medium;
+  }
+
+  .badge-white {
+    background-color: rgb(255, 255, 255);
+    border-width: 0.5px;
+    color: rgb(0, 0, 0);
+    padding: 4px 12px;
+    text-align: center;
+    font-size: medium;
+  }
+
+
+.bage-section .text-huge-title{
+    margin-left: -12px;
+}
+
+.bage-section .text-subtitle{
+    margin-left: -16px;
+}
+
+
+.section-padding{
+    padding: 100px 0;
+}
+.badge-wrap{
+    gap: 12px;
+  width: 60vw;
+}
+
+ .industries-badges{
+    padding-right: 120px;
+    
+  }
+
+  .bage-section .text-subtitle{
+    margin-left: -16px;
+}
+
+/* testimonial  */
+#testimonial-section{
+    padding: 8rem 0 8rem 0;
+}
+.slider {
+    position: relative;
+    width: 100%; /* Adjust based on your layout needs */
+    overflow: hidden; /* Keeps anything outside the slider div from being visible */
+}
+
+.slider-contorls{
+ left: 5rem;
+top: 5rem;
+position: absolute;
+}
+
+.control-button{
+    padding: 0;
+}
+
+.slides {
+    width: 100%;
+    margin-top: 8rem;
+}
+
+.slide {
+    display: none; /* Hide all slides by default */
+    width: 100%; /* Adjust based on your layout needs */
+    padding: 20px; /* Provides some space inside the slide */
+    text-align: center; /* Center the text inside the slide */
+}
+
+.slide.active {
+    display: block; /* Only the active slide is shown */
+}
+
+
+
+
+.prev, .next {
+    /* position: absolute; */
+    top: 50%;
+    /* right: 0; */
+    transform: translateY(-50%);
+    width: 48px; /* Size of the SVG */
+    height: 48px; /* Size of the SVG */
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev svg, .next svg {
+    fill: white; /* Adjust if you need a different color */
+    width: 50%;
+    height: auto;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+
+.tesmintonal-profile-pic{
+width: 80px;
+height: 80px;
+margin-right: 12px;
+
+}
+
+.testimonial-profile-wrapper{
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-bottom: 2rem;
+}
+
+.tesminonail-paragraph{
+   text-align: left;
+font-size: 2rem;
+margin-bottom: 0;
+line-height: 180%;
+
+}
+
+.testimonial-name-wrapper{
+     text-align: left;
+}
+
+    .testimonial-wrapper{
+        width: 50%; /* Each testimonial takes up half the width of the slide */
+            float: left; /* Align testimonials side by side */
+            box-sizing: border-box;
+            padding: 0 2rem; /* Optional: Adjust padding based on design needs */
+    
+    }
+
+.linkedIn-card {
+    background: transparent !important;
+    border: 1.5px solid #000000;
+    color: #000000;
+    padding: 24px 60px;
+    margin: 0;
+    height: 160px;
+    width: auto;
+    display: block;
+    width: auto;
+    object-fit: contain;
+    margin-top: 16px;
+}
+
+.footer-contact-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.center-image {
+    margin-bottom: 20px;
+    display: block;
+    width: 40svw;
+    margin-bottom: 24px;
+}
+
+.email-link svg {
+    margin-right: 8px;
+}
+
+
+.footer-contact-wrap .email-link {
+    margin-top: 20px; /* Add margin to separate the elements */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-image {
+    margin-bottom: 20px;
+    display: block;
+    width: 40svw;
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 600px) {
+
+ 
+.title-paragraph{
+    font-size: 2rem;
+  margin: 0px 18px 40px 18px;
+ line-height: 140%;
+}
+
+ .center-image {
+    width: 60svw;
+}
+
+.linkedIn-card {
+ 
+    padding: 4px 24px;
+  
+}
+
+.big-image{
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .comics-narrative{
+   justify-self: center;
+    }
+    
+    .comics-narrative p{
+        max-width: none;
+    }
+
+    figure img {
+
+        align-self: center;
+    }
+
+.text-home-title{
+font-size: 80px; 
+padding: 0 40px;   
+}
+.title-icon{
+width: 100px;
+height: 100px;
+
+}
+
+.title-paragraph{
+    font-size: 3rem;
+  margin: 0px 36px 40px 36px;
+ line-height: 140%;
+ text-align: center;
+}
+
+
+.work-card{
+    padding: 18px; 
+    margin-top: 24px;
+}
+
+
+.badge-wrap{
+    gap: 12px;
+  width: 100%;
+}
+
+
+.big-image{
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+}
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+ 
+.title-paragraph{
+    font-size: 2rem;
+  margin: 0px 18px 40px 18px;
+ line-height: 140%;
+}
+
+ .center-image {
+    width: 60svw;
+}
+
+.linkedIn-card {
+ 
+    padding: 4px 24px;
+  
+}
+
+.big-image{
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+.slider-contorls{
+ left: auto;
+top: 5rem;
+position: absolute;
+}
+
+
+
+.title-icon{
+width: 80px;
+height: 80px;
+margin-right: 12px;
+margin-bottom: 20px;
+margin-left: -16px;
+}
+
+.title-paragraph{
+    font-size: 2rem;
+  margin: 0px 18px 40px 18px;
+ line-height: 140%;
+}
+
+.work-card{
+    padding: 18px; 
+    margin-top: 24px;
+}
+
+.text-home-title{
+  
+  font-size      : 6rem;    
+  padding: 0 40px; 
+}
+
+     .industries-badges{
+    padding-right: 0px;
+    margin-bottom: 24px;
+  }
+
+ .center-image {
+    width: 80svw;
+}
+
+}
+
+/* about  */
+
+.about-page{
+    background-color: white;
+}
+
+
+
+.about-hero{
+    padding-top : 10svh;
+    width       : 100%;
+    position    : relative;
+     /* background-color: #ffe81d; */
+     min-height: 100svh;
+     height: auto;
+  
+     padding-bottom: 24px;
+    
+}
+
+
+.section-title{
+    /* text-align: center; */
+    font-size: 2.5em;
+    /* margin: 0 auto; */
+    width: 92%;
+    /* padding: 0 20px; */
+}
+
+
+
+
+.process-item{
+ margin-top: 2rem;
+}
+
+.my-process-icon{
+width: 12rem;
+margin: 0;
+}
+
+
+
+#my-process{
+     /* background-color: #ffe81d; */
+    padding: 8rem 0 8rem 0;
+}
+
+
+#experience{
+     background-color: #ffe81d;
+    padding: 8rem 0 8rem 0;
+}
+
+/* tools  */
+#tools-section .row{
+     /* background-color: #ffe81d; */
+    padding: 8rem 0 8rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  > div {
+    background: black;
+    padding: 1rem;
+    position: relative;
+    &::before {
+      // for apsect ratio
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+
+    .grid img {
+      position: absolute;
+      max-width: 100%;
+
+      // Alternate Version
+      // top: 0;
+      // bottom: 0;
+      // right: 0;
+      // left: 0;
+      // margin: auto;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.articles{
+    padding: 8rem 0 8rem 0;
+    /* margin: 120px 0 120px 0; */
+}
+
+
+
+.process-item h3{
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+
+    .process-item{
+      margin-bottom: 4rem;
+      padding: 0 16rem 0 16rem;
+    }
+    .section-title{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+.block-stack-on-700 .process-item{
+    /* width: 80%; */
+}
+
+.about-hero{
+text-align: center;
+}
+
+.process-item{
+    padding: 0 4rem 0 4rem;
+}
+.articles figure{
+    margin: 0;
+}
+
+
+.articles p{
+    margin: 0;
+}
+
+
+.folio-item__info{
+    margin-top: 24px;
+}
+
+
+
+}
+
+.fun-fact-article{
+margin-top: 0;
+margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+    #about-hero img{
+width: 80vw;
+    }
+.articles{
+    padding: 8rem 3rem 8rem 3rem;
+    /* margin: 120px 0 120px 0; */
+}
+#tools-section .row{
+     /* background-color: #ffe81d; */
+    padding: 8rem 3rem 8rem 3rem;
+}
+
+
+}
+
+
+/* case study  */
+
+.case-study-hero {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Maintaining a 16:9 ratio */
+    max-height: 80vh;
+    overflow: hidden;
+    
+}
+
+.case-study-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block; /* Eliminates any space below the image */
+}
+
+
+
+
+
+/* case study  */
+
+body{
+    background-color: white;
+}
+
+
+.case-intro{
+     background-color: white;
+     padding: 8rem 0 8rem 0;
+}
+
+.case-intro .text-wrapper{
+    text-align: center;
+}
+
+.case-intro .text-wrapper p{
+    width: 30vw; /* Set the width of the text box */
+    padding: 0px; /* Optional: add some padding */
+    display: block; /* Ensure it respects text-align center */
+    margin: 36px auto; /* Center it horizontally */
+   
+}
+
+
+.case-intro .tags-group{
+    justify-content: center;
+}
+
+.case-intro h1{
+    margin-top: 0;
+}
+
+.responsibility table{
+    border-width: 1px;
+   border-color: #000000;
+}
+
+.responsibility th, td {
+    border-bottom: none;
+}
+
+
+
+.responsibility td {
+    vertical-align: top;
+}
+
+
+.big-text-section{
+    padding: 8rem 0 8rem 0;
+}
+
+.big-text-section h2{
+  margin: 0;
+}
+
+.items-row{
+    padding: 8rem 0 8rem 0;
+}
+
+.about-text-wrap{
+    padding-top: 4rem;
+}
+
+
+.padding-left{
+    padding-left: 80px;
+    padding-right: 0;
+}
+
+.caption-image{
+    margin-top: 4rem;
+}
+
+.content-paragraph{
+padding-top: 100px;
+padding-bottom: 100px;
+}
+
+
+@media screen and (max-width: 900px) {
+.case-intro .text-wrapper p{
+    width: 80vw; /* Set the width of the text box */
+   
+}
+
+.padding-left{
+    padding-left: 0px;
+    padding-right: 0;
+}
+}
+
+}
+
+
+
+
+
+
+
+    </style> 
+
+    <!-- <link rel="stylesheet" href="css/base.css"> -->
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+
+    <!-- favicons
+    ================================================== -->
+  <link rel="icon" href="/images/favicon_luca.png" type="image/png">
+
+</head>
+
+
+<body id="top-about" class="about-page">
+
+ <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="line"></div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header id="masthead" class="s-header">
+
+             <div class="s-header__block">
+                <div class="s-header__branding">
+                    <p class="site-title">
+                        <a href="index.html" rel="home">Luca Luk</a>
+                    </p>
+                </div>
+
+                <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+            </div> <!-- end s-header__block -->
+
+            <div class="row s-header__nav-wrap">
+
+                <nav class="s-header__nav">
+                    <ul>
+                        <!-- <li class="current"><a href="" class="smoothscroll">Home</a></li> -->
+                        <li>
+                            <a href="index.html#all_works" class="">Home</a>
+                        </li>
+                        
+                        <li><a href="about.html" class="current">About</a></li>
+                        <li><a href="Luca-Luk-CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+                    </ul>
+                </nav> <!-- end s-header__nav -->
+
+                <ul class="s-header__social">
+                    <li>
+                        <a href="https://www.linkedin.com/in/lucaluk" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="linkedin-icon" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.5 20h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75c.96 0 1.75.79 1.75 1.75s-.79 1.76-1.75 1.76zm14.5 12.27h-3v-5.66c0-1.35-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.98v5.75h-3v-11h2.87v1.5h.04c.4-.75 1.37-1.54 2.81-1.54 3.01 0 3.57 1.98 3.57 4.55v6.49z"/>
+                            </svg>
+                            <span class="u-screen-reader-text">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:luca.kahim.luk@gmail.com" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M20 4h-16c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-12c0-1.1-.9-2-2-2zm0 4-8 5-8-5v-2l8 5 8-5v2z"/>
+                            </svg>
+                            <span class="u-screen-reader-text">Email</span>
+                        </a>
+                    </li>
+                </ul> 
+
+            </div> <!-- end s-header__nav-wrap -->
+
+        </header> <!-- end s-header -->
+
+
+
+
+   <section class="about-hero">
+     
+         <picture >
+             
+                <img src="images/wheel-500.jpg" alt="Hero Image" class="full-hero-image">
+            </picture>
+
+            <div class="row lg-12 center">
+
+               <h3 class="about-hero-text white-text "> It's so much fun exploring inwards, analyzing my own behaviours & decision making process </h3>
+      
+</div> 
+
+     </section>
+
+
+
+
+<section class="content-paragraph">
+       
+        <div class="row">
+          
+            <figure >
+                <img class="big-image" src="images/wheel-500.jpg" 
+                srcset="images/wheel-1000.jpg 1000w, 
+                images/wheel-500.jpg 500w"  >
+            </figure>
+        </div>
+ 
+
+               
+    <div class="row row-y-top  block-stack-on-900 horizontal-center about-text-wrap " data-animate-block>
+       
+        
+    
+        <div class="column lg-5 md-6 tab-12 remove-padding" data-animate-el>
+        
+        <div class=" tags-group">
+                <p class="badge ">Personality</p>
+                
+            </div>
+                <h3 class="text-big-title "> Empathetic & Logical </h3>
+        
+        </div> 
+
+
+    <div class="column lg-7 md-6 tab-12 padding-left" data-animate-el>
+        <p>  I mayself is the best subject to oberse as I can dig into it as much as I want. At times in the process I also realize aha that's why he did that! Being curious in how others feel and think and able to feel deeply what they are going through make my friends like talking to me.
+        </p>
+                <h3 class="title-paragraph-about"> Maybe it's because I'm an INFJ(@MBTI), I am very empathetic and logical in the same time.  </h3>
+        <p> Able to think from different perspective and listen why others think this way help me to avoid juding blindly and truely respect others' choices. </p>
+        
+        
+        
+        <div class="hide-on-md">
+
+                <figure >
+                    <img src="images/wheel-500.jpg" 
+                   class="caption-image">
+
+                </figure>
+
+            <a href="" title="" class=" " >
+
+              
+                <figcaption>
+                   See how it's like working with an INFJ <a href="https://www.16personalities.com/infj-personality" target="_blank" class="caption-link">View</a> 
+                </figcaption>
+
+            </a>        
+            
+            </div>
+
+    
+        </div>
+
+    </div>
+       
+
+</section>
+
+
+
+<section class="content-paragraph yellow">
+       
+        <div class="row">
+          
+            <figure >
+                <img class="big-image" src="images/wheel-500.jpg" 
+                srcset="images/wheel-1000.jpg 1000w, 
+                images/wheel-500.jpg 500w"  >
+            </figure>
+        </div>
+ 
+
+               
+    <div class="row row-y-top  block-stack-on-900 horizontal-center about-text-wrap " data-animate-block>
+       
+        
+    
+        <div class="column lg-5 md-6 tab-12 remove-paddings-margin" data-animate-el>
+        
+        <div class=" tags-group">
+                <p class="badge remove-margin-bottom">Thinking</p>
+                
+            </div>
+                <h3 class="text-big-title remove-margin-top"> My Take on AI</h3>
+        
+        </div> 
+
+
+    <div class="column lg-7 md-6 tab-12 padding-left" data-animate-el>
+         <p>As an AI enthusiast, I'm always excited to explore smart way to get new ideas and avoid blind spots.</p>
+                <h3 class="title-paragraph-about"> In this era, how will UX provide value to companies?  </h3>
+        <p> I believe it is the insights gaining from talking to real people, which let see users as human being instead of data. The in-depth exploration allows us to discover the problems and opportunities that make the business exceptional.   </p>
+        
+        
+        
+        <div class="hide-on-md">
+
+                <figure  class="caption-image">
+                    <img src="images/wheel-500.jpg" 
+                    srcset="images/wheel-1000.jpg 1000w, 
+                    images/wheel-500.jpg 500w" 
+                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+
+                </figure>
+
+            <a href="" title="" class=" " >
+
+                <figcaption>
+                    UX Research with AI GPT I created <a href="https://chatgpt.com/g/g-72JOqlILe-ux-research-with-ai" target="_blank" class="caption-link">View</a> 
+                </figcaption>
+
+            </a>        
+            
+            </div>
+
+    
+        </div>
+
+    </div>
+       
+
+</section>
+
+
+
+
+
+
+
+<section id="fun-facts">
+
+    <div class="articles black white-text">
+
+        <div class="row remove-padding">
+            <div class="column lg-12">
+             <div class=" tags-group">
+                <p class="badge-white remove-margin-bottom">Life Motto</p>
+                
+            </div>
+                
+                <h2 class="text-huge-title white-text"> Live in the sunshine, swin the sea, drink the wild air </h2>
+            </div>
+        </div>
+ 
+    <!-- <h2 class="row section-title">Experience</h2> -->
+    <div class="row  block-lg-one-half block-stack-on-900 horizontal-center image-paragraph-section" data-animate-block>
+        <div class="column" data-animate-el>
+        <figure>
+            <img src="images/wheel-500.jpg" 
+            srcset="images/wheel-1000.jpg 1000w, 
+            images/wheel-500.jpg 500w" 
+            sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+        </figure>
+        </div>
+   
+    <div class="column" data-animate-el>
+        <div class="folio-item__info">
+            <h3 class="text-big-title white-text ">Travelled to 20+ countries solo</h3>
+        </div>
+           
+            <p> Times travelling are always my best memories, especially when I first breathe the freedom in Sweden doing exchange studies and working
+            holiday. </p>
+
+    </div> <!-- end column -->
+</div>
+
+    <div class="row  block-lg-one-half block-stack-on-900 horizontal-center image-paragraph-section image-on-right " data-animate-block>
+        <div class="column " data-animate-el>
+        <figure>
+            <img src="images/wheel-500.jpg" 
+            srcset="images/wheel-1000.jpg 1000w, 
+            images/wheel-500.jpg 500w" 
+            sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+        </figure>
+        </div>
+   
+     <div class="column" data-animate-el>
+        <div class="folio-item__info">
+            <h3 class="text-big-title white-text">Passion in Life</h3>
+        </div>
+           
+            <p> Always excited to explore and try new things, happy to start watch hockey in canada, the precious moment when everyone cheer and cry together.  </p>
+
+    </div> 
+    <!-- end column -->
+</div>
+
+
+<div class="row  block-lg-one-half block-stack-on-900 horizontal-center image-paragraph-section" data-animate-block>
+    <div class="column" data-animate-el>
+    <figure>
+        <img src="images/wheel-500.jpg" 
+        srcset="images/wheel-1000.jpg 1000w, 
+        images/wheel-500.jpg 500w" 
+        sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+    </figure>
+    </div>
+
+   <div class="column" data-animate-el>
+        <div class="folio-item__info">
+            <h3 class="text-big-title white-text">Tiny living dream</h3>
+        </div>
+            
+            <p> I realized recently that what I wanted in life is quite simple: staying in small house in the nature, chilling with the sunlight and blue sky, trying new recipe, playing guitar and do some painting and sketching.</p>
+
+    </div> <!-- end column -->
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+                
+
+
+        <!-- # site footer
+        ================================================== -->
+       <footer id="colophon" class="s-footer" style="padding-top: 10rem;">
+    <div class="row s-footer__contact-header">
+        <div class="column lg-12">
+          
+            <div class="footer-contact-wrap">
+                <img src="images/wheel-500.jpg" class="center-image" alt="Profile Image">
+
+                      <h2 class="text-big-title center remove-margin-top">
+                Connect before you leave!
+            </h2>
+        
+
+                        <div class=" footer-contact-wrap">
+                             <a href="www.linkedin.com/in/lucaluk" target="_blank" class=""><img  src="  ./images/LinkedInStyleContactCard.png" class="linkedIn-card " alt=""></a>
+                             
+                             
+                              <a href="mailto:luca.kahim.luk@gmail.com" target="_blank" class="email-link">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M20 4h-16c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-12c0-1.1-.9-2-2-2zm0 4-8 5-8-5v-2l8 5 8-5v2z"/>
+                                 </svg>
+
+                                luca.kahim.luk@gmail.com
+                                <span class="u-screen-reader-text">Email</span>
+                            </a>
+                       
+                         </div>
+                          
+
+                   
+                </div>
+            </div> <!-- end s-footer__content -->
+
+            <div class="row s-footer__bottom">
+                <div class="column ss-copyright">
+                    <span>© Copyright Luca Luk 2024</span> 
+                  
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"></path></svg>
+                    </a>
+                </div>
+            </div> <!-- end s-footer__bottom-->
+
+        </footer> <!-- end s-footer -->
+
+
+    </div> <!-- end s-pagewrap -->
+
+
+ 
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

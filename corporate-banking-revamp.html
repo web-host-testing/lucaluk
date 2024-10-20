@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Corporate Banking Revamp</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+           <style>
+:root {
+            --primary-color: #ffe81d; 
+     --secondary-color :#175bd1;
+}
+
+    body {
+        background-color: transparent; /* Consolidated to a single rule */
+    }
+
+    .tags-group {
+        flex-direction: row;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    .badge {
+        background-color: black;
+        border-width: 0.5px;
+        color: white;
+        padding: 4px 12px;
+        text-align: center;
+        font-size: medium;
+    }
+
+    .badge-white {
+        background-color: rgb(255, 255, 255);
+        border-width: 0.5px;
+        color: rgb(0, 0, 0);
+        padding: 4px 12px;
+        text-align: center;
+        font-size: medium;
+    }
+
+    .badge-section .text-huge-title {
+        margin-left: -12px;
+    }
+
+    .industries-badges .text-subtitle,
+    .projects-badges .text-subtitle {
+        margin-left: -16px;
+    }
+
+    .section-padding {
+        padding: 100px 0;
+    }
+
+    .badge-wrap {
+        gap: 12px;
+        width: 60vw;
+    }
+
+    .industries-badges {
+        padding-right: 120px;
+    }
+
+    #testimonial-section {
+        padding: 8rem 0;
+    }
+
+    .slider {
+        position: relative;
+        width: 100%; /* Adjust based on your layout needs */
+        overflow: hidden; /* Keeps anything outside the slider div from being visible */
+    }
+
+    .slider-contorls {
+        left: 5rem;
+        top: 5rem;
+        position: absolute;
+    }
+
+    .control-button {
+        padding: 0;
+    }
+
+    .slides {
+        width: 100%;
+        margin-top: 8rem;
+    }
+
+    .slide {
+        display: none; /* Hide all slides by default */
+        width: 100%; /* Adjust based on your layout needs */
+        padding: 20px; /* Provides some space inside the slide */
+        text-align: center; /* Center the text inside the slide */
+    }
+
+    .slide.active {
+        display: block; /* Only the active slide is shown */
+    }
+
+    .prev,
+    .next {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 48px; /* Size of the SVG */
+        height: 48px; /* Size of the SVG */
+        background-color: rgb(0, 0, 0);
+        cursor: pointer;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .prev svg,
+    .next svg {
+        fill: white; /* Adjust if you need a different color */
+        width: 50%;
+        height: auto;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .tesmintonal-profile-pic {
+        width: 80px;
+        height: 80px;
+        margin-right: 12px;
+    }
+
+    .testimonial-profile-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .tesminonail-paragraph {
+        text-align: left;
+        font-size: 2rem;
+        margin-bottom: 0;
+        line-height: 180%;
+    }
+
+    .testimonial-name-wrapper {
+        text-align: left;
+    }
+
+    .testimonial-wrapper {
+        width: 50%; /* Each testimonial takes up half the width of the slide */
+        float: left; /* Align testimonials side by side */
+        box-sizing: border-box;
+        /* Optional: Adjust padding based on design needs */
+    }
+
+    .linkedIn-card {
+ 
+        margin: 0;
+        height: 200px;
+        display: block;
+        object-fit: contain;
+        margin-top: 16px;
+    }
+
+    /* .ss-copyright{
+    display: inline-flex;
+} */
+
+    .footer-contact-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+    }
+
+    .footer-image {
+        margin-bottom: 40px;
+        display: block;
+        height: 240px;
+        width: auto;
+        margin-top: -80px;
+    }
+
+    .email-link svg {
+        margin-right: 8px;
+    }
+
+    .footer-contact-wrap .email-link {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .case-study-paragraph-wrap {
+        margin-bottom: 16px;
+    }
+
+    .reduced-margin-bottom {
+        margin-bottom: 1rem;
+    }
+
+    .big-image {
+        height: 100%;
+        width: 100vw;
+        object-fit: contain;
+    }
+
+    @media screen and (max-width: 900px) {
+
+          .image-caption-right padding-top {
+            padding-left: 2rem;
+        }
+
+        .comics-narrative {
+            justify-self: center;
+        }
+
+        .comics-narrative p {
+            max-width: none;
+        }
+
+        .text-home-title {
+            font-size: 80px;
+            padding: 0 40px;
+        }
+
+        .title-icon {
+            width: 100px;
+            height: 100px;
+        }
+
+        .title-paragraph {
+            font-size: 3rem;
+            margin: 0px 36px 40px 36px;
+            line-height: 140%;
+            text-align: center;
+        }
+
+        .work-card {
+            padding: 18px;
+            margin-top: 24px;
+        }
+
+        .badge-wrap {
+            gap: 12px;
+            width: 100%;
+        }
+
+      
+
+        .image-caption-left ,
+        .image-caption-right {
+            /* padding: 0 2rem 24px 2rem; */
+            order: -1;
+        }
+
+         .testimonial-wrapper {
+        width: 100%; /* Each testimonial takes up half the width of the slide */
+      
+    }
+
+    }
+
+        @media screen and (max-width: 768px) {
+
+    .mid-image {
+           margin-top: 24px;
+        }
+
+        .metric-image{
+            margin-top: 60px;
+        }
+}
+
+    @media screen and (max-width: 700px) {
+
+.block-stack-on-700 .process-item{
+    /* width: 80%; */
+}
+
+.about-hero{
+text-align: center;
+}
+
+.process-item{
+    padding: 0 4rem 0 4rem;
+}
+.articles figure{
+    margin: 0;
+}
+
+
+.articles p{
+    margin: 0;
+}
+
+.impact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Ensures text is centered */
+    padding: 20px; /* Adds some padding for spacing */
+}
+
+
+    .impact-item p{
+        max-width: 60vw;
+    }
+
+
+}
+
+.fun-fact-article{
+margin-top: 0;
+margin-bottom: 0;
+}
+
+    @media screen and (max-width: 600px) {
+
+        .title-paragraph {
+            font-size: 2rem;
+            margin: 0px 18px 40px 18px;
+            line-height: 140%;
+        }
+
+        .articles{
+    padding: 8rem 3rem 8rem 3rem;
+    /* margin: 120px 0 120px 0; */
+}
+
+         .footer-image {
+        margin-bottom: 40px;
+        display: block;
+        height: 200px;
+        width: auto;
+        /* margin-top: -80px; */
+    }
+
+
+        .big-image {
+            height: 100%;
+            width: 100vw;
+            object-fit: contain;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+
+        .slider-contorls {
+            left: auto;
+            top: 5rem;
+            position: absolute;
+        }
+
+        .title-icon {
+            width: 80px;
+            height: 80px;
+            margin-right: 12px;
+            margin-bottom: 20px;
+            margin-left: -16px;
+        }
+
+        .title-paragraph {
+            font-size: 2rem;
+            margin: 0px 18px 40px 18px;
+            line-height: 140%;
+        }
+
+        .work-card {
+            padding: 18px;
+            margin-top: 24px;
+        }
+
+        .text-home-title {
+            font-size: 6rem;
+            padding: 0 40px;
+        }
+
+        .industries-badges {
+            padding-right: 0px;
+            margin-bottom: 24px;
+        }
+
+.industries-badges .text-subtitle,
+    .projects-badges .text-subtitle {
+        margin-left: 0;
+    }
+          .footer-image {
+        margin-bottom: 40px;
+        display: block;
+        height: 160px;
+        width: auto;
+        /* margin-top: -80px; */
+    }
+    }
+
+    /* case study  */
+
+  .case-study-hero {
+    position: relative;
+    height: 100svh;
+    width: 100%;
+    /* overflow:visible; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin-top: 5svh;  */
+}
+
+
+
+.case-study-hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    overflow: visible;
+}
+
+.padding-bottom {
+    padding-bottom: 24px;
+}
+
+.padding-top{
+    padding-top: 24px;
+}
+
+.content-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.additional-hero-image {
+    width: 100%;
+    height: 100%;
+    max-height: 60svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.additional-hero-image .hero-image {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    height: 100%;
+    margin-top: 5svh;
+    padding-bottom: 24px;
+}
+.hero-text {
+    width: 100%;
+    text-align: center;
+    gap: 12px;
+    z-index: 2;
+    margin-bottom: 5svh;
+}
+
+.hero-text h1 {
+    margin: 0;
+    padding: 16px 0;
+}
+
+.hero-text p {
+    max-width: 600px;
+    margin: 0 auto;
+    white-space: normal;
+}
+.center {
+    margin: 0 auto;
+}
+
+.left {
+    text-align: left;
+}
+
+.list-paragraph li {
+    padding-bottom: 8px;
+}
+
+.animate-on-load {
+    animation: fadeIn 0.1s ease-in-out;
+}
+
+.big-image-with-caption {
+    padding: 2rem 0;
+}
+
+.content-paragraph{
+padding: 100px 0;
+}
+
+.articles{
+    padding: 8rem 0 8rem 0;
+    /* margin: 120px 0 120px 0; */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .additional-hero-image {
+        margin-top: -20px;
+    }
+
+    .additional-hero-image .hero-image {
+        max-height: 60vh;
+    }
+
+    .hero-text {
+        /* margin-bottom: 10px; */
+        padding: 0 10px;
+    }
+
+    .hero-text p {
+        max-width: 90%;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .additional-hero-image .hero-image {
+        height: 60vh;
+        object-fit: cover;
+    }
+
+    .overview-item {
+        padding-top: 24px;
+    }
+}
+
+.remove-margin {
+    margin: 0;
+}
+
+.remove-padding {
+    padding: 0;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 40px; */
+}
+
+.image-container img loading="lazy" {
+    width: 100%;
+    height: auto;
+}
+
+.tags-group.special-badge {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    z-index: 10;
+}
+
+.special-badge .badge {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.case-intro {
+    background-color: white;
+    padding: 8rem 0;
+}
+
+.case-intro .text-wrapper {
+    text-align: center;
+}
+
+
+.case-study-paragraph-wrap {
+    padding: 0 24px 0 0;
+}
+
+.case-intro .text-wrapper p {
+    width: 30vw;
+    padding: 0px;
+    display: block;
+    margin: 36px auto;
+}
+
+.case-intro .tags-group {
+    justify-content: center;
+}
+
+.tags-group{
+  display: inline-flex;
+}
+
+.case-intro h1 {
+    margin-top: 0;
+}
+
+.responsibility table {
+    border-width: 1px;
+    border-color: #000000;
+}
+
+.responsibility th,
+td {
+    border-bottom: none;
+}
+
+.responsibility td {
+    vertical-align: top;
+}
+
+.big-text-section {
+    padding: 8rem 0;
+}
+
+.big-text-section h2 {
+    margin: 0;
+}
+
+.items-row {
+    padding: 8rem 0;
+}
+
+.image-caption-right padding-top {
+    padding-left: 2rem;
+    padding-bottom: 24px;
+}
+
+.image-caption-left padding-top {
+    padding-right: 3rem;
+    padding-bottom: 24px;
+}
+
+.impact-icon {
+    width: 12rem;
+    padding: 6rem 0 2rem 0;
+    margin: 0;
+}
+
+
+
+.learnings-icon {
+    width: 30rem;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    padding-top: 16rem;
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.control-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.arrow-button {
+    width: 48px;
+    height: 48px;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-btn .link-text h3,
+.left-btn .link-text figcaption {
+   
+    text-align: left;
+}
+
+.left-btn .link-text{
+ margin-left: 16px;
+}
+
+.right-btn .link-text h3,
+.right-btn .link-text figcaption {
+   
+    text-align: right;
+}
+
+.right-btn .link-text{
+ margin-right: 16px;
+}
+
+@media (max-width: 1000px) {
+    .arrow-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .link-text h3 {
+        font-size: 2rem;
+    }
+
+    .link-text figcaption {
+        font-size: 1.6rem;
+    }
+
+    .left-btn .link-text {
+        margin-left: 8px;
+    }
+
+    .right-btn .link-text {
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 800px) {
+    .link-text h3 {
+        font-size: 2rem;
+    }
+
+    .link-text figcaption {
+        font-size: 1.6rem;
+    }
+
+    .left-btn .link-text {
+        margin-left: 8px;
+    }
+
+    .right-btn .link-text {
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navigation-links {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 24px;
+        gap: 24px;
+    }
+
+    .control-button {
+        flex-direction: row;
+
+        /* align-items: center; */
+       
+        width: 100%;
+        gap: 8px;
+        /* width: 100%; */
+    }
+
+
+    .left-btn + .control-button{
+ justify-content: right;
+ /* padding-left: 30svw; */
+    }
+
+    .right-btn + .control-button{
+ justify-content: right;
+  /* padding-right: 30svw; */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .learning-item {
+        margin-bottom: 40px;
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Ensures text is centered */
+    padding: 20px; /* Adds some padding for spacing */
+    }
+
+    .learning-item p{
+        max-width: 60vw;
+    }
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .case-intro .text-wrapper p {
+        width: 80vw;
+    }
+/* 
+    .overview-item{
+        padding: 0;
+    } */
+
+    .padding-left {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+</style>
+    <!-- <link rel="stylesheet" href="css/base.css"> -->
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+
+    <!-- favicons
+    ================================================== -->
+   <link rel="icon" href="images/favicon_luca.webp" type="image/png">
+
+</head>
+
+
+<body id="top" >
+
+ <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="line"></div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+       <header id="masthead" class="s-header">
+    <div class="s-hader__block">
+        <div class="s-header__branding">
+            <p class="site-title">
+                <a href="index.html" rel="home">Luca Luk</a>
+            </p>
+        </div>
+        <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+    </div> <!-- end s-header__block -->
+
+    <div class="row s-header__nav-wrap">
+        <nav class="s-header__nav">
+            <ul>
+                <!-- Dropdown Menu for Work -->
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">
+        Work
+        <img loading="lazy" src="images/arrow-down.svg" alt="Dropdown Arrow" class="dropdown-arrow">
+    </a>
+    <div class="dropdown-content ">
+
+        <a href="mobile-cheque-deposit.html">
+       <p class="badge remove-margin-bottom" style="color: white; text-decoration: none;">UX</p>
+        <p> Cheque Deposit Feature</p>
+        </a>
+
+        <div style="clear: both;"></div> 
+
+        <a href="corporate-banking-revamp.html">
+       <p class="badge remove-margin-bottom" style="color: white; text-decoration: none;">Research</p>
+        <p>Corporate Banking App</p>
+        </a>
+
+        <div style="clear: both;"></div> 
+
+        <a href="education-website-revamp.html">
+       <p class="badge remove-margin-bottom" style="color: white; text-decoration: none;">UIUX</p>
+        <p>Education Network Website</p>
+        </a>
+
+
+    </div>
+</li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Luca-Luk-CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+            </ul>
+        </nav> <!-- end s-header__nav -->
+
+        <ul class="s-header__social">
+            <li>
+                <a href="https://www.linkedin.com/in/lucaluk" target="_blank">
+                    <img loading="lazy" src="images/icons/linkedin.svg" alt="" class="nav-icon">
+                    <span class="u-screen-reader-text">LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                
+                
+<a href="javascript:void(0);" onclick="copyEmailToClipboard()" style="position: relative;">
+    <img loading="lazy" src="images/icons/email-link.svg" alt="" class="nav-icon">
+    <span class="u-screen-reader-text">Email</span>
+    <span id="tooltip" class="tooltip-text">Email copied!</span> <!-- Tooltip -->
+</a>
+            </li>
+        </ul>  
+    </div> <!-- end s-header__nav-wrap -->
+</header> <!-- end s-header -->
+
+<section class="case-study-hero">
+    <picture>
+        <img loading="lazy" src="images/corp-bank/hero-bg.svg" alt="Hero Image" class="case-study-hero-image ">
+    </picture>
+
+    <figure class="additional-hero-image animate-on-load">
+    
+        <img loading="lazy" class="hero-image" src="images/corp-bank/corp-bank-hero.webp"  alt="Additional Hero Image">
+    </figure>
+
+      <!-- <div class=" tags-group animate-on-load">
+                        <p class="badge remove-margin-bottom">Mobile App</p>
+                        <strong>UX Design</strong>
+                        <p class="remove-margin-bottom">2023</p>
+                        
+                </div> -->
+
+        <div class="hero-text ">
+
+     <div class=" tags-group animate-on-load remove-margin" >
+             <p class="badge remove-margin-bottom"  >Research</p>
+             <!-- <strong>UX Design</strong> -->
+            <p class="remove-margin-bottom">App / 2023</p>
+        </div>
+
+      
+        <h1 class="text-big-title animate-on-load" >Corporate Banking App</h1>
+
+        <strong class="animate-on-load">Bank of China (Hong Kong)</strong>
+
+    </div>
+
+    
+         
+</section>
+
+
+<section class="content-paragraph ">
+       
+     
+ 
+
+               
+    <div class="row row-y-top  block-stack-on-900 horizontal-center  " >
+       
+        
+    
+        <div class="column lg-2 md-3 tab-12 " >
+        
+      
+                <h2 class=""> Overview </h2>
+                 
+        
+        </div> 
+
+
+    <div class="column lg-10 md-9 tab-12 padding-left" >
+      
+      <div class="column">
+
+    <div class="row">
+    
+                <div class="lg-4 tab-12 column overview-item">
+                <h4>Timeline</h4>
+                    <p>
+                    7 Months
+                    </p>
+                      <p class="padding-bottom">
+                    (Mar 2023 - Sep 2023)
+                    </p>
+                </div>
+    
+                <div class="lg-4 tab-12 column overview-item">
+                 <h4>Team</h4>
+                 <ul>
+                 <li>UX Head</li>
+                 <li>Business Product Managers</li>
+                 <li>IT Product Managers</li>
+                    <li>IT Department</li>
+                 <li>Customer Service Team</li>
+                 <li>Marketing Team</li>
+                 <li>Data Analysis Team</li>
+                 <li>Research Agency</li>
+                 
+                 </ul>
+                </div>
+    
+                <div class="lg-4 tab-12 column overview-item">
+                 <h4>Contribution</h4>
+                    <ul>
+                 <li>Gather Feedbacks & Data</li>
+                 <li>User Interview</li>
+                 <li>Recommendation Report</li>
+                 <li>Customer Journey Mapping</li>
+                 <li>High-fi Prototyping</li>
+                 <li>Concept Test Planning</li>
+                
+                 </ul>
+                </div>
+    
+            </div>
+
+  <div class="image-container">
+        <!-- <div class="tags-group special-badge">
+            <p class="badge remove-margin-bottom">Problem</p>
+        </div> -->
+        <figure class="padding-bottom">
+            <img loading="lazy" src="images/corp-bank/executive-summary.webp" >
+        </figure>
+    </div>
+
+
+       <div class=" column case-study-paragraph-wrap overview-item" >
+    <!-- <h4>Executive Summary</h4> -->
+          <p class="padding-bottom">After 4 years of operation, the iGTB platform, serving 130,000 customers, received negative feedback on usability. A major revamp was needed to regain customer trust.</b></p>
+
+          <p class="padding-bottom">As the lead researcher, I <a href="#data-gather" class="hero-link smoothscroll">gathered data</a> and conducted <a href="#pain-point-analysis" class="hero-link smoothscroll">pain-point analysis</a> , <a href="#discover-opportunities" class="hero-link smoothscroll">discovering opportunities</a>  to tailor the mobile app for small corporations. I <a href="#Collaboration" class="hero-link smoothscroll">collaborated with business and development teams</a>  to co-create customer journeys so to estimate costs. This helped management finalize the shortlisted features.</p>
+          
+          <p class="padding-bottom">The solutions underwent <a href="#user-testing" class="hero-link smoothscroll">user testing</a> before being handed off to fellow product designers, and the revamped app launched in mid-2024.</p>
+          
+      
+                   <a class="btn btn--stroke smoothscroll" href="#final-outcome">Final Outcome</a>
+                <!-- <h3 class="title-paragraph-about"> As an INFJ, I balance empathy with logic, <b>respecting diverse perspectives</b> and <b>avoiding judging right away</b>.</h3>
+        <p> This combination helps me understand and <b>respect others’ choices</b> genuinely. </p> -->
+        </div>
+    
+                
+    
+            </div>
+      
+      
+                <!-- <h3 class="title-paragraph-about"> Maybe it's because I'm an INFJ(@MBTI), I am very empathetic and logical in the same time.  </h3> -->
+    
+       <div class="column">
+       
+        <h4>Business Problem</h4>
+<div class="row ">
+
+
+    
+ <div class="lg-4 tab-12 column ">
+    <div class="image-container">
+        <div class="tags-group special-badge">
+            <p class="badge remove-margin-bottom">Problem</p>
+        </div>
+        <figure>
+            <img loading="lazy" src="images/corp-bank/negative-feedbacks.webp" >
+        </figure>
+    </div>
+<p>
+Low ratings with negative feedbacks from varioius channels.
+</p>
+
+      
+  
+</div>
+    
+    
+ <div class="lg-4 tab-12 column metric-image">
+    <div class="image-container">
+        <div class="tags-group special-badge">
+            <p class="badge remove-margin-bottom">Problem</p>
+        </div>
+        <figure>
+            <img loading="lazy" src="images/corp-bank/cs-agent.webp" >
+        </figure>
+    </div>
+
+         <p>Customer service overwhelmed by users failing simple tasks.</p>
+   
+</div>
+
+
+    
+ <div class="lg-4 tab-12 column metric-image">
+    <div class="image-container">
+        <div class="tags-group special-badge">
+            <p class="badge remove-margin-bottom">Goals</p>
+        </div>
+        <figure>
+            <img loading="lazy" src="images/corp-bank/select-task.webp" >
+        </figure>
+    </div>
+       <ul class="list-paragraph">
+                 <li>Fix the most valuable customer journeys</li>
+                 <li> Introduce features to benchmark against competitors </li>
+        </ul>
+    
+</div>
+    
+            </div>
+       </div>
+    </div>
+  
+
+    
+        </div>
+
+
+       
+
+</section>
+
+
+
+
+<!-- 
+----------------------------------
+start of content paragraph section 
+-------------------------------- -->
+<section id="data-gather" class="content-paragraph yellow">
+       
+    <!-- start of text section             -->
+    <div class="row row-y-top  block-stack-on-900 horizontal-center  " >
+       
+        
+     <div class="column lg-4 md-4 tab-12  case-study-paragraph-wrap" >
+         <div class=" tags-group">
+            <p class="badge remove-margin-bottom" >Research</p>
+        </div>
+     <h3 class="text-big-title reduced-margin-bottom"> Data Gathering</h3>
+       
+        </div>
+    
+
+
+    <div class="column lg-8  tab-12  case-study-paragraph-wrap" >
+
+     <h4  >Coordinating Cross-Departmental Data Collection</h4>
+
+         <p class="padding-bottom">Reviewed key user flows and analyzed competitor structures, such as payment, to understand usability issues, like why users fail to find entry points.
+ </p>
+
+
+     <h4  >Identifying Navigation Issues</h4>
+
+         <p class="padding-bottom">One major issue identified was navigation. Unlike competitors, who separate payment options into “send to myself” and “send to others,” our platform displays all payment methods at once, overwhelming users and making it difficult to choose.
+ </p>
+
+
+    </div>
+      <!-- end of text section             -->
+
+
+    <!-- start of big image  -->
+
+      <div class="row" style="margin-bottom: 16px;">
+          
+            <figure >
+                <img loading="lazy" class="big-image" src="images/corp-bank/data-gathering.webp"   >
+            </figure>
+        </div>
+
+        <!-- end of big image  -->
+       
+
+       
+
+
+
+          <!-- start of caption image right             -->
+<div class="row">
+
+  <div class="row row-y-top block-stack-on-900 big-image-with-caption" >
+    <div class="column lg-9 md-8 tab-12  " >
+        <figure>
+        <img loading="lazy" class="mid-image"  src="images/corp-bank/data-sources.webp">
+            
+        </figure>
+    </div>
+    <div class="column lg-3 md-4 tab-12 image-caption-right padding-top">
+        <h4>Diverse Data Sources</h4>
+        <p>Leveraging opportunities from related projects to interview hard-to-reach customers, along with existing data, data science expertise, and prior research, we gained a comprehensive understanding of the pain points across different customer segments.
+    </div>
+</div>
+</div>
+   <!-- end of caption image right             -->
+
+
+
+
+
+
+
+
+  <!-- start of caption image left                     -->
+
+<div class="row">
+
+  <div class="row row-y-top block-stack-on-900 big-image-with-caption" >
+    <div class="column lg-3 md-4 tab-12 image-caption-left padding-top " >
+       
+       
+        <h4>Overcoming Data Collection Challenges</h4>
+        <p class="padding-bottom">Data was scattered across teams, and we initially didn’t know some of it existed. The key to gathering it was our approach: providing value instead of just asking for help.</p>
+       <p>We built long-term rapport by exchanging information, offering UX support, and even just saying hi when we met.</p>
+
+    </div>
+
+
+    <div class="column lg-9 md-8 tab-12  ">
+ <figure>
+            <img loading="lazy" class="mid-image"  src="images/corp-bank/data-collect-challenge.webp">
+        </figure>
+
+
+    </div>
+</div>
+</div>
+
+
+
+
+  <!-- end of caption image left  -->
+  
+
+</section>
+
+<!-- end of content paragraph section  -->
+
+
+
+
+<!-- 
+----------------------------------
+start of content paragraph section 
+-------------------------------- -->
+<section id="pain-point-analysis" class="content-paragraph ">
+       
+    <!-- start of text section             -->
+    <div class="row row-y-top  block-stack-on-900 horizontal-center  " >
+       
+        
+
+           
+     <div class="column lg-4 md-4 tab-12  case-study-paragraph-wrap" >
+         <div class=" tags-group">
+            <p class="badge remove-margin-bottom" >Insights</p>
+        </div>
+   
+     <h3 class="text-big-title reduced-margin-bottom">  Pain-points Analysis </h3>
+       
+        </div>
+    
+
+
+    <div class="column lg-8  tab-12 case-study-paragraph-wrap" >
+    
+
+       <h4  >Translating Data into Business Decisions</h4>
+
+         <p class="padding-bottom">Building on the data gathered from various departments, we identified the most critical pain points affecting customer satisfaction and operational efficiency. 
+ </p>
+
+     <p class="padding-bottom">This demonstrated the benefits of the revamp to each segment, convincing departments to invest in solutions aligned with their goals.
+ </p>
+          
+
+    
+        </div>
+
+    </div>
+      <!-- end of text section             -->
+
+
+
+    <!-- start of big image  -->
+
+      <div class="row" style="margin-bottom: 16px;">
+          
+            <figure >
+                <img loading="lazy" class="big-image" src="images/corp-bank/pain-point-analysis.webp"   >
+            </figure>
+        </div>
+
+        <!-- end of big image  -->
+       
+
+       
+          <!-- start of caption image right             -->
+<div class="row">
+
+  <div class="row row-y-top block-stack-on-900 big-image-with-caption" >
+    <div class="column lg-9 md-8 tab-12   " >
+        <figure>
+            <img loading="lazy" class="mid-image"  src="images/corp-bank/distinct-customer-needs.webp">
+        </figure>
+    </div>
+    <div class="column lg-3 md-4 tab-12 image-caption-right padding-top">
+        <h4> Prioritizing Common Pain Points</h4>
+        <p>By focusing on issues that impact the most customers, we offer a roadmap for resource allocation that maximizes improvements across all segments.</p>
+        
+       
+    </div>
+</div>
+</div>
+
+
+   <!-- end of caption image right             -->
+
+
+
+
+  <!-- start of caption image left                     -->
+<!-- 
+<div class="row">
+
+  <div class="row row-y-top block-stack-on-900 big-image-with-caption" >
+    <div class="column lg-3 md-4 tab-12  image-caption-left padding-top " >
+       
+       
+      <h4>Multiple-Company Owner </h4>
+        <p>An opportunity that many small-corp owners have multiple companies, but fail to manage all bank accounts with single mobile phone. </p>
+       
+
+    </div>
+
+
+    <div class="column lg-9 md-8 tab-12  ">
+ <figure>
+            <img loading="lazy" class="big-image"  src="images/wheel-500.webp">
+        </figure>
+
+
+
+
+    </div>
+</div>
+</div> -->
+
+
+    
+
+
+</div>
+
+
+
+
+  <!-- end of caption image left  -->
+
+
+</section>
+
+<!-- end of content paragraph section  -->
+
+
+
+<section id="discover-opportunities" class="content-paragraph yellow">
+
+        <div class="row ">
+            <div class="column lg-5 md-12">
+
+ 
+       <div class=" tags-group">
+            <p class="badge remove-margin-bottom" >Opportunities</p>
+        </div>
+
+
+                
+                <h3 class="text-big-title  "> Optimize App for Small-Corps </h3>
+                        </div>
+
+                   <div class="column lg-7 md-12 ">
+
+        <h4  >Distictive Segment Needs</h4>
+         <p class="padding-bottom">Based on the pain points identified, we saw an opportunity to enhance the mobile app for small-corp users. While large corporations rely on the desktop platform, small-corp decision-makers, who often use the mobile app, faced more usability challenges.
+        </p>
+         
+
+         <h4  >Simplifying the Mobile Experience</h4>
+         <p class="padding-bottom" style="padding-bottom: 40px;">Simplifying the mobile app by removing unnecessary steps and improving navigation directly supported the company’s goals of increasing app downloads and mobile token usage.
+        </p>
+
+            </div>
+
+
+                
+ <div class="lg-4 tab-12 column ">
+    <div class="image-container">
+        <div class="tags-group special-badge">
+            <p class="badge-white remove-margin-bottom">Metric</p>
+        </div>
+        <figure >
+            <img loading="lazy" src="images/corp-bank/MAU.webp"   
+                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+        </figure>
+    </div>
+<p>
+Growth in app downloads and active monthly users
+</p>
+
+      
+  
+</div>
+    
+    
+ <div class="lg-4 tab-12 column metric-image">
+    <div class="image-container">
+        <div class="tags-group special-badge">
+            <p class="badge-white remove-margin-bottom">Metric</p>
+        </div>
+        <figure>
+            <img loading="lazy" src="images/corp-bank/mobile-tokens.webp"  
+                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+        </figure>
+    </div>
+
+         <p>Increase in mobile token activation </p>
+   
+</div>
+
+
+    
+ <div class="lg-4 tab-12 column metric-image">
+    <div class="image-container">
+        <div class="tags-group special-badge">
+            <p class="badge-white remove-margin-bottom">Metric</p>
+        </div>
+        <figure>
+            <img loading="lazy" src="images/corp-bank/customer-satisfaction.webp"  
+                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+        </figure>
+    </div>
+      
+                 <p>Improvements in small-corp customer satisfaction scores</p>
+  
+    
+</div>
+    
+
+        </div>
+
+
+
+</section>
+
+
+
+
+<!-- 
+----------------------------------
+start of content paragraph section 
+-------------------------------- -->
+<section id="Collaboration" class="content-paragraph ">
+       
+    <!-- start of text section             -->
+    <div class="row row-y-top  block-stack-on-900 horizontal-center  " >
+       
+        
+     <div class="column lg-4 md-4 tab-12 case-study-paragraph-wrap" >
+       <div class=" tags-group">
+            <p class="badge remove-margin-bottom" >Collaboration</p>
+        </div>
+     <h3 class="text-big-title reduced-margin-bottom"> Solutions & Costs </h3>
+       
+        </div>
+    
+      
+
+    <div class="column lg-8 md-8 tab-12  case-study-paragraph-wrap" >
+    
+            <h4  >Assessing Feasibility and Costs</h4>
+
+         <p class="padding-bottom">With several valuable features identified, it was crucial to determine if the potential value justified the investment. By assessing costs and feasibility upfront, we ensured that only the most impactful features were prioritized for development. </p>
+         
+
+    
+        </div>
+
+    </div>
+      <!-- end of text section             -->
+
+
+    <!-- start of big image  -->
+
+      <div class="row" style="margin-bottom: 16px;">
+          
+            <figure >
+                <img loading="lazy" class="big-image" src="images/corp-bank/costs-to-build.webp"   >
+            </figure>
+        </div>
+
+        <!-- end of big image  -->
+
+
+
+
+
+
+       
+<div class="row">
+
+  <div class="row row-y-top block-stack-on-900 big-image-with-caption" >
+    <div class="column lg-12  image-caption-left padding-top " >
+       
+     <h4  > Collaborative Solution Development</h4>
+        <p style="margin-bottom: 40px;">To achieve this, we held regular meetings with business and IT teams. In these sessions, we reviewed customer journeys, with developers providing feasibility insights and suggesting implementation improvements. Business stakeholders made final decisions based on these discussions, aligning technical capabilities with business goals.</p>
+
+        <figure>
+            <img loading="lazy" class="mid-image"  src="images/corp-bank/accurate-cost-estimation.webp">
+        </figure>
+
+
+    </div>
+</div>
+</div>
+
+
+
+ <div class="row ">
+         <!-- start of text section             -->
+    <div class="row row-y-center  block-stack-on-900 horizontal-center " >
+       
+        
+     <div class="column lg-12 md-4 tab-12 " >
+      <!-- <div class=" tags-group">
+            <p class="badge remove-margin-bottom" >Solutions</p>
+        </div> -->
+     <h3 class="text-big-title reduced-margin-bottom"> Shortlisted Features </h3>
+     <p class="padding-bottom"> These features were prioritized because they solve the most critical pain points, affecting all customer segments, reducing frustration, lowering operational costs, or achieving key business goals. The value they provide also justifies the cost. </p>
+       
+        </div>
+    
+
+
+    </div>
+      <!-- end of text section             -->
+
+
+      <div class="row padding-bottom">
+        
+       <div class="lg-6 mob-12 column padding-bottom ">
+    <div class="image-container">
+        <!-- <div class="tags-group special-badge">
+            <p class="badge remove-margin-bottom">Metric</p>
+        </div> -->
+        <figure>
+            <img loading="lazy" src="images/corp-bank/mobile-dashboard.webp"  
+                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+        </figure>
+    </div>
+     <h3>Mobile Dashboard</h3>
+<p>
+The signature revamp feature, optimizing navigation, offering monthly statement downloads, and showcasing a fresh design.
+</p>  
+  
+  
+      </div>         
+
+
+
+       <div class="lg-6 mob-12 column padding-bottom ">
+    <div class="image-container">
+        <!-- <div class="tags-group special-badge">
+            <p class="badge remove-margin-bottom">Metric</p>
+        </div> -->
+        <figure>
+            <img loading="lazy" src="images/corp-bank/reset-pw.webp"  
+                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+        </figure>
+    </div>
+     <h3>Reset Password</h3>
+<p>
+Streamlines the reset process, reducing the need for in-person visits and lowering internal operational costs.
+</p>  
+  
+  
+      </div>    
+
+
+    
+</div>
+    
+
+      <div class="row">
+      
+       <div class="lg-6 mob-12 column padding-bottom ">
+    <div class="image-container">
+        <!-- <div class="tags-group special-badge">
+            <p class="badge remove-margin-bottom">Metric</p>
+        </div> -->
+        <figure>
+            <img loading="lazy" src="images/corp-bank/link-companies.webp"  
+                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+        </figure>
+    </div>
+     <h3>Link Companies</h3>
+<p>
+Encourages owners of multiple companies to use the bank for all their businesses with a simple single login.
+</p>  
+  
+  
+      </div>    
+
+
+      
+       <div class="lg-6 mob-12 column padding-bottom ">
+    <div class="image-container">
+        <!-- <div class="tags-group special-badge">
+            <p class="badge remove-margin-bottom">Metric</p>
+        </div> -->
+        <figure>
+            <img loading="lazy" src="images/corp-bank/payment.webp"  
+                sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+        </figure>
+    </div>
+     <h3>Payment & Approval</h3>
+<p>
+Simplifies the entire payment flow, including batch approvals for big-corps and improving the telegraphic transfer (TT) process.
+</p>  
+  
+  
+      </div>         
+
+</div>
+    
+
+
+        </div>
+
+
+</section>
+
+
+
+
+<!-- 
+----------------------------------
+start of content paragraph section 
+-------------------------------- -->
+<section id="user-testing" class="content-paragraph yellow">
+       
+    <!-- start of text section             -->
+    <div class="row row-y-top  block-stack-on-900 horizontal-center  " >
+       
+        
+     <div class="column lg-3 md-4 tab-12  case-study-paragraph-wrap" >
+      <div class=" tags-group">
+            <p class="badge remove-margin-bottom" >Validation</p>
+        </div>
+     <h3 class="text-big-title reduced-margin-bottom"> User Testing</h3>
+       
+        </div>
+    
+
+
+    <div class="column lg-8 md-8 tab-12  case-study-paragraph-wrap padding-left" >
+
+      <h4  >Focus Groups with small-corps</h4>
+      <p style="margin-bottom: 40px;">To ensure the shortlisted features would meet customer needs and drive value, we conducted focus groups with 9 small-corp clients. Despite a limited budget, this approach provided broad feedback and deeper insights into how users perceived key features like the mobile dashboard and streamlined payment process.
+    </p>
+
+    </div>
+      <!-- end of text section             -->
+
+
+    <!-- start of big image  -->
+
+    <div class="column">
+      <div class="row" style="margin-bottom: 16px;">
+          
+            <figure >
+                <img loading="lazy" class="big-image" src="images/corp-bank/test-flow.webp"   >
+            </figure>
+
+             <h4  > Collaborating with Research Agency</h4>
+        <p > We also partnered with a banking-focused research agency to further validate the features. I developed an interactive prototype and detailed test flow with targeted questions, ensuring we gathered meaningful feedback to refine and optimize the solutions.
+        </div>
+    
+    </div>
+      
+
+
+
+</section>
+
+<!-- end of content paragraph section  -->
+
+
+
+
+
+   <section class="content-paragraph " id="final-outcome">
+            <div class="row">
+
+
+           
+   <!-- start of text section             -->
+    <div class="row row-y-top  block-stack-on-900 horizontal-center  " >
+       
+        
+     <div class="column lg-4 tab-12  case-study-paragraph-wrap" >
+      <div class=" tags-group">
+            <p class="badge remove-margin-bottom" >Solution</p>
+        </div>
+     <h3 class="text-big-title reduced-margin-bottom"> Final Outcome</h3>
+       
+        </div>
+    
+
+
+    <div class="column lg-8  tab-12  case-study-paragraph-wrap padding-left" >
+
+      <!-- <h4  >Prototype for Testing Only</h4> -->
+        <p class="padding-bottom">The first phase launched successfully in mid-2024. This update streamlined processes, significantly improving user convenience and driving higher adoption of the mobile app among small-corp corporate customers. </p>
+         <a href="https://www.bochk.com/dam/smeinone/digitalbanking/igtbguide/en.html" class="hero-link smoothscroll"> Official Product Page</a> 
+
+   
+
+    </div>
+      <!-- end of text section             -->
+<!--                
+                   <div class="image-container ">
+                            <figure>
+                                <img loading="lazy" src="images/corp-bank/pre-login.webp" class="remove-padding remove-margin">
+                            </figure>
+                    </div> -->
+
+                       <div class="image-container">
+                            <figure>
+                                <img loading="lazy" src="images/corp-bank/dashboard.webp">
+                            </figure>
+                    </div>
+                       <div class="image-container">
+                            <figure>
+                                 <img loading="lazy" src="images/corp-bank/key-screens.webp">
+                            </figure>
+                    </div>
+                       <div class="image-container">
+                            <figure>
+                                 <img loading="lazy" src="images/corp-bank/features.webp">
+                            </figure>
+                    </div>
+
+                    </div>
+
+              
+            
+              
+            </div>
+        </section>
+
+
+
+<section class="black white-text">
+
+
+    <div class="articles ">
+
+        <div class="row ">
+            <div class="column lg-12">
+         
+                
+                <h2 class="text-huge-title white-text "> Impact </h2>
+
+                <!-- <li>Feedback shows notable improvements in user experience</li>
+                <li>New concepts overall well perceived </li> -->
+                 
+            </div>
+
+ <div class="lg-4 md-4  tab-12 column">
+    <img loading="lazy" class="impact-icon" src="images/corp-bank/huge-improvement.webp" >
+
+        <h3 class="white-text padding-bottom">22% increase in app downloads</h3>
+
+        <p>Improved app downloads by 22% after redesigning dashboard navigation and introducing mobile-only features like password reset, enhancing user engagement on mobile.
+</p>
+   
+</div>
+
+
+ <div class="lg-4 md-4  tab-12 column">
+    <img loading="lazy" class="impact-icon" src="images/corp-bank/insights.webp" >
+
+        <h3 class="white-text padding-bottom">Save two full-time positions</h3>
+        <p>Introduced online password reset, reducing the need for staff to handle offline applications, saving the equivalent of two full-time positions and lowering operational costs.</p>
+   
+</div>
+
+
+ <div class="lg-4 md-4 tab-12 column">
+    <img loading="lazy" class="impact-icon" src="images/corp-bank/nice-touches.webp"  >
+
+                <h3 class="white-text padding-bottom">App Widely Appreciated by Users</h3>
+
+         <p>Received excellent customer feedback for usability improvements. A small-corp customer shared, “This version improved so much, I can now easily find balance and payment details.”</p>
+   
+</div>
+
+
+
+      
+<!-- 
+    
+ <div class="lg-4 md-4 tab-12 column">
+    <img loading="lazy" class="impact-icon" src="images/corp-bank/nice-touches.webp" >
+
+                <h3 class="padding-bottom white-text">Many nice touches in new payment process</h3>
+    <div class="padding-bottom"> <p>"I didn't know how to set an unauthorized payee, this version is way easier!"</p></div>
+     
+</div> -->
+
+      
+
+
+                         
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<section class=" white">
+
+    <div class="articles " style="gap: 4rem;">
+
+        <div class="row ">
+
+
+            <div class="column lg-12" >
+
+            <!-- <figure style="margin-bottom: 8rem;">
+                <img loading="lazy" class="big-image" src="images/wheel-500.webp"   >
+            </figure>
+          -->
+                
+                <h2 class="text-huge-title " style="margin-bottom: 4rem;"> What I learned </h2>
+                 
+            </div>
+
+             
+
+
+                 
+ <div class="lg-4   tab-12 column learning-item">
+       <img loading="lazy" class="learnings-icon" src="images/corp-bank/mutual-help.webp" >
+
+
+                <h3>Mutual Help</h3>
+
+         <p>Build long-term relationships by providing mutual value, like collaborating with the business team to map customer journeys and learn how the product works.  </p>
+   
+</div>
+  
+
+    
+    
+ <div class="lg-4 tab-12 column learning-item">
+    <img loading="lazy" class="learnings-icon" src="images/corp-bank/focus.webp" >
+
+
+                <h3>Focus on data that matters</h3>
+
+         <p>Avoid inefficiently sifting through all data. Focus on relevant information that aligns with project goals.</p>
+   
+</div>
+
+
+    
+ <div class="lg-4 tab-12 column learning-item">
+       <img loading="lazy" class="learnings-icon" src="images/corp-bank/IT-expertise.webp" >
+
+
+                <h3>Seek IT expertise</h3>
+
+         <p>Collaborating with IT prevents wasting time on solutions that may not work within system limits, ensuring feasible design outcomes.</p>
+   
+</div>
+    
+    <div class="column lg-12 remove-margin">
+<div class="navigation-links">
+    <div class="control-button left-btn" >
+        <a href="mobile-cheque-deposit.html" class="arrow-button" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M12.707 17.293L8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z" fill="white"/>
+            </svg>
+        </a>
+        <div class="link-text">
+            <h3 class="title-paragraph-about remove-padding remove-margin">Mobile Cheque Deposit</h3>
+            <figcaption class="remove-margin hide-on-tab">#Complex Logics #Crisis Handling</figcaption>
+        </div>
+    </div>
+    <div class="control-button right-btn">
+        <div class="link-text" >
+            <h3 class="title-paragraph-about remove-padding remove-margin">YCYW Education Revamp</h3>
+            <figcaption class="remove-margin hide-on-tab" >#Agency settings #Content Strategy</figcaption>
+        </div>
+        <a href="education-website-revamp.html" class="arrow-button" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M11.293 6.707L15.586 11H6v2h9.586l-4.293 4.293 1.414 1.414L19.414 12l-6.707-6.707z" fill="white"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+    </div>
+ </div>
+
+
+</section>
+
+
+
+ 
+        <!-- # site footer
+        ================================================== -->
+       <footer id="colophon" class="s-footer">
+    <div class="row s-footer__contact-header">
+        <div class="column lg-12">
+
+        
+          
+          
+            <div class="footer-contact-wrap">
+           
+
+                <img loading="lazy" src="images/footer-bye.webp" class="footer-image" alt="Profile Image">
+
+           
+        
+
+                        <div class=" footer-contact-wrap">
+<h2 class="text-home-title center remove-margin-top">
+              Let's Connect!
+            </h2>
+
+                             <a href="www.linkedin.com/in/lucaluk" target="_blank" class=""><img loading="lazy"  src="  ./images/LinkedInStyleContactCard.webp" class="linkedIn-card " alt=""></a>
+                             
+ 
+                       
+                         </div>
+                          
+
+                   
+                </div>
+            </div> <!-- end s-footer__content -->
+
+            <div class="row s-footer__bottom">
+                <div class="column ss-copyright">
+                      <p> < / >  code by me 🤟 </p> 
+                <!-- <a href="mailto: luca.kahim.luk@gmail.com " class="caption-link footer-email">  luca.kahim.luk@gmail.com </a>  -->
+                  
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"></path></svg>
+                    </a>
+                </div>
+            </div> <!-- end s-footer__bottom-->
+
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end s-pagewrap -->
+
+
+ <script>
+
+
+        // Copy email to clipboard and show tooltip
+        function copyEmailToClipboard() {
+            const email = "luca.kahim.luk@gmail.com";
+
+            // Copy email to clipboard
+            const tempInput = document.createElement("input");
+            tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+            tempInput.value = email;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            // Show tooltip
+            const tooltip = document.getElementById("tooltip");
+            tooltip.classList.add("tooltip-visible");
+
+            // Hide tooltip after 2 seconds
+            setTimeout(function() {
+                tooltip.classList.remove("tooltip-visible");
+            }, 2000);
+        }
+
+        
+
+        // Attach event listener to email icon
+        const emailIcon = document.querySelector('[onclick="copyEmailToClipboard()"]');
+        if (emailIcon) {
+            emailIcon.addEventListener('click', copyEmailToClipboard);
+        }
+    ;
+
+</script>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  
+    <script src="js/script.js"></script>
+
+</body>
+</html>
