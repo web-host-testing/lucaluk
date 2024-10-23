@@ -4512,8 +4512,8 @@ display: block;
 
 
   #home_intro {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        /* padding-top: 2rem;
+        padding-bottom: 2rem; */
          height: 100%;
          min-height: auto; /* Remove min-height to allow more flexibility */
     }
@@ -4535,8 +4535,8 @@ display: block;
     }
 
     #home_intro {
-        padding-top: 12rem;
-        padding-bottom: 2rem;
+        /* padding-top: 12rem;
+        padding-bottom: 2rem; */
          /* height: 80svh; */
             max-height: 90vh;
     }
@@ -4555,8 +4555,8 @@ display: block;
     }
 
     #home_intro {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        /* padding-top: 1rem;
+        padding-bottom: 1rem; */
        /* height: 70vh; */
         max-height: 80vh;
     }
@@ -4566,7 +4566,7 @@ display: block;
   
 
     #home_intro {
-                max-height: 66vh;
+                /* max-height: 66vh; */
 
        /* height: 65vh; */
     }
@@ -4577,7 +4577,7 @@ display: block;
   
 
     #home_intro {
-                max-height: 90vh;
+                /* max-height: 90vh; */
 
        /* height: 65vh; */
     }
@@ -4811,8 +4811,8 @@ figure img {
 /* Home */
 
 #home_intro{
-    padding-top: 12svh;
-    padding-bottom: 4svh;
+    /* padding-top: 12svh;
+    padding-bottom: 4svh; */
    /* max-height:  100svh; */
 
 }
