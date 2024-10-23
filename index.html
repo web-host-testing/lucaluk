@@ -37,11 +37,19 @@
  --secondary-color :#175bd1;
 }
 
-    body {
-        background-color: var(); 
-
+body {
+    background-color: var(--primary-color); 
 }
 
+
+.home-hero-section {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    min-height: 100vh;       /* Full viewport height */
+    text-align: center;      /* Centers text */
+    padding: 0 10vw;
+}
         
         /* 
         Consolidated to a single rule */
@@ -818,12 +826,11 @@ td {
 
         <!-- Intro Section -->
 
+<!-- id="home_intro"  hero-center -->
+<section class="yellow home-hero-section">
 
-<section id="home_intro" class="yellow">
 
-    <div class="">
-        <div class="row">
-            <div class="column lg-12 hero-center">
+            <div class=" ">
                 
 
             <figure>
@@ -838,9 +845,6 @@ td {
 </p>
 
 
-
-            </div>
-        </div>
     </div>
 
 
