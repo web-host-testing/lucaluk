@@ -189,47 +189,6 @@
         /* Optional: Adjust padding based on design needs */
     }
 
-    .linkedIn-card {
- 
-        margin: 0;
-        height: 200px;
-        display: block;
-        object-fit: contain;
-        margin-top: 16px;
-    }
-
-    /* .ss-copyright{
-    display: inline-flex;
-} */
-
-    .footer-contact-wrap {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        text-align: center;
-    }
-
-    .footer-image {
-        margin-bottom: 40px;
-        display: block;
-        height: 240px;
-        width: auto;
-        margin-top: -80px;
-    }
-
-    .email-link svg {
-        margin-right: 8px;
-    }
-
-    .footer-contact-wrap .email-link {
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: inherit;
-    }
 
     .case-study-paragraph-wrap {
         margin-bottom: 16px;
@@ -244,6 +203,15 @@
         width: 100vw;
         object-fit: contain;
     }
+.ss-copyright {
+    flex: 1;
+    text-align: center;
+}
+
+.ss-copyright p {
+    text-align: center;
+}
+
 
     @media screen and (max-width: 900px) {
 
@@ -368,13 +336,7 @@ margin-bottom: 0;
     /* margin: 120px 0 120px 0; */
 }
 
-         .footer-image {
-        margin-bottom: 40px;
-        display: block;
-        height: 200px;
-        width: auto;
-        /* margin-top: -80px; */
-    }
+      
 
 
         .big-image {
@@ -443,7 +405,7 @@ margin-bottom: 0;
     /* overflow:visible; */
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     /* margin-top: 5svh;  */
 }
@@ -477,7 +439,7 @@ margin-bottom: 0;
 
 .additional-hero-image {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     max-height: 60svh;
     display: flex;
     justify-content: center;
@@ -572,8 +534,9 @@ padding: 100px 0;
 
 @media (max-width: 600px) {
     .additional-hero-image .hero-image {
-        height: 60vh;
+        width: 95vw;
         object-fit: cover;
+        margin-bottom:0 ;
     }
 
     .overview-item {
@@ -1685,52 +1648,37 @@ td {
 
         <!-- # site footer
         ================================================== -->
-       <footer id="colophon" class="s-footer">
-    <div class="row s-footer__contact-header">
+    <footer id="colophon" class="s-footer">
+    <div class="s-footer__contact-header">
         <div class="column lg-12">
-
-        
-          
-          
             <div class="footer-contact-wrap">
-           
-
                 <img loading="lazy" src="images/footer-bye.webp" class="footer-image" alt="Profile Image">
-
-           
-        
-
-                        <div class=" footer-contact-wrap">
-<h2 class="text-home-title center remove-margin-top">
-              Let's Connect!
-            </h2>
-
-                             <a href="www.linkedin.com/in/lucaluk" target="_blank" class=""><img loading="lazy"  src="  ./images/LinkedInStyleContactCard.webp" class="linkedIn-card " alt=""></a>
-                             
- 
-                       
-                         </div>
-                          
-
-                   
-                </div>
-            </div> <!-- end s-footer__content -->
-
-            <div class="row s-footer__bottom">
-                <div class="column ss-copyright">
-                      <p> < / >  code by me 🤟 </p> 
-                <!-- <a href="mailto: luca.kahim.luk@gmail.com " class="caption-link footer-email">  luca.kahim.luk@gmail.com </a>  -->
-                  
-                </div>
-
-                <div class="ss-go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"></path></svg>
+                <div class="footer-contact-wrap">
+                    <h2 class="text-home-title center remove-margin-top">
+                        Let's Connect!
+                    </h2>
+                    <a href="www.linkedin.com/in/lucaluk" target="_blank" class="">
+                        <img loading="lazy" src="./images/LinkedInStyleContactCard.webp" class="linkedIn-card" alt="">
                     </a>
                 </div>
-            </div> <!-- end s-footer__bottom-->
+            </div>
+        </div> <!-- end column -->
+    </div> <!-- end s-footer__contact-header -->
 
-        </footer> <!-- end s-footer -->
+    <div class="row s-footer__bottom">
+        <div class="column ss-copyright">
+            <p> < / >  code by me 🤟 </p> 
+            <!-- Optional email link -->
+        </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <!-- SVG icon -->
+            </a>
+        </div>
+    </div> <!-- end s-footer__bottom-->
+</footer> <!-- end s-footer -->
+
 
     </div> <!-- end s-pagewrap -->
 
