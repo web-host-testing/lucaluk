@@ -3,7 +3,10 @@
 <head>
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
    
        <!-- Open Graph meta tags -->
     <meta property="og:title" content="Luca Luk | Product Designer & UX Researcher" />
@@ -49,6 +52,30 @@ body {
     min-height: 100vh;       /* Full viewport height */
     text-align: center;       /* Centers text alignment */
     padding: 0 8vw;          /* Optional: Adds padding on left and right */
+}
+
+.home-hero-section h2,
+.home-hero-section p {
+    margin: 0; /* Remove default margins */
+}
+
+
+
+
+@media (max-width: 600px) {
+    .home-hero-section {
+        padding: 0 4vw; /* Adjust as necessary */
+        /* Other styles specific to mobile */
+    }
+
+    .home-hero-section h2 {
+        font-size: 3rem; /* Example adjustment */
+    }
+
+    .home-hero-section p {
+        font-size: 1.5rem; /* Example adjustment */
+        line-height: 1.5;   /* Ensures proper spacing */
+    }
 }
 
         
