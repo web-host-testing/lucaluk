@@ -41,15 +41,16 @@ body {
     background-color: var(--primary-color); 
 }
 
-
 .home-hero-section {
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;     /* Centers vertically */
+    flex-direction: column;  /* Ensures vertical stacking */
+    justify-content: center;  /* Centers vertically */
+    align-items: center;      /* Centers horizontally */
     min-height: 100vh;       /* Full viewport height */
-    text-align: center;      /* Centers text */
-    padding: 0 8vw;
+    text-align: center;       /* Centers text alignment */
+    padding: 0 8vw;          /* Optional: Adds padding on left and right */
 }
+
         
         /* 
         Consolidated to a single rule */
@@ -827,28 +828,22 @@ td {
         <!-- Intro Section -->
 
 <!-- id="home_intro"  hero-center -->
-<section class="yellow home-hero-section">
-
-
-            <div class=" ">
-                
-
-            <figure>
-                <img loading="lazy" class="hero_image animate-on-load" src="images/home-hero.webp"  >
-            </figure>
-
-
-                <h2 class="animate-on-load ">Luca Luk </h2>
-
-<p class="animate-on-load wrap-text" style="display: inline;">
-    Hi I'm a Product Designer and UX Researcher recognized for my <br> 🧠 <a href="#home-mobile-cheque" class="hero-link smoothscroll">Logical Thinking, </a> <span style="color: red;">❤️</span> <a href="#home-ycyw" class="hero-link smoothscroll">Deep Empathy </a> and 💼 <a href="#home-igtb" class="hero-link smoothscroll">Strategic Business Sense.</a>
-</p>
-
-
+<section class="yellow">
+    <div class="home-hero-section">
+        <figure>
+            <img loading="lazy" class="hero_image animate-on-load" src="images/home-hero.webp">
+        </figure>
+        <h2 class="animate-on-load">Luca Luk</h2>
+        <p class="animate-on-load wrap-text">
+            Hi I'm a Product Designer and UX Researcher recognized for my <br> 
+            🧠 <a href="#home-mobile-cheque" class="hero-link smoothscroll">Logical Thinking,</a> 
+            <span style="color: red;">❤️</span> 
+            <a href="#home-ycyw" class="hero-link smoothscroll">Deep Empathy</a> and 💼 
+            <a href="#home-igtb" class="hero-link smoothscroll">Strategic Business Sense.</a>
+        </p>
     </div>
-
-
 </section>
+
 
 
 
