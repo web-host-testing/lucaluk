@@ -953,6 +953,56 @@
         @media (prefers-reduced-motion: reduce) {
             .portfolio-hero-2026__project, .portfolio-hero-2026__arrow { transition: none; }
         }
+
+        /* Hero refinement: consistent gutters, subtle divider and clear typography. */
+        :root { --portfolio-hero-gutter: clamp(22px, 4.1vw, 64px); }
+        .portfolio-hero-2026__shell {
+            padding-inline: var(--portfolio-hero-gutter);
+        }
+        .s-header__branding {
+            left: var(--portfolio-hero-gutter);
+        }
+        .s-header__social {
+            right: var(--portfolio-hero-gutter);
+        }
+        .portfolio-hero-2026__role {
+            font-size: clamp(15px, 1.25vw, 18px);
+            line-height: 1.38;
+            letter-spacing: 0;
+            color: #48402e;
+        }
+        .portfolio-hero-2026__statement {
+            font-size: clamp(20px, 1.7vw, 23px);
+            line-height: 1.43;
+            margin-top: clamp(17px, 1.8vw, 21px);
+            color: #16140e;
+        }
+        .portfolio-hero-2026__statement::before {
+            content: "";
+            display: block;
+            width: 44px;
+            height: 1px;
+            background: rgba(22, 20, 14, 0.32);
+            margin-bottom: 17px;
+        }
+        @media (max-width: 900px) {
+            .s-header__menu-toggle {
+                right: calc(var(--portfolio-hero-gutter) - 20px);
+            }
+        }
+        @media (max-width: 810px) {
+            .portfolio-hero-2026__role { font-size: 16px; }
+            .portfolio-hero-2026__statement { font-size: 20px; margin-top: 18px; }
+        }
+        @media (max-width: 550px) {
+            .portfolio-hero-2026__role { font-size: 15px; line-height: 1.4; }
+            .portfolio-hero-2026__statement {
+                font-size: 19px;
+                line-height: 1.43;
+                margin-top: 17px;
+            }
+            .portfolio-hero-2026__statement::before { width: 38px; margin-bottom: 15px; }
+        }
 </style>
 
     <!-- favicons
